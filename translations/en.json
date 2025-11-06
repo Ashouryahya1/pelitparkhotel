@@ -91,5 +91,16 @@
   "reviews_booking_rating_note": "Guest review score",
   "reviews_tripadvisor_carousel_title": "Tripadvisor Voices",
   "reviews_tripadvisor_carousel_subtitle": "Stories from travelers who explored the Black Sea coast with us.",
-  "reviews_tripadvisor_rating_note": "Traveler rating"
+  "reviews_tripadvisor_rating_note": "Traveler rating",
+  "footer_quick_links_heading": "QUICK LINKS",
+  "footer_quick_links_browse": "Browse Destinations",
+  "footer_quick_links_offers": "Special Offers & Packages",
+  "footer_quick_links_rooms": "Room Types & Amenities",
+  "footer_quick_links_reviews": "Customer Reviews & Ratings",
+  "footer_quick_links_tips": "Travel Tips & Guides",
+  "footer_services_heading": "OUR SERVICES",
+  "footer_services_concierge": "Concierge Assistance",
+  "footer_services_flexible": "Flexible Booking Options",
+  "footer_services_airport": "Airport Transfers",
+  "footer_services_wellness": "Wellness & Recreation"
 }

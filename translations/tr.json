@@ -92,5 +92,17 @@
   "reviews_booking_rating_note": "Misafir değerlendirme skoru",
   "reviews_tripadvisor_carousel_title": "Tripadvisor Sesleri",
   "reviews_tripadvisor_carousel_subtitle": "Bizimle Karadeniz kıyılarını keşfeden gezginlerin hikayeleri.",
-  "reviews_tripadvisor_rating_note": "Gezgin puanı"
+  "reviews_tripadvisor_rating_note": "Gezgin puanı",
+  "footer_quick_links_heading": "Hızlı Bağlantılar",
+  "footer_quick_links_browse": "Destinasyonları Keşfet",
+  "footer_quick_links_offers": "Özel Teklifler ve Paketler",
+  "footer_quick_links_rooms": "Oda Tipleri ve Olanaklar",
+  "footer_quick_links_reviews": "Misafir Yorumları ve Puanları",
+  "footer_quick_links_tips": "Seyahat İpuçları ve Rehberler",
+  "footer_services_heading": "Hizmetlerimiz",
+  "footer_services_concierge": "Concierge Desteği",
+  "footer_services_flexible": "Esnek Rezervasyon Seçenekleri",
+  "footer_services_airport": "Havalimanı Transferleri",
+  "footer_services_wellness": "Sağlık ve Dinlenme"
 }
+

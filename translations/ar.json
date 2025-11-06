@@ -91,7 +91,17 @@
 "reviews_booking_rating_note": "تقييم النزلاء",
 "reviews_tripadvisor_carousel_title": "أصوات تريب أدفايزر",
 "reviews_tripadvisor_carousel_subtitle": "حكايات من مسافرين استكشفوا ساحل البحر الأسود معنا.",
-"reviews_tripadvisor_rating_note": "تقييم المسافرين"
-
+"reviews_tripadvisor_rating_note": "تقييم المسافرين",
+"footer_quick_links_heading": "روابط سريعة",
+"footer_quick_links_browse": "تصفح الوجهات",
+"footer_quick_links_offers": "عروض وباقات خاصة",
+"footer_quick_links_rooms": "أنواع الغرف والمرافق",
+"footer_quick_links_reviews": "آراء وتقييمات الضيوف",
+"footer_quick_links_tips": "نصائح وإرشادات السفر",
+"footer_services_heading": "خدماتنا",
+"footer_services_concierge": "خدمة الكونسيرج",
+"footer_services_flexible": "خيارات حجز مرنة",
+"footer_services_airport": "خدمة النقل من وإلى المطار",
+"footer_services_wellness": "العافية والترفيه"
 
 }
