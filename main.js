@@ -74,3 +74,31 @@ ScrollReveal().reveal(".service__list li", {
   interval: 500,
   origin: "right",
 });
+
+// about page extras
+ScrollReveal().reveal(".story__content", {
+  ...scrollRevealOption,
+  delay: 300,
+});
+
+ScrollReveal().reveal(".story__image", {
+  ...scrollRevealOption,
+  origin: "right",
+  delay: 500,
+});
+
+ScrollReveal().reveal(".founder__image", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 300,
+});
+
+ScrollReveal().reveal(".founder__content", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+
+ScrollReveal().reveal(".goal__card", {
+  ...scrollRevealOption,
+  interval: 200,
+});
