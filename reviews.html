@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Customer Reviews &amp; Ratings | Pelit Park Hotel</title>
+  </head>
+  <body>
+    <header class="subpage__header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="index.html#home"
+              ><img
+                src="assets/logo.png"
+                alt="Pelit Park Hotel"
+                style="height: 100px; width: auto; display: inline-block; vertical-align: middle;"
+            /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a data-translate="home" href="index.html#home">Home</a></li>
+          <li><a data-translate="about" href="index.html#about">About</a></li>
+          <li><a data-translate="service" href="index.html#service">Services</a></li>
+          <li><a data-translate="explore" href="index.html#explore">Explore</a></li>
+          <li><a data-translate="contact" href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="language-switcher">
+          <button data-lang="ar">AR</button>
+          <button data-lang="en">EN</button>
+          <button data-lang="tr">TR</button>
+        </div>
+      </nav>
+      <div class="section__container reviews__hero">
+        <p class="section__subheader">GUEST FEEDBACK</p>
+        <h1 class="section__header">Loved by Travelers Around the World</h1>
+        <p class="section__description">
+          From Google to Booking.com and Tripadvisor, guests consistently celebrate Pelit Park Hotel for its warm hospitality, central location in Trabzon, and thoughtful amenities.
+        </p>
+        <div class="overall-rating">
+          <span class="overall-rating__label">Average guest satisfaction</span>
+          <span class="overall-rating__value">4.7</span>
+          <span class="overall-rating__scale">/ 5</span>
+        </div>
+        <a class="btn reviews__hero-btn" href="#google-reviews">Read the latest reviews</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section__container reviews__intro">
+        <div class="reviews__lead">
+          <h2 class="section__header">What Our Guests Are Saying</h2>
+          <p class="section__description">
+            Whether visiting Trabzon for business or leisure, travelers choose Pelit Park Hotel for comfort, convenience, and service that feels personal. Explore highlights from our latest online reviews below.
+          </p>
+        </div>
+        <div class="reviews__metrics">
+          <div class="reviews__metric reviews__metric--google">
+            <span class="reviews__metric__label">Google</span>
+            <span class="reviews__metric__value">4.7 <small>/ 5</small></span>
+            <span class="reviews__metric__note">Average rating</span>
+          </div>
+          <div class="reviews__metric reviews__metric--booking">
+            <span class="reviews__metric__label">Booking.com</span>
+            <span class="reviews__metric__value">8.7 <small>/ 10</small></span>
+            <span class="reviews__metric__note">Guest review score</span>
+          </div>
+          <div class="reviews__metric reviews__metric--tripadvisor">
+            <span class="reviews__metric__label">Tripadvisor</span>
+            <span class="reviews__metric__value">5.0 <small>/ 5</small></span>
+            <span class="reviews__metric__note">Traveler rating</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__container reviews__summary">
+        <h2 class="section__subheader">PLATFORM HIGHLIGHTS</h2>
+        <div class="reviews__grid">
+          <article class="reviews__card">
+            <div class="reviews__card__header">
+              <i class="ri-google-fill reviews__icon" aria-hidden="true"></i>
+              <span class="reviews__platform">Google Reviews</span>
+            </div>
+            <div class="reviews__rating">
+              <span class="reviews__score">4.7 / 5</span>
+              <span class="reviews__stars">★★★★★</span>
+            </div>
+            <p class="section__description">
+              Guests praise our attentive front-desk team and the peaceful ambiance that makes Pelit Park Hotel a relaxing base in Trabzon.
+            </p>
+          </article>
+
+          <article class="reviews__card">
+            <div class="reviews__card__header">
+              <i class="ri-bookmark-fill reviews__icon" aria-hidden="true"></i>
+              <span class="reviews__platform">Booking.com</span>
+            </div>
+            <div class="reviews__rating">
+              <span class="reviews__score">8.7 / 10</span>
+              <span class="reviews__stars">Excellent</span>
+            </div>
+            <p class="section__description">
+              Families and business travelers alike highlight our spacious rooms, spotless housekeeping, and effortless check-in experience.
+            </p>
+          </article>
+
+          <article class="reviews__card">
+            <div class="reviews__card__header">
+              <i class="ri-compass-3-fill reviews__icon" aria-hidden="true"></i>
+              <span class="reviews__platform">Tripadvisor</span>
+            </div>
+            <div class="reviews__rating">
+              <span class="reviews__score">5.0 / 5</span>
+              <span class="reviews__stars">Top Rated</span>
+            </div>
+            <p class="section__description">
+              Reviewers love how close we are to Trabzon’s must-see attractions and appreciate the helpful recommendations from our concierge team.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section__container reviews__testimonials">
+        <h2 class="section__header">Recent Guest Highlights</h2>
+
+        <div class="reviews__nav" role="navigation" aria-label="Review sources">
+          <a class="reviews__nav-link" href="#google-reviews">
+            <i class="ri-google-fill" aria-hidden="true"></i>
+            Google
+          </a>
+          <a class="reviews__nav-link" href="#booking-reviews">
+            <i class="ri-bookmark-fill" aria-hidden="true"></i>
+            Booking.com
+          </a>
+          <a class="reviews__nav-link" href="#tripadvisor-reviews">
+            <i class="ri-compass-3-fill" aria-hidden="true"></i>
+            Tripadvisor
+          </a>
+        </div>
+
+        <div class="reviews__carousel" id="google-reviews" data-platform="google">
+          <div class="carousel__header">
+            <div>
+              <h3 class="carousel__title"><i class="ri-google-fill"></i> Google Reviews</h3>
+              <p class="carousel__subtitle">Five-star stays from guests around the globe.</p>
+            </div>
+            <div class="carousel__rating">
+              <span class="carousel__rating-value">4.7</span>
+              <span class="carousel__rating-scale">/ 5</span>
+              <span class="carousel__rating-note">Average rating</span>
+            </div>
+          </div>
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <article class="review__slide">
+                <p class="review__quote">
+                  “I recently stayed at Hotel Pelit in Trabzon, and I was very impressed. The hotel was exceptionally clean, and the service was excellent – the staff were always friendly and helpful.<br /><br />
+                  What really stood out was the breakfast. It was absolutely fantastic, with a wide variety of delicious options. There was so much food to choose from, and everything was fresh and well-prepared. My favorite was definitely the sigara börek, which was crispy, flavorful, and perfectly made.<br /><br />
+                  Overall, Hotel Pelit offers great value, comfort, and hospitality. I would happily stay here again and highly recommend it to anyone visiting Trabzon.”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Dobar Dan</span>
+                  <span class="review__details">Stayed August 2025 · Vacation with friends</span>
+                  <span class="review__context">Rooms 5 · Service 5 · Location 5</span>
+                </div>
+              </article>
+              <article class="review__slide">
+                <p class="review__quote">
+                  “A lovely hotel where we stayed while visiting Trabzon for a sporting event. The staff was friendly and helpful in every way. It was a comfortable place, and I wholeheartedly recommend it.<br /><br />
+                  The rooms were spotless, and the breakfast was a hearty buffet. Thank you, Pelit Park Hotel!”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Gözde Öztürk</span>
+                  <span class="review__details">Stayed April 2025 · Business with friends</span>
+                </div>
+              </article>
+              <article class="review__slide">
+                <p class="review__quote">
+                  “One of the best hotels I have experienced. The breakfast was magnificent, the hotel spotless, and every member of the team was very helpful and smiling all the time. I highly recommend it.”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Fuad Eshaq</span>
+                  <span class="review__details">Stayed 2024 · Family vacation</span>
+                  <span class="review__context">Hotel highlights: Luxury · Kid-friendly · Great value</span>
+                </div>
+              </article>
+              <article class="review__slide">
+                <p class="review__quote">
+                  “I've stayed in many places in the area, but this is the most comfortable and clean hotel. I wish all businesses were as friendly and honest as you. Keep up the good work.”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Hakan Düzgün</span>
+                  <span class="review__details">Stayed April 2025 · Business trip with friends</span>
+                  <span class="review__context">Hotel highlights: Great view · Quiet · High-tech</span>
+                </div>
+              </article>
+              <article class="review__slide">
+                <p class="review__quote">
+                  “Honestly, the price-quality ratio is very good. The rooms, service, and location all deserved top scores during my stay.”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Matías D'Angelo</span>
+                  <span class="review__details">Stayed April 2025 · Leisure stay</span>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="carousel__controls">
+            <button class="carousel__control prev" type="button" aria-label="Previous Google review">
+              <i class="ri-arrow-left-line"></i>
+            </button>
+            <button class="carousel__control next" type="button" aria-label="Next Google review">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+          <div class="carousel__indicators" role="tablist"></div>
+        </div>
+
+        <div class="reviews__carousel" id="booking-reviews" data-platform="booking">
+          <div class="carousel__header">
+            <div>
+              <h3 class="carousel__title"><i class="ri-bookmark-fill"></i> Booking.com Guests</h3>
+              <p class="carousel__subtitle">Verified travelers share their highlights from Pelit Park Hotel.</p>
+            </div>
+            <div class="carousel__rating">
+              <span class="carousel__rating-value">8.7</span>
+              <span class="carousel__rating-scale">/ 10</span>
+              <span class="carousel__rating-note">Guest review score</span>
+            </div>
+          </div>
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <article class="review__slide">
+                <p class="review__quote">
+                  “The hotel exceeded our expectations. Everything was spotlessly clean, the staff were attentive, and the breakfast had plenty of choice for the whole family.”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Turnay</span>
+                  <span class="review__details">Stayed May 2025 · Family trip</span>
+                  <span class="review__context">Room comfort 9.0 · Cleanliness 9.5</span>
+                </div>
+              </article>
+              <article class="review__slide">
+                <p class="review__quote">
+                  “Very comfortable beds and a generous room size. After a long day exploring Trabzon, the quiet atmosphere and fast Wi-Fi were just what we needed.”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Arina</span>
+                  <span class="review__details">Stayed May 2025 · Couple getaway</span>
+                </div>
+              </article>
+              <article class="review__slide">
+                <p class="review__quote">
+                  “Superb hotel in Trabzon! Friendly staff, delicious breakfast, and private parking made our business trip effortless. We’ll be back soon.”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Sergey</span>
+                  <span class="review__details">Stayed June 2025 · Business trip</span>
+                  <span class="review__context">Staff 9.2 · Facilities 8.9</span>
+                </div>
+              </article>
+              <article class="review__slide">
+                <p class="review__quote">
+                  “The sea view from our balcony was beautiful. We appreciated the friendly reception team and the convenient parking just behind the hotel.”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Juliane</span>
+                  <span class="review__details">Stayed September 2025 · Couple getaway</span>
+                </div>
+              </article>
+              <article class="review__slide">
+                <p class="review__quote">
+                  “I arrived very early and the team still managed to arrange a room. Their hospitality was memorable, and I left feeling refreshed and grateful.”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Aytan</span>
+                  <span class="review__details">Stayed October 2025 · Solo traveler</span>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="carousel__controls">
+            <button class="carousel__control prev" type="button" aria-label="Previous Booking.com review">
+              <i class="ri-arrow-left-line"></i>
+            </button>
+            <button class="carousel__control next" type="button" aria-label="Next Booking.com review">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+          <div class="carousel__indicators" role="tablist"></div>
+        </div>
+
+        <div class="reviews__carousel" id="tripadvisor-reviews" data-platform="tripadvisor">
+          <div class="carousel__header">
+            <div>
+              <h3 class="carousel__title"><i class="ri-compass-3-fill"></i> Tripadvisor Voices</h3>
+              <p class="carousel__subtitle">Stories from travelers who explored the Black Sea coast with us.</p>
+            </div>
+            <div class="carousel__rating">
+              <span class="carousel__rating-value">5.0</span>
+              <span class="carousel__rating-scale">/ 5</span>
+              <span class="carousel__rating-note">Traveler rating</span>
+            </div>
+          </div>
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <article class="review__slide">
+                <p class="review__quote">
+                  “Pelit Park Hotel gave me a cozy stay with clean rooms, kind staff, tasty food, and a peaceful vibe worth remembering. Had a great stay at Pelit Park Hotel. Very friendly staff, food is delicious, tidy rooms. Special thanks for the staff for care.”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Taymour A</span>
+                  <span class="review__details">Stayed September 2025 · Family trip</span>
+                </div>
+              </article>
+              <article class="review__slide">
+                <p class="review__quote">
+                  “Very nice hotel with parking behind the hotel. The location near the airport and Forum Trabzon adds to its beautiful sea view. The treatment is very pleasant, the price is excellent, and the hotel is friendly with no trouble. Thank you!”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Dream42963397918</span>
+                  <span class="review__details">Stayed April 2025 · Couple getaway</span>
+                  <span class="review__context">Value · Rooms · Location · Cleanliness · Service · Sleep Quality</span>
+                </div>
+              </article>
+              <article class="review__slide">
+                <p class="review__quote">
+                  “It was a wonderful experience. The cleanliness of the hotel is exceptional; every corner is spotless and well-maintained. The hotel is quiet, the staff are incredibly friendly, and the location is convenient for both the airport and the city center. Highly recommend Pelit Park Hotel for anyone visiting Trabzon!”
+                </p>
+                <div class="review__meta">
+                  <span class="review__author">Yahya A</span>
+                  <span class="review__details">Stayed June 2024 · Solo traveler</span>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="carousel__controls">
+            <button class="carousel__control prev" type="button" aria-label="Previous Tripadvisor review">
+              <i class="ri-arrow-left-line"></i>
+            </button>
+            <button class="carousel__control next" type="button" aria-label="Next Tripadvisor review">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+          <div class="carousel__indicators" role="tablist"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col" style="margin-top: -0.5em;">
+          <div class="logo">
+            <a href="index.html#home">Pelit Park Hotel</a>
+          </div>
+          <p class="section__description">
+            Discover a world of comfort, luxury, and adventure at Pelit Park Hotel. Experience the beauty of Trabzon and create unforgettable memories with us.
+          </p>
+          <a
+            href="https://pelit-park.rezervasyonal.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            >Book Now</a
+          >
+        </div>
+        <div class="footer__col">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer__links">
+            <li><a href="index.html#explore">Browse Destinations</a></li>
+            <li><a href="index.html#service">Special Offers &amp; Packages</a></li>
+            <li><a href="index.html#about">Room Types &amp; Amenities</a></li>
+            <li><a href="reviews.html#google-reviews">Customer Reviews &amp; Ratings</a></li>
+            <li><a href="index.html#explore">Travel Tips &amp; Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>OUR SERVICES</h4>
+          <ul class="footer__links">
+            <li><a href="#">Concierge Assistance</a></li>
+            <li><a href="#">Flexible Booking Options</a></li>
+            <li><a href="#">Airport Transfers</a></li>
+            <li><a href="#">Wellness &amp; Recreation</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>CONTACT US</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:info@pelitparkhotel.com">info@pelitparkhotel.com</a></li>
+            <li style="color: var(--text-light)">+90 552 151 00 12 </li>
+            <li style="color: var(--text-light)">Üniversite Mh. Akif Saruhan Cd. <br /> No:77/1   Ortahisar / Trabzon </li>
+          </ul>
+          <div class="footer__socials">
+            <a href="wa.me/905521510012"><img src="assets/whatsaap.png" alt="WhatsApp" /></a>
+            <a href="https://www.instagram.com/pelitparkhotel"><img src="assets/instagram.png" alt="instagram" /></a>
+            <a href="https://maps.app.goo.gl/AkTMb2R6jq4rDqtZ6"><img src="assets/Maps.png" alt="Google Maps" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Pelit Park Hotel. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script>
+      async function setLanguage(lang) {
+        try {
+          const response = await fetch(`translations/${lang}.json`);
+          const translations = await response.json();
+
+          document.querySelectorAll("[data-translate]").forEach((el) => {
+            const key = el.getAttribute("data-translate");
+            if (el.tagName.toLowerCase() === "input") {
+              el.placeholder = translations[key] || el.placeholder;
+            } else {
+              el.textContent = translations[key] || el.textContent;
+            }
+          });
+        } catch (error) {
+          console.error("Language file not found, fallback to English.");
+          if (lang !== "en") setLanguage("en");
+        }
+      }
+
+      let userLang = navigator.language || navigator.userLanguage;
+      userLang = userLang.slice(0, 2);
+      if (!["en", "ar", "tr"].includes(userLang)) {
+        userLang = "en";
+      }
+      setLanguage(userLang);
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".language-switcher button").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const selectedLang = btn.dataset.lang;
+            setLanguage(selectedLang);
+            localStorage.setItem("lang", selectedLang);
+          });
+        });
+
+        const savedLang = localStorage.getItem("lang");
+        if (savedLang) {
+          setLanguage(savedLang);
+        }
+      });
+    </script>
+  </body>
+</html>
