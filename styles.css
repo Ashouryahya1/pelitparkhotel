@@ -199,26 +199,30 @@ nav {
 
 .header__container p {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3.8vw, 1.2rem);
   color: var(--white);
   text-align: center;
   opacity: 0.6;
 }
 
 .header__container h1 {
-  font-size: 6rem;
+  font-size: clamp(3rem, 10vw, 5.5rem);
   font-weight: 500;
-  line-height: 4.5rem;
+  line-height: 1.1;
   color: var(--white);
   text-align: center;
+  margin: 0 auto;
+  max-width: 20ch;
 }
 
 .header__container h2 {
-  font-size: 2rem;
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
   font-weight: 500;
-  line-height: 4.5rem;
+  line-height: 1.2;
   color: var(--white);
   text-align: center;
+  margin: 0 auto;
+  max-width: 24ch;
 }
 
 .header__container h1 span {
