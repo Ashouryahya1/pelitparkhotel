@@ -519,6 +519,25 @@ nav {
   background-repeat: no-repeat;
 }
 
+.subpage__header :is(.section__subheader, .section__header, .section__description) {
+  color: var(--white);
+}
+
+.subpage__header .section__subheader::after {
+  background-color: rgba(193, 154, 111, 0.85);
+}
+
+.reviews__header {
+  background-image: linear-gradient(
+      rgba(23, 23, 23, 0.65),
+      rgba(23, 23, 23, 0.8)
+    ),
+    url("assets/reviews.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .about__hero {
   padding-block: 10rem 6rem;
   text-align: center;
