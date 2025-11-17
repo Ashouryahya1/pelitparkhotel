@@ -650,6 +650,10 @@ nav {
   text-align: center;
 }
 
+.reviews__hero :is(.section__header, .section__description) {
+  margin-inline: auto;
+}
+
 .overall-rating {
   margin: 2rem auto 0;
   display: inline-flex;
@@ -1127,6 +1131,30 @@ nav {
   font-size: 0.9rem;
   color: var(--text-light);
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  .section__header {
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+  }
+
+  .subpage__header .section__header {
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+  }
+
+  .section__subheader {
+    letter-spacing: 1.4px;
+  }
+
+  .section__description {
+    font-size: 0.98rem;
+  }
+
+  .reviews__hero {
+    padding-block: 8rem 5rem;
+  }
 }
 
 @media (width > 576px) {
