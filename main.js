@@ -121,6 +121,20 @@ if (typeof ScrollReveal === "function") {
     ...scrollRevealOption,
     interval: 200,
   });
+
+  ScrollReveal().reveal(".tip__card", {
+    ...scrollRevealOption,
+    interval: 150,
+  });
+
+  ScrollReveal().reveal(".guides__content", {
+    ...scrollRevealOption,
+  });
+
+  ScrollReveal().reveal(".tips__cta__card", {
+    ...scrollRevealOption,
+    delay: 300,
+  });
 }
 
 const initReviewCarousels = () => {
