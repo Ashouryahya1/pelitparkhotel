@@ -9,11 +9,11 @@
     />
     <link rel="stylesheet" href="/styles.css" />
     <title>Explore Trabzon | Pelit Park Hotel</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png" />
-    <link rel="manifest" href="assets/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/android-chrome-192x192.png" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
   </head>
   <body>
     <header class="subpage__header">
@@ -272,7 +272,7 @@
     <script>
       async function setLanguage(lang) {
         try {
-          const response = await fetch(`translations/${lang}.json`);
+          const response = await fetch(`/translations/${lang}.json`);
           const translations = await response.json();
 
           document.querySelectorAll("[data-translate]").forEach((el) => {
