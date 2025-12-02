@@ -371,6 +371,28 @@ nav {
   color: var(--text-dark);
 }
 
+.room__amenities {
+  list-style: none;
+  margin: 1rem 0 1.5rem;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.room__amenities li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.room__amenities li::before {
+  content: "\2713";
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
 .service {
   background-image: url("assets/service.jpg");
   background-position: center center;
@@ -525,6 +547,27 @@ nav {
 
 .subpage__header :is(.section__subheader, .section__header, .section__description) {
   color: var(--white);
+}
+
+.roomtypes__hero {
+  max-width: 900px;
+}
+
+.roomtypes__intro {
+  text-align: center;
+}
+
+.roomtypes__lede {
+  max-width: 900px;
+  margin: auto;
+}
+
+.roomtypes__amenities__section {
+  text-align: center;
+}
+
+.roomtypes__amenities .goal__card {
+  text-align: left;
 }
 
 .subpage__header .section__subheader::after {
