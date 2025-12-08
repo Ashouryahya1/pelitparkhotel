@@ -556,6 +556,17 @@ nav {
   background-repeat: no-repeat;
 }
 
+.flexible__header {
+  background-image: linear-gradient(
+      rgba(11, 48, 67, 0.65),
+      rgba(11, 48, 67, 0.8)
+    ),
+    url("assets/header2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .subpage__header :is(.section__subheader, .section__header, .section__description) {
   color: var(--white);
 }
