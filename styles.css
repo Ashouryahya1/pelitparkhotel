@@ -545,6 +545,17 @@ nav {
   background-repeat: no-repeat;
 }
 
+.concierge__header {
+  background-image: linear-gradient(
+      rgba(18, 18, 18, 0.65),
+      rgba(18, 18, 18, 0.75)
+    ),
+    url("assets/service.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .subpage__header :is(.section__subheader, .section__header, .section__description) {
   color: var(--white);
 }
