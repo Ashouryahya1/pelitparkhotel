@@ -567,6 +567,17 @@ nav {
   background-repeat: no-repeat;
 }
 
+.airport__header {
+  background-image: linear-gradient(
+      rgba(16, 16, 16, 0.6),
+      rgba(16, 16, 16, 0.7)
+    ),
+    url("assets/header2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .subpage__header :is(.section__subheader, .section__header, .section__description) {
   color: var(--white);
 }
