@@ -562,7 +562,7 @@ nav {
       rgba(10, 10, 10, 0.65),
       rgba(10, 10, 10, 0.75)
     ),
-    url("assets/room-1.jpg");
+    url("assets/room-1.webp");
 }
 
 .concierge__header {
@@ -709,7 +709,7 @@ nav {
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.65)
     ),
-    url("assets/tipsheader.png");
+    url("assets/tipsheader.webp");
 }
 
 .tips__hero .section__description {
