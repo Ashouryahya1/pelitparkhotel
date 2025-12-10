@@ -110,7 +110,7 @@ body {
 
 .header {
   background-image:linear-gradient(rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)), url("assets/room-1.jpg");
+  rgba(0, 0, 0, 0.5)), url("assets/room-1.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -406,7 +406,7 @@ nav {
 }
 
 .service {
-  background-image: url("assets/service.jpg");
+  background-image: url("assets/service.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -508,7 +508,7 @@ nav {
     minmax(1rem, 1fr)
     minmax(0, var(--max-width))
     minmax(1rem, 1fr);
-  background-image: url("assets/explore.jpg");
+  background-image: url("assets/explore.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
