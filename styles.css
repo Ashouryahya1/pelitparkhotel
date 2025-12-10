@@ -192,6 +192,13 @@ nav {
   border: none;
   font: inherit;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav__links li {
+  display: flex;
+  align-items: center;
 }
 
 .nav__btn {
