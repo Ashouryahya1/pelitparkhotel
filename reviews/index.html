@@ -54,12 +54,21 @@
           </div>
         </div>
         <ul class="nav__links" id="nav-links">
-          <li><a data-translate="home" href="/index.html#home">Home</a></li>
+          <li><a data-translate="home" href="/?scroll=home">Home</a></li>
           <li><a data-translate="about" href="/about/">About</a></li>
-          <li><a data-translate="service" href="index.html#service">Services</a></li>
+          <li><a data-translate="service" href="/?scroll=service">Services</a></li>
           <li><a data-translate="explore" href="/explore/">Explore</a></li>
           <li><a data-translate="travel_tips_nav" href="/travel-tips/">Travel Tips</a></li>
-          <li><a data-translate="contact" href="index.html#contact">Contact</a></li>
+          <li>
+            <button
+              type="button"
+              data-translate="contact"
+              class="nav__link__button"
+              data-scroll-target="#contact"
+            >
+              Contact
+            </button>
+          </li>
         </ul>
         <div class="language-switcher">
           <button data-lang="ar">AR</button>
@@ -78,7 +87,14 @@
           <span class="overall-rating__value">4.7</span>
           <span class="overall-rating__scale">/ 5</span>
         </div>
-        <a class="btn reviews__hero-btn" data-translate="reviews_hero_cta" href="#google-reviews">Read the latest reviews</a>
+        <button
+          type="button"
+          class="btn reviews__hero-btn"
+          data-translate="reviews_hero_cta"
+          data-scroll-target="#google-reviews"
+        >
+          Read the latest reviews
+        </button>
       </div>
     </header>
 
@@ -160,18 +176,30 @@
         <h2 class="section__header" data-translate="reviews_testimonials_title">Recent Guest Highlights</h2>
 
         <div class="reviews__nav" role="navigation" aria-label="Review sources">
-          <a class="reviews__nav-link" href="#google-reviews">
+          <button
+            type="button"
+            class="reviews__nav-link"
+            data-scroll-target="#google-reviews"
+          >
             <i class="ri-google-fill" aria-hidden="true"></i>
             <span data-translate="reviews_metric_google_label">Google</span>
-          </a>
-          <a class="reviews__nav-link" href="#booking-reviews">
+          </button>
+          <button
+            type="button"
+            class="reviews__nav-link"
+            data-scroll-target="#booking-reviews"
+          >
             <i class="ri-bookmark-fill" aria-hidden="true"></i>
             <span data-translate="reviews_metric_booking_label">Booking.com</span>
-          </a>
-          <a class="reviews__nav-link" href="#tripadvisor-reviews">
+          </button>
+          <button
+            type="button"
+            class="reviews__nav-link"
+            data-scroll-target="#tripadvisor-reviews"
+          >
             <i class="ri-compass-3-fill" aria-hidden="true"></i>
             <span data-translate="reviews_metric_tripadvisor_label">Tripadvisor</span>
-          </a>
+          </button>
         </div>
 
         <div class="reviews__carousel" id="google-reviews" data-platform="google">

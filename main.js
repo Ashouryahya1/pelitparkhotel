@@ -16,6 +16,49 @@ if (menuBtn && navLinks && menuBtnIcon) {
   });
 }
 
+const setupSmoothScroll = () => {
+  const triggers = document.querySelectorAll("[data-scroll-target]");
+
+  triggers.forEach((trigger) => {
+    const targetSelector = trigger.dataset.scrollTarget;
+    if (!targetSelector) return;
+
+    trigger.addEventListener("click", (event) => {
+      const targetElement = document.querySelector(targetSelector);
+      if (!targetElement) return;
+
+      event.preventDefault();
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+};
+
+const handleScrollQuery = () => {
+  const url = new URL(window.location.href);
+  const targetId = url.searchParams.get("scroll");
+  if (!targetId) return;
+
+  const targetElement = document.querySelector(`#${targetId}`);
+  if (targetElement) {
+    requestAnimationFrame(() => {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
+  url.searchParams.delete("scroll");
+  window.history.replaceState({}, "", url);
+};
+
+if (typeof document !== "undefined") {
+  document.addEventListener("DOMContentLoaded", () => {
+    setupSmoothScroll();
+
+    if (typeof URL !== "undefined") {
+      handleScrollQuery();
+    }
+  });
+}
+
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
