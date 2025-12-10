@@ -581,7 +581,7 @@ nav {
       rgba(18, 18, 18, 0.65),
       rgba(18, 18, 18, 0.75)
     ),
-    url("assets/Flex.png");
+    url("assets/flexheader.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -592,7 +592,7 @@ nav {
       rgba(16, 16, 16, 0.6),
       rgba(16, 16, 16, 0.7)
     ),
-    url("assets/transfer.png");
+    url("assets/transfer.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
