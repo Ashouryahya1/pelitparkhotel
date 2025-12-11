@@ -655,6 +655,11 @@ nav {
   text-align: center;
 }
 
+.about__hero .section__subheader {
+  margin-inline: auto;
+  text-align: center;
+}
+
 .about__hero .section__header,
 .about__hero .section__description {
   margin-inline: auto;
