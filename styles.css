@@ -501,6 +501,10 @@ nav {
   margin-inline: auto;
 }
 
+.explore .section__subheader::after {
+  margin-inline: auto;
+}
+
 .explore__bg {
   margin-top: 4rem;
   padding-block: 3rem;
