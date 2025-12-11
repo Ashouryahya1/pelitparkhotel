@@ -854,6 +854,10 @@ nav {
 .footer__phone {
   direction: ltr;
   unicode-bidi: bidi-override;
+  text-align: left;
+}
+
+[dir="rtl"] .footer__phone {
   text-align: right;
 }
 
