@@ -49,6 +49,21 @@ const setupBookingDateControls = () => {
   });
 };
 
+const applyDateLocale = (lang) => {
+  const checkInInput = document.getElementById("check-in");
+  const checkOutInput = document.getElementById("check-out");
+
+  if (!checkInInput || !checkOutInput) return;
+
+  const isDayMonthYear = lang === "tr" || lang === "ar";
+  const placeholder = isDayMonthYear ? "dd/mm/yyyy" : "yyyy-mm-dd";
+
+  [checkInInput, checkOutInput].forEach((input) => {
+    input.setAttribute("lang", lang);
+    input.placeholder = placeholder;
+  });
+};
+
 const setupSmoothScroll = () => {
   const triggers = document.querySelectorAll("[data-scroll-target]");
 
@@ -91,6 +106,10 @@ if (typeof document !== "undefined") {
       handleScrollQuery();
     }
   });
+}
+
+if (typeof window !== "undefined") {
+  window.applyDateLocale = applyDateLocale;
 }
 
 const scrollRevealOption = {
