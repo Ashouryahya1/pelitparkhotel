@@ -321,10 +321,21 @@
         const response = await fetch(`translations/${lang}.json`);
         const translations = await response.json();
 
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
         document.querySelectorAll("[data-translate]").forEach((el) => {
           const key = el.getAttribute("data-translate");
-          el.textContent = translations[key] || key;
+          if (el.tagName.toLowerCase() === "input") {
+            el.placeholder = translations[key] || el.placeholder;
+          } else {
+            el.textContent = translations[key] || key;
+          }
         });
+
+        if (typeof window !== "undefined" && window.applyDateLocale) {
+          window.applyDateLocale(lang);
+        }
       } catch (error) {
         console.error("Language file not found, fallback to English.");
         if (lang !== "en") setLanguage("en");
