@@ -24,16 +24,17 @@
 .section__subheader {
   margin-bottom: 0.5rem;
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
   font-weight: 500;
   letter-spacing: 2px;
   color: var(--text-dark);
 }
 
 .section__subheader::after {
-  position: absolute;
   content: "";
-  top: 50%;
-  transform: translate(1rem, -50%);
+  display: block;
   height: 2px;
   width: 4rem;
   background-color: var(--primary-color);
