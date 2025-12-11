@@ -16,6 +16,39 @@ if (menuBtn && navLinks && menuBtnIcon) {
   });
 }
 
+const setupBookingDateControls = () => {
+  const checkInInput = document.getElementById("check-in");
+  const checkOutInput = document.getElementById("check-out");
+
+  if (!checkInInput || !checkOutInput) return;
+
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate() + 1);
+
+  const toDateInputValue = (date) => date.toISOString().split("T")[0];
+
+  checkInInput.min = toDateInputValue(today);
+  checkOutInput.min = toDateInputValue(tomorrow);
+
+  if (!checkInInput.value) checkInInput.value = checkInInput.min;
+  if (!checkOutInput.value) checkOutInput.value = checkOutInput.min;
+
+  checkInInput.addEventListener("change", () => {
+    const selectedCheckIn = checkInInput.valueAsDate;
+    if (!selectedCheckIn) return;
+
+    const nextDay = new Date(selectedCheckIn);
+    nextDay.setDate(selectedCheckIn.getDate() + 1);
+
+    checkOutInput.min = toDateInputValue(nextDay);
+
+    if (checkOutInput.valueAsDate && checkOutInput.valueAsDate < nextDay) {
+      checkOutInput.value = checkOutInput.min;
+    }
+  });
+};
+
 const setupSmoothScroll = () => {
   const triggers = document.querySelectorAll("[data-scroll-target]");
 
@@ -51,6 +84,7 @@ const handleScrollQuery = () => {
 
 if (typeof document !== "undefined") {
   document.addEventListener("DOMContentLoaded", () => {
+    setupBookingDateControls();
     setupSmoothScroll();
 
     if (typeof URL !== "undefined") {
