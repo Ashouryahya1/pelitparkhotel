@@ -501,6 +501,10 @@ nav {
   margin-inline: auto;
 }
 
+.explore .section__subheader {
+  justify-content: center;
+}
+
 .explore .section__subheader::after {
   margin-inline: auto;
 }
