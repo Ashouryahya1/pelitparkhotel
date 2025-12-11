@@ -851,6 +851,12 @@ nav {
   color: var(--white);
 }
 
+.footer__phone {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+  text-align: right;
+}
+
 .reviews__hero {
   padding-block: 10rem 6rem;
   text-align: center;
