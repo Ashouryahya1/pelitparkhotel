@@ -506,7 +506,7 @@ nav {
 }
 
 .explore__intro .section__subheader {
-  justify-self: start;
+  justify-self: center;
   margin-inline: 0;
 }
 
