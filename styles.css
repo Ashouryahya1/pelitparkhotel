@@ -496,16 +496,26 @@ nav {
   color: var(--text-light);
 }
 
-.explore :is(.section__subheader, .section__header) {
+.explore__intro {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: grid;
+  justify-items: center;
+  gap: 0.25rem;
+}
+
+.explore__intro .section__subheader {
+  justify-self: start;
+  margin-inline: 0;
+}
+
+.explore__intro .section__subheader::after {
+  margin-inline: 0;
+}
+
+.explore__intro .section__header {
   text-align: center;
-  margin-inline: auto;
-}
-
-.explore .section__subheader {
-  justify-content: center;
-}
-
-.explore .section__subheader::after {
   margin-inline: auto;
 }
 
