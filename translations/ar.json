@@ -47,7 +47,7 @@
   "footer_quick_reviews": "آراء العملاء والتقييمات",
   "footer_quick_tips": "نصائح وإرشادات السفر",
   "footer_services_title": "خدماتنا",
-  "footer_services_concierge": "مكتب خدمة الضيوف",
+  "footer_services_concierge": "خدمة الاستشارات",
   "footer_services_flexible": "خيارات حجز مرنة",
   "footer_services_airport": "خدمة نقل المطار",
   "Service_subheader": "الخدمات",
@@ -194,10 +194,10 @@
   "flexible_highlight_4": "ترقيات الغرف وتعديل الباقات",
   "flexible_cta_home": "العودة إلى الصفحة الرئيسية",
   "concierge_hero_subheader": "خدمة مميزة",
-  "concierge_hero_title": "مساعدة الكونسيرج",
-  "concierge_hero_description": "توصيات شخصية وحجوزات ودعم يجعل كل لحظة من إقامتك في طرابزون سهلة.",
+  "concierge_hero_title": "خدمة الاستشارات",
+  "concierge_hero_description": "توصيات شخصية وحجوزات ودعم استشاري يجعل كل لحظة من إقامتك في طرابزون سهلة.",
   "concierge_section_title": "إرشاد مخصص",
-  "concierge_section_body": "من حجز المطاعم إلى تنظيم الجولات على طول البحر الأسود، فريق الكونسيرج جاهز لتنسيق تجارب تناسب اهتماماتك. نحب مشاركة كنوز طرابزون المخفية وضمان سير جدولك بسلاسة.",
+  "concierge_section_body": "من حجز المطاعم إلى تنظيم الجولات على طول البحر الأسود، فريق الاستشارات جاهز لتنسيق تجارب تناسب اهتماماتك. نحب مشاركة كنوز طرابزون المخفية وضمان سير جدولك بسلاسة.",
   "concierge_highlights_title": "ما يمكننا ترتيبه",
   "concierge_highlight_1": "حجوزات المطاعم والترفيه المحلي",
   "concierge_highlight_2": "خطط سياحية مصممة خصيصًا",
@@ -245,6 +245,6 @@
   "roomtypes_amenity_arrivals_desc": "موقف سيارات مجاني في الموقع مع خدمة نقل اختيارية من وإلى مطار طرابزون.",
   "roomtypes_amenity_breakfast_title": "إفطار في الموقع",
   "roomtypes_amenity_breakfast_desc": "خيارات تركية وقارية طازجة لبدء يومك قرب ساحل البحر الأسود.",
-  "roomtypes_amenity_concierge_title": "مساعدة كونسيرج",
-  "roomtypes_amenity_concierge_desc": "استقبال يعمل على مدار الساعة لترتيب سيارات الأجرة والجولات والتوصيات المخصصة في طرابزون."
+  "roomtypes_amenity_concierge_title": "خدمة استشارات",
+  "roomtypes_amenity_concierge_desc": "استقبال يعمل على مدار الساعة لترتيب سيارات الأجرة والجولات والتوصيات المخصصة في طرابزون من خلال فريق الاستشارات."
 }
