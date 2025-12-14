@@ -88,7 +88,7 @@
   "reviews_card_booking_description": "Aileler ve iş seyahatindeki konuklar geniş odalarımızı, tertemiz housekeeping hizmetimizi ve zahmetsiz check-in deneyimimizi öne çıkarıyor.",
   "reviews_card_tripadvisor_title": "Tripadvisor",
   "reviews_card_tripadvisor_rating": "En Çok Beğenilen",
-  "reviews_card_tripadvisor_description": "Yorumcular Trabzon'un mutlaka görülmesi gereken noktalarına yakınlığımızı ve concierge ekibimizin sunduğu faydalı önerileri seviyor.",
+  "reviews_card_tripadvisor_description": "Yorumcular Trabzon'un mutlaka görülmesi gereken noktalarına yakınlığımızı ve danışmanlık ekibimizin sunduğu faydalı önerileri seviyor.",
   "reviews_testimonials_title": "Son Misafir Deneyimleri",
   "reviews_google_subtitle": "Dünyanın dört bir yanından beş yıldızlı konaklamalar.",
   "reviews_google_quote_1": "“Trabzon’daki Hotel Pelit’te yakın zamanda konakladım ve çok etkilendim. Otel son derece temizdi ve hizmet mükemmeldi – personel her zaman güler yüzlü ve yardımseverdi.<br /><br />Beni en çok kahvaltı etkiledi. Harika çeşitlilikte lezzetli seçenekler vardı. Seçilecek o kadar çok şey vardı ki; her şey taze ve özenle hazırlanmıştı. Favorim kesinlikle çıtır çıtır ve enfes sigara böreğiydi.<br /><br />Genel olarak Hotel Pelit harika bir fiyat-performans, konfor ve misafirperverlik sunuyor. Burada yeniden kalmaktan mutluluk duyarım ve Trabzon’u ziyaret eden herkese gönülden tavsiye ederim.”",
@@ -194,10 +194,10 @@
   "flexible_highlight_4": "Oda yükseltmeleri ve paket düzenlemeleri",
   "flexible_cta_home": "Ana Sayfaya Dön",
   "concierge_hero_subheader": "ÖZEL HİZMET",
-  "concierge_hero_title": "Concierge Desteği",
-  "concierge_hero_description": "Kişiselleştirilmiş öneriler, rezervasyonlar ve Trabzon'daki konaklamanızın her anını zahmetsiz kılan destek.",
+  "concierge_hero_title": "Danışmanlık Hizmeti",
+  "concierge_hero_description": "Kişiselleştirilmiş öneriler, rezervasyonlar ve Trabzon'daki konaklamanızın her anını zahmetsiz kılan danışmanlık desteği.",
   "concierge_section_title": "Kişiye Özel Rehberlik",
-  "concierge_section_body": "Karadeniz boyunca rehberli turlar düzenlemekten restoran rezervasyonlarına kadar concierge ekibimiz ilgi alanlarınıza uygun deneyimler planlar. Trabzon’un gizli noktalarını paylaşmayı ve programınızın sorunsuz ilerlemesini sağlamayı seviyoruz.",
+  "concierge_section_body": "Karadeniz boyunca rehberli turlar düzenlemekten restoran rezervasyonlarına kadar danışmanlık ekibimiz ilgi alanlarınıza uygun deneyimler planlar. Trabzon’un gizli noktalarını paylaşmayı ve programınızın sorunsuz ilerlemesini sağlamayı seviyoruz.",
   "concierge_highlights_title": "Sizin İçin Neler Ayarlayabiliriz",
   "concierge_highlight_1": "Yerel restoran ve eğlence rezervasyonları",
   "concierge_highlight_2": "Kişiselleştirilmiş gezi planları",
@@ -245,6 +245,6 @@
   "roomtypes_amenity_arrivals_desc": "Ücretsiz otopark ve Trabzon Havalimanı’na gidiş-dönüş isteğe bağlı transferler.",
   "roomtypes_amenity_breakfast_title": "Yerinde kahvaltı",
   "roomtypes_amenity_breakfast_desc": "Karadeniz kıyısında güne başlamak için taze Türk ve kontinental seçenekler.",
-  "roomtypes_amenity_concierge_title": "Concierge desteği",
-  "roomtypes_amenity_concierge_desc": "Trabzon genelinde taksi, tur ve öneriler için hazır 7/24 resepsiyon."
+  "roomtypes_amenity_concierge_title": "Danışmanlık hizmeti",
+  "roomtypes_amenity_concierge_desc": "Trabzon genelinde taksi, tur ve öneriler için 7/24 hazır danışmanlık ekibimiz."
 }
