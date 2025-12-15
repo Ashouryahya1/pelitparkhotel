@@ -246,5 +246,29 @@
   "roomtypes_amenity_breakfast_title": "Yerinde kahvaltı",
   "roomtypes_amenity_breakfast_desc": "Karadeniz kıyısında güne başlamak için taze Türk ve kontinental seçenekler.",
   "roomtypes_amenity_concierge_title": "Danışmanlık hizmeti",
-  "roomtypes_amenity_concierge_desc": "Trabzon genelinde taksi, tur ve öneriler için 7/24 hazır danışmanlık ekibimiz."
+  "roomtypes_amenity_concierge_desc": "Trabzon genelinde taksi, tur ve öneriler için 7/24 hazır danışmanlık ekibimiz.",
+  "seo": {
+    "title": {
+      "home": "Pelit Park Hotel | Trabzon'da Butik Otel",
+      "about": "Pelit Park Hotel Hakkında | Hikayemiz",
+      "explore": "Trabzon'u Keşfet | Pelit Park Hotel Rehberleri",
+      "rooms": "Oda Tipleri ve Olanaklar | Pelit Park Hotel",
+      "reviews": "Misafir Yorumları | Pelit Park Hotel",
+      "travel_tips": "Trabzon Seyahat İpuçları | Pelit Park Hotel",
+      "airport_transfers": "Havalimanı Transferi | Pelit Park Hotel",
+      "flexible_booking": "Esnek Rezervasyon | Pelit Park Hotel",
+      "consulting_service": "Concierge ve Danışmanlık | Pelit Park Hotel"
+    },
+    "desc": {
+      "home": "Pelit Park Hotel, Trabzon'da deniz manzaralı odalar, danışmanlık desteği, havalimanı transferi ve sıcak misafirperverlik sunar.",
+      "about": "Pelit Park Hotel'in hikayesini, kurucumuz Ali Şahin'i ve Trabzon'da misafirlere sunduğumuz butik konukseverliği keşfedin.",
+      "explore": "Pelit Park Hotel'i üs yaparak Trabzon'u keşfedin; Karadeniz boyunca görülmesi gereken yerleri ve kültürel durakları bulun.",
+      "rooms": "Deniz manzaralı deluxe, twin ve ekonomik seçenekler dahil olmak üzere Pelit Park Hotel oda tipleri ve olanaklarına göz atın.",
+      "reviews": "Trabzon'daki Pelit Park Hotel hakkında temizlikten hizmet kalitesine kadar misafir yorumlarını okuyun.",
+      "travel_tips": "Pelit Park Hotel'in önerileriyle Trabzon geziniz için gezi noktaları, doğa kaçamakları ve yerel önerileri planlayın.",
+      "airport_transfers": "Trabzon'a sorunsuz varış için güvenilir karşılamalı Pelit Park Hotel havalimanı transferlerini ayırtın.",
+      "flexible_booking": "Tarih değişikliklerini kolaylaştıran ve misafir odaklı destek sunan Pelit Park Hotel esnek rezervasyon seçeneklerinden yararlanın.",
+      "consulting_service": "Trabzon'da gezi planı ve kişiselleştirilmiş destek için Pelit Park Hotel concierge ve danışmanlık hizmetlerini kullanın."
+    }
+  }
 }

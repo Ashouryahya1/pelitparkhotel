@@ -1,0 +1,44 @@
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+.nav__links,
+.footer__container,
+.footer__links,
+.room__grid,
+.service__grid,
+.review__grid,
+.explore__grid,
+.roomtypes__grid,
+.travel__grid {
+  direction: rtl;
+}
+
+.nav__links li,
+.footer__links li {
+  text-align: right;
+}
+
+.section__subheader,
+.section__header,
+.section__description,
+.footer__bar {
+  text-align: right;
+}
+
+.hero__content,
+.about__content,
+.service__card,
+.travel__card,
+.explore__card,
+.review__card,
+.room__card,
+.roomtypes__card {
+  text-align: right;
+}
+
+.hero__btns,
+.footer__socials {
+  flex-direction: row-reverse;
+}
