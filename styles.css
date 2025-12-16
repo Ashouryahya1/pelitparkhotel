@@ -645,6 +645,8 @@ nav {
 
 .roomtypes__hero {
   max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .roomtypes__intro {
