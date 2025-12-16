@@ -23,6 +23,7 @@ body {
 .section__subheader,
 .section__header,
 .section__description,
+.footer__col h4,
 .footer__bar {
   text-align: right;
 }
