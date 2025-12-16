@@ -62,7 +62,12 @@
       if (el.tagName.toLowerCase() === "input") {
         el.placeholder = translations[key] || el.placeholder;
       } else {
-        el.textContent = translations[key] || el.textContent || key;
+        const translatedValue = translations[key];
+        if (translatedValue !== undefined) {
+          el.innerHTML = translatedValue;
+        } else if (!el.textContent) {
+          el.textContent = key;
+        }
       }
     });
 
