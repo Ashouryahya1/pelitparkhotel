@@ -649,6 +649,15 @@ nav {
   text-align: center;
 }
 
+.roomtypes__hero .section__subheader,
+.roomtypes__hero .section__header,
+.roomtypes__hero .section__description,
+.roomtypes__amenities__section .section__header,
+.roomtypes__amenities__section .section__description {
+  margin-inline: auto;
+  text-align: center;
+}
+
 .roomtypes__intro {
   text-align: center;
 }
