@@ -42,3 +42,11 @@ body {
 .footer__socials {
   flex-direction: row-reverse;
 }
+
+.reviews__carousel .carousel__track {
+  direction: ltr;
+}
+
+.reviews__carousel .review__slide {
+  direction: rtl;
+}
