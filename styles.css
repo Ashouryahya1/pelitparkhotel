@@ -314,6 +314,8 @@ nav {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
 
 .room__card__image {
@@ -358,6 +360,10 @@ nav {
 
 .room__card__details {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
 }
 
 .room__card h4 {
@@ -404,6 +410,11 @@ nav {
   content: "\2713";
   color: var(--primary-color);
   font-weight: 700;
+}
+
+.room__card__details .btn {
+  align-self: flex-start;
+  margin-top: auto;
 }
 
 .service {
@@ -634,6 +645,17 @@ nav {
 
 .roomtypes__hero {
   max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.roomtypes__hero .section__subheader,
+.roomtypes__hero .section__header,
+.roomtypes__hero .section__description,
+.roomtypes__amenities__section .section__header,
+.roomtypes__amenities__section .section__description {
+  margin-inline: auto;
+  text-align: center;
 }
 
 .roomtypes__intro {
@@ -643,6 +665,12 @@ nav {
 .roomtypes__lede {
   max-width: 900px;
   margin: auto;
+}
+
+.roomtypes__intro .section__header,
+.roomtypes__intro .section__description {
+  margin-inline: auto;
+  text-align: center;
 }
 
 .roomtypes__amenities__section {
