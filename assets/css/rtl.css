@@ -35,9 +35,12 @@ body {
 .section__subheader,
 .section__header,
 .section__description,
-.footer__col h4,
-.footer__bar {
+.footer__col h4 {
   text-align: right;
+}
+
+.footer__bar {
+  text-align: center;
 }
 
 .footer__container {
