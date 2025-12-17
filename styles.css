@@ -927,8 +927,14 @@ nav {
   width: 100%;
 }
 
+[dir="rtl"] .footer__col h4,
+[dir="rtl"] .footer__col .section__description {
+  text-align: right;
+}
+
 [dir="rtl"] .footer__container {
   justify-items: end;
+  justify-content: flex-end;
 }
 
 [dir="rtl"] .footer__links {
