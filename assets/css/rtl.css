@@ -3,9 +3,10 @@ body {
   text-align: right;
 }
 
-.nav__links,
+.footer,
 .footer__container,
 .footer__links,
+.nav__links,
 .room__grid,
 .service__grid,
 .review__grid,
@@ -15,9 +16,19 @@ body {
   direction: rtl;
 }
 
+.footer__container {
+  text-align: right;
+  justify-items: end;
+}
+
+.footer__col,
 .nav__links li,
 .footer__links li {
   text-align: right;
+}
+
+.footer__col {
+  align-items: flex-end;
 }
 
 .section__subheader,
