@@ -75,3 +75,16 @@ body {
 .reviews__carousel .review__slide {
   direction: rtl;
 }
+
+html[dir="rtl"] footer#contact .footer__container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-end !important;
+  direction: rtl;
+}
+
+html[dir="rtl"] footer#contact .footer__container .footer__col {
+  text-align: right;
+  flex: 0 1 240px !important;
+  width: auto !important;
+}
