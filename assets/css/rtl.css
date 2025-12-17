@@ -23,7 +23,7 @@ body {
 }
 
 .footer__col {
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 [dir="rtl"] .footer__col {
