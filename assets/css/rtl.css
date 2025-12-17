@@ -26,6 +26,12 @@ body {
   align-items: flex-end;
 }
 
+[dir="rtl"] .footer__col {
+  width: auto;
+  flex: 1 1 240px;
+  min-width: 220px;
+}
+
 .section__subheader,
 .section__header,
 .section__description,
