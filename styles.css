@@ -924,7 +924,7 @@ nav {
 }
 
 [dir="rtl"] .footer__col {
-  align-items: flex-start;
+  align-items: flex-end;
   text-align: right;
   width: 100%;
 }
