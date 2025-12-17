@@ -16,11 +16,6 @@ body {
   direction: rtl;
 }
 
-.footer__container {
-  text-align: right;
-  justify-items: end;
-}
-
 .footer__col,
 .nav__links li,
 .footer__links li {
@@ -36,6 +31,15 @@ body {
 .section__description,
 .footer__col h4,
 .footer__bar {
+  text-align: right;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem 2rem;
+  align-items: flex-start;
+  justify-content: flex-end;
   text-align: right;
 }
 
