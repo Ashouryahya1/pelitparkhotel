@@ -3,9 +3,10 @@ body {
   text-align: right;
 }
 
-.nav__links,
+.footer,
 .footer__container,
 .footer__links,
+.nav__links,
 .room__grid,
 .service__grid,
 .review__grid,
@@ -15,15 +16,30 @@ body {
   direction: rtl;
 }
 
+.footer__col,
 .nav__links li,
 .footer__links li {
   text-align: right;
 }
 
+.footer__col {
+  align-items: flex-end;
+}
+
 .section__subheader,
 .section__header,
 .section__description,
+.footer__col h4,
 .footer__bar {
+  text-align: right;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem 2rem;
+  align-items: flex-start;
+  justify-content: flex-end;
   text-align: right;
 }
 
