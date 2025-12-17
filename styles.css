@@ -1431,24 +1431,6 @@ nav {
   text-align: center;
 }
 
-.centered-rights-message {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  padding: 0.75rem 1.5rem;
-  color: var(--white);
-  background: rgba(0, 0, 0, 0.75);
-  border-radius: 0.75rem;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1.6;
-  max-width: min(90vw, 640px);
-  pointer-events: none;
-  direction: rtl;
-}
-
 @media (max-width: 576px) {
   .section__header {
     font-size: 1.9rem;

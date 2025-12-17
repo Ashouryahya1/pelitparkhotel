@@ -97,22 +97,10 @@ const handleScrollQuery = () => {
   window.history.replaceState({}, "", url);
 };
 
-const injectCenteredRightsMessage = () => {
-  if (typeof document === "undefined") return;
-  if (document.querySelector(".centered-rights-message")) return;
-
-  const rightsMessage = document.createElement("div");
-  rightsMessage.className = "centered-rights-message";
-  rightsMessage.textContent = "© 2025 فندق بيليت بارك | جميع الحقوق محفوظة";
-
-  document.body.appendChild(rightsMessage);
-};
-
 if (typeof document !== "undefined") {
   document.addEventListener("DOMContentLoaded", () => {
     setupBookingDateControls();
     setupSmoothScroll();
-    injectCenteredRightsMessage();
 
     if (typeof URL !== "undefined") {
       handleScrollQuery();
