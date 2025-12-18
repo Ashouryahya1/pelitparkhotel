@@ -2,10 +2,6 @@
   "name": "pelitparkhotel",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "build:i18n": "node tools/build-i18n.js"
-  },
-  "dependencies": {
-    "cheerio": "^1.0.0"
-  }
+  "scripts": {},
+  "dependencies": {}
 }
