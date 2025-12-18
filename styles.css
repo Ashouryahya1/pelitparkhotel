@@ -124,9 +124,6 @@ body {
 }
 
 .language-switcher button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
   background: transparent;
   border: 1px solid white;
   color: white;
@@ -134,10 +131,6 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.language-switcher .flag {
-  font-size: 1.1rem;
 }
 
 .language-switcher button:hover {
