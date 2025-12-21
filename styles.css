@@ -118,24 +118,42 @@ body {
 }
 
 .language-switcher {
-  display: flex;
-  gap: 0.5rem;
+  display: inline-flex;
   align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-.language-switcher button {
-  background: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
+.language-switcher a {
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
 }
 
-.language-switcher button:hover {
-  background: white;
-  color: var(--primary-color);
+.language-switcher a:hover,
+.language-switcher a:focus-visible {
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  outline: none;
+}
+
+.language-switcher a.is-active {
+  background: var(--white);
+  color: var(--primary-color-dark);
+  border-color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 nav {
