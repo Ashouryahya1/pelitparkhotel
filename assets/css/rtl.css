@@ -9,6 +9,10 @@ body {
   text-align: center;
 }
 
+.guides__list {
+  text-align: right;}
+
+  
 .footer,
 .footer__container,
 .footer__links,
