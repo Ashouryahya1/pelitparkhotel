@@ -157,12 +157,20 @@ body {
 }
 
 @media (max-width: 768px) {
+  .nav__bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
   .language-switcher {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    right: auto;
-    transform: translate(-50%, -50%);
+    position: static;
+    transform: none;
+    justify-self: center;
+  }
+
+  .nav__menu__btn {
+    justify-self: end;
   }
 }
 
