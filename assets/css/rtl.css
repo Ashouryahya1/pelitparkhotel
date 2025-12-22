@@ -3,6 +3,12 @@ body {
   text-align: right;
 }
 
+.header__container p,
+.header__container h1,
+.header__container h2 {
+  text-align: center;
+}
+
 .footer,
 .footer__container,
 .footer__links,
