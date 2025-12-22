@@ -1515,7 +1515,7 @@ nav {
 @media (width > 768px) {
   nav {
     padding: 2rem 1rem;
-    position: static;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1524,6 +1524,13 @@ nav {
   .nav__bar {
     padding: 0;
     background-color: transparent;
+  }
+
+  .language-switcher {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .nav__menu__btn {
@@ -1537,6 +1544,7 @@ nav {
     transform: none;
     flex-direction: row;
     background-color: transparent;
+    margin-right: 6.5rem;
   }
 
   .nav__btn {
