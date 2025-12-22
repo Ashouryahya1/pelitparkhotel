@@ -1516,21 +1516,22 @@ nav {
   nav {
     padding: 2rem 1rem;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: space-between;
   }
 
   .nav__bar {
     padding: 0;
     background-color: transparent;
+    display: contents;
   }
 
   .language-switcher {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
+    position: static;
+    transform: none;
+    justify-self: end;
+    grid-column: 3;
   }
 
   .nav__menu__btn {
@@ -1544,7 +1545,9 @@ nav {
     transform: none;
     flex-direction: row;
     background-color: transparent;
-    margin-right: clamp(8rem, 14vw, 11.5rem);
+    justify-content: center;
+    margin-right: 0;
+    grid-column: 2;
   }
 
   .nav__btn {
