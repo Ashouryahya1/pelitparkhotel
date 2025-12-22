@@ -156,6 +156,14 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 768px) {
+  .language-switcher {
+    position: absolute;
+    top: 1.05rem;
+    right: 3.5rem;
+  }
+}
+
 nav {
   position: fixed;
   isolation: isolate;
