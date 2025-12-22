@@ -981,6 +981,7 @@ nav {
 
 .reviews__hero :is(.section__header, .section__description) {
   margin-inline: auto;
+  text-align: center;
 }
 
 .overall-rating {
