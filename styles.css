@@ -1544,7 +1544,7 @@ nav {
     transform: none;
     flex-direction: row;
     background-color: transparent;
-    margin-right: 6.5rem;
+    margin-right: clamp(8rem, 14vw, 11.5rem);
   }
 
   .nav__btn {
