@@ -737,6 +737,7 @@ nav {
 .about__hero .section__header,
 .about__hero .section__description {
   margin-inline: auto;
+  text-align: center;
 }
 
 .about__hero .section__description {
@@ -805,6 +806,7 @@ nav {
 
 .tips__hero .section__description {
   max-width: 720px;
+  text-align: center;
 }
 
 .tips__section {
