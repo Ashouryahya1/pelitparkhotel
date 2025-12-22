@@ -222,7 +222,7 @@ nav {
 .nav__links .nav__link__button {
   position: relative;
   isolation: isolate;
-  padding-bottom: 8px;
+  padding-block: 0.35rem;
   color: var(--white);
   transition: 0.3s;
   background: none;
