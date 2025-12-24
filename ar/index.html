@@ -133,60 +133,6 @@
       </script>
       <script src="https://www.rezervasyonal.com/widget/widgetbar/assets/widget.js"></script>
       <div id="elektraweb-widget-area"></div>
-      <script>
-        const widgetTranslations = {
-          "Check In": "تاريخ الوصول",
-          "Check Out": "تاريخ المغادرة",
-          Arrival: "تاريخ الوصول",
-          Departure: "تاريخ المغادرة",
-          Adults: "البالغون",
-          Adult: "بالغ",
-          Children: "الأطفال",
-          Child: "طفل",
-          Guests: "النزلاء",
-          Rooms: "الغرف",
-          Room: "غرفة",
-          Search: "ابحث",
-          "Book Now": "احجز الآن",
-          "Promo Code": "رمز ترويجي",
-          Apply: "تطبيق",
-          Night: "ليلة",
-          Nights: "ليالٍ",
-          Select: "اختر"
-        };
-
-        const normalizeWidgetText = (text) => text.replace(/\s+/g, " ").trim();
-
-        const translateWidgetContent = () => {
-          const widgetArea = document.getElementById("elektraweb-widget-area");
-          if (!widgetArea) return;
-
-          widgetArea.querySelectorAll("*").forEach((element) => {
-            if (element.childElementCount === 0) {
-              const text = normalizeWidgetText(element.textContent);
-              if (widgetTranslations[text]) {
-                element.textContent = widgetTranslations[text];
-              }
-            }
-
-            ["placeholder", "aria-label", "value"].forEach((attribute) => {
-              const value = element.getAttribute(attribute);
-              if (!value) return;
-              const normalizedValue = normalizeWidgetText(value);
-              if (widgetTranslations[normalizedValue]) {
-                element.setAttribute(attribute, widgetTranslations[normalizedValue]);
-              }
-            });
-          });
-        };
-
-        const widgetObserver = new MutationObserver(() => {
-          translateWidgetContent();
-        });
-
-        widgetObserver.observe(document.body, { childList: true, subtree: true });
-        translateWidgetContent();
-      </script>
     </section>
 
     <section class="section__container about__container" id="about">
