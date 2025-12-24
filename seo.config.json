@@ -1,0 +1,10 @@
+{
+  "siteDomain": "https://pelitparkhotel.com",
+  "defaultLanguage": "tr",
+  "languageFolders": {
+    "tr": "/",
+    "en": "/en/",
+    "ar": "/ar/"
+  },
+  "defaultOGImage": "/assets/about.webp"
+}
