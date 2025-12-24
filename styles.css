@@ -199,6 +199,10 @@ nav {
   cursor: pointer;
 }
 
+button#widgetSubmit {
+  background: var(--primary-color);
+}
+
 .nav__links {
   list-style: none;
   position: absolute;
