@@ -200,7 +200,7 @@ nav {
 }
 
 button#widgetSubmit {
-  background: var(--primary-color);
+  background: var(--primary-color) !important;
 }
 
 .nav__links {
