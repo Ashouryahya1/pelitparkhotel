@@ -119,32 +119,20 @@
     </header>
 
     <section class="section__container booking__container">
-      <form action="/" class="booking__form">
-        <div class="input__group">
-          <span><i class="ri-calendar-2-fill"></i></span>
-          <div>
-            <label for="check-in">CHECK-IN</label>
-            <input id="check-in" name="check-in" type="date" placeholder="Check In" />
-          </div>
-        </div>
-        <div class="input__group">
-          <span><i class="ri-calendar-2-fill"></i></span>
-          <div>
-            <label for="check-out">CHECK-OUT</label>
-            <input id="check-out" name="check-out" type="date" placeholder="Check Out" />
-          </div>
-        </div>
-        <div class="input__group">
-          <span><i class="ri-user-fill"></i></span>
-          <div>
-            <label data-translate="guest" for="guest">عدد الضيوف</label>
-            <input id="guest" name="guest" type="number" min="1" placeholder="2" />
-          </div>
-        </div>
-        <div class="input__group input__btn">
-            <a href="https://pelit-park.rezervasyonal.com" target="_blank" rel="noopener noreferrer" class="btn">Check Out</a>
-        </div>
-      </form>
+      <script>
+        var grouphotels = false;
+        var widgeturl = "https://pelit-park.rezervasyonal.com/";
+        var defaultadultcount = 2; // Default Yetişkin Sayısı
+        var maxchild = 3; // Maximum Çocuk Sayısı
+        var maxchildage = [0, 12]; // Yaş aralığı "var maxchildage = 8;" yaş aralığı 0 - 8 yaş arası olacaktır.
+        var maxadult = 4; // Maximum Yetişkin Sayısı
+        var mainWidget = true;
+        var exitWidget = false;
+        var currency = "USD"; // Döviz
+        var lang = "en"; // tr veya en
+      </script>
+      <script src="https://www.rezervasyonal.com/widget/widgetbar/assets/widget.js"></script>
+      <div id="elektraweb-widget-area"></div>
     </section>
 
     <section class="section__container about__container" id="about">
