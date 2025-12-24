@@ -1,84 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pelitparkhotel.com/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/room-types/</loc>
-  </url>
-  <url>
     <loc>https://pelitparkhotel.com/about/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/explore/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/travel-tips/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/reviews/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/services/Consulting-Service/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/services/flexible-booking/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/services/airport-transfers/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/en/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/en/room-types/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/en/about/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/en/explore/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/en/travel-tips/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/en/reviews/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/en/services/Consulting-Service/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/en/services/flexible-booking/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/en/services/airport-transfers/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/ar/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/ar/room-types/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pelitparkhotel.com/ar/about/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pelitparkhotel.com/ar/explore/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pelitparkhotel.com/ar/travel-tips/</loc>
+    <loc>https://pelitparkhotel.com/ar/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://pelitparkhotel.com/ar/reviews/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/ar/room-types/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pelitparkhotel.com/ar/services/Consulting-Service/</loc>
-  </url>
-  <url>
-    <loc>https://pelitparkhotel.com/ar/services/flexible-booking/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pelitparkhotel.com/ar/services/airport-transfers/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/ar/services/flexible-booking/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/ar/travel-tips/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/en/about/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/en/explore/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/en/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/en/reviews/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/en/room-types/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/en/services/Consulting-Service/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/en/services/airport-transfers/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/en/services/flexible-booking/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/en/travel-tips/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/explore/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/reviews/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/room-types/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/services/Consulting-Service/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/services/airport-transfers/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/services/flexible-booking/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelitparkhotel.com/travel-tips/</loc>
+    <lastmod>2025-12-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
