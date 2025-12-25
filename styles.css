@@ -180,7 +180,7 @@ body {
 
   .header__container {
     min-height: 62vh;
-    padding-block: 4.5rem;
+    padding-block: 9rem 2rem !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,7 +263,7 @@ button#widgetSubmit {
 }
 
 .header__container {
-  padding-block: 9rem 2rem;
+  padding-block: 10rem 14rem;
 }
 
 .header__container p {
