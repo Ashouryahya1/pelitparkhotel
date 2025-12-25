@@ -172,6 +172,17 @@ body {
   .nav__menu__btn {
     justify-self: end;
   }
+
+  .header__container {
+    min-height: 100svh;
+    padding-block: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+  }
 }
 
 nav {
