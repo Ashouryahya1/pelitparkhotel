@@ -157,6 +157,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .nav__bar {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -171,6 +176,17 @@ body {
 
   .nav__menu__btn {
     justify-self: end;
+  }
+
+  .header__container {
+    min-height: 62vh;
+    padding-block: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
   }
 }
 
