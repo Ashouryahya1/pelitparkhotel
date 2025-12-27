@@ -207,6 +207,7 @@ nav {
   justify-content: space-between;
   gap: 1.5rem;
   background-color: var(--primary-color-dark);
+  position: relative;
 }
 
 .nav__menu__btn {
@@ -222,6 +223,8 @@ button#widgetSubmit {
 .nav__links {
   list-style: none;
   position: absolute;
+  top: 100%;
+  left: 0;
   width: 100%;
   padding: 2rem;
   display: flex;
