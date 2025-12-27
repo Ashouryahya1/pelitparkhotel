@@ -4,6 +4,7 @@
   const { pathname, search } = window.location;
   const isLanguagePath = /^\/(en|ar)(\/|$)/.test(pathname);
   if (isLanguagePath) return;
+  if (pathname !== "/") return;
 
   const params = new URLSearchParams(search || "");
   if (params.has("lang")) return;
