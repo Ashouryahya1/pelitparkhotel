@@ -197,7 +197,7 @@ nav {
   width: 100%;
   max-width: var(--max-width);
   margin: auto;
-  z-index: 9;
+  z-index: 10000;
 }
 
 .nav__bar {
@@ -239,7 +239,7 @@ button#widgetSubmit {
   overflow: hidden;
   transition: transform 0.4s ease, opacity 0.4s ease, visibility 0s linear 0.4s,
     max-height 0.4s ease;
-  z-index: 1;
+  z-index: 10001;
   pointer-events: none;
 }
 
