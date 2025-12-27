@@ -1585,6 +1585,7 @@ button#widgetSubmit {
     justify-content: center;
     margin-right: 0;
     justify-self: center;
+    pointer-events: auto;
   }
 
   .nav__btn {
