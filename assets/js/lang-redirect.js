@@ -6,8 +6,8 @@
     if (normalizedPath !== "/ar/") return;
     if (document.getElementById("arabic-booking-pages")) return;
 
-    const bookingSection = document.querySelector(".booking__container");
-    if (!bookingSection) return;
+    const aboutSection = document.querySelector(".about__container#about");
+    if (!aboutSection) return;
 
     const section = document.createElement("section");
     section.className = "section__container goals__section";
@@ -40,7 +40,7 @@
       </div>
     `;
 
-    bookingSection.insertAdjacentElement("afterend", section);
+    aboutSection.insertAdjacentElement("afterend", section);
   };
 
   if (document.readyState === "loading") {
