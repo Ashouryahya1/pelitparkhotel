@@ -1,6 +1,26 @@
 (() => {
   if (typeof window === "undefined") return;
 
+  const updateGoogleRatingDisplay = () => {
+    const ratingSelectors = [
+      ".banner__card h4",
+      ".overall-rating__value",
+      ".reviews__metric__value",
+      ".reviews__score",
+      ".carousel__rating-value"
+    ].join(", ");
+
+    document.querySelectorAll(ratingSelectors).forEach((element) => {
+      if (!element.textContent.includes("4.8")) return;
+
+      element.childNodes.forEach((node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          node.textContent = node.textContent.replace(/4\.8/g, "4.9");
+        }
+      });
+    });
+  };
+
   const addArabicHomeLinks = () => {
     const normalizedPath = window.location.pathname.replace(/\/+$/, "/");
     if (normalizedPath !== "/ar/") return;
@@ -43,10 +63,15 @@
     aboutSection.insertAdjacentElement("afterend", section);
   };
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", addArabicHomeLinks);
-  } else {
+  const runPageEnhancements = () => {
+    updateGoogleRatingDisplay();
     addArabicHomeLinks();
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", runPageEnhancements);
+  } else {
+    runPageEnhancements();
   }
 
   const { pathname, search } = window.location;
