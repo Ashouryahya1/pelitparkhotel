@@ -25,6 +25,122 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
     <link rel="manifest" href="/assets/site.webmanifest" />
+    <style>
+      .same-day-hero__actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+      }
+
+      .same-day-hero__button {
+        min-height: 52px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-weight: 600;
+      }
+
+      .same-day-hero__button--primary {
+        color: var(--primary-color-dark);
+        box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.2);
+      }
+
+      .same-day-hero__button--secondary {
+        color: var(--white);
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+      }
+
+      .same-day-hero__button--secondary:hover {
+        color: var(--primary-color-dark);
+        background-color: var(--white);
+      }
+
+      .same-day-hero__button:focus-visible,
+      .same-day-mobile-bar__button:focus-visible {
+        outline: 3px solid var(--white);
+        outline-offset: 3px;
+      }
+
+      .same-day-hero__highlights {
+        max-width: 780px;
+        margin: 1rem auto 0;
+        color: var(--white);
+        font-size: 0.95rem;
+        font-weight: 500;
+        line-height: 1.9;
+        text-align: center;
+      }
+
+      .same-day-mobile-bar {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        body.same-day-booking-page {
+          padding-bottom: calc(5.75rem + env(safe-area-inset-bottom));
+        }
+
+        .same-day-hero {
+          padding-block: 8.5rem 4rem;
+        }
+
+        .same-day-hero__actions {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .same-day-hero__button {
+          width: 100%;
+          padding-inline: 1rem;
+        }
+
+        .same-day-hero__highlights {
+          font-size: 0.9rem;
+          line-height: 1.8;
+        }
+
+        .same-day-mobile-bar {
+          position: fixed;
+          z-index: 9999;
+          inset-inline: 0;
+          bottom: 0;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 0.65rem;
+          width: 100%;
+          padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+          background-color: rgba(255, 255, 255, 0.98);
+          box-shadow: 0 -0.5rem 1.5rem rgba(0, 0, 0, 0.16);
+        }
+
+        .same-day-mobile-bar__button {
+          min-height: 50px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.4rem;
+          padding: 0.7rem 0.75rem;
+          border: 1px solid var(--primary-color-dark);
+          border-radius: 5px;
+          color: var(--primary-color-dark);
+          background-color: var(--white);
+          font-weight: 600;
+        }
+
+        .same-day-mobile-bar__button--primary {
+          border-color: var(--primary-color);
+          background-color: var(--primary-color);
+        }
+
+        .same-day-mobile-bar__button:focus-visible {
+          outline-color: var(--primary-color-dark);
+        }
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -62,7 +178,7 @@
       }
     </script>
   </head>
-  <body>
+  <body class="same-day-booking-page">
     <header class="subpage__header roomtypes__header">
       <nav>
         <div class="nav__bar">
@@ -78,11 +194,15 @@
           <div class="nav__menu__btn" id="menu-btn"><i class="ri-menu-line"></i></div>
         </div>
       </nav>
-      <div class="section__container about__hero">
+      <div class="section__container about__hero same-day-hero">
         <p class="section__subheader">إقامة عائلية في طرابزون</p>
-        <h1 class="section__header">فندق مناسب للعائلات الخليجية في طرابزون</h1>
-        <p class="section__description">استمتع بإقامة مريحة في فندق بليت بارك طرابزون مع موقع قريب من المطار، غرف مناسبة للعائلات، وخدمة تواصل باللغة العربية عبر واتساب للحصول على أفضل سعر للحجز المباشر.</p>
-        <a class="btn" href="https://wa.me/905521510012?text=مرحباً، أنا من دول الخليج وأرغب في حجز غرفة في فندق بليت بارك طرابزون. تاريخ الوصول: تاريخ المغادرة: عدد البالغين: عدد الأطفال: الدولة: هل أحتاج إلى استقبال من المطار؟" target="_blank" rel="noopener noreferrer">احصل على سعر خاص عبر واتساب</a>
+        <h1 class="section__header">تبحث عن فندق في طرابزون الليلة؟</h1>
+        <p class="section__description">إقامة عائلية مريحة بالقرب من مطار طرابزون، مع استقبال على مدار 24 ساعة، مواقف مجانية، وتواصل مباشر باللغة العربية. تحقق من توفر الغرف والسعر الآن.</p>
+        <div class="same-day-hero__actions">
+          <a class="btn same-day-hero__button same-day-hero__button--primary" href="https://wa.me/905521510012?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D8%A3%D8%A8%D8%AD%D8%AB%20%D8%B9%D9%86%20%D8%BA%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%8A%D9%88%D9%85.%0A%D8%B9%D8%AF%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5%3A%0A%D8%B9%D8%AF%D8%AF%20%D8%A7%D9%84%D9%84%D9%8A%D8%A7%D9%84%D9%8A%3A%0A%D9%88%D9%82%D8%AA%20%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84%20%D8%A7%D9%84%D9%85%D8%AA%D9%88%D9%82%D8%B9%3A" target="_blank" rel="noopener noreferrer" data-booking-event="whatsapp_click"><i class="ri-whatsapp-line" aria-hidden="true"></i>تحقق من توفر الليلة عبر واتساب</a>
+          <a class="btn same-day-hero__button same-day-hero__button--secondary" href="https://maps.app.goo.gl/1t5iU6jmtBFL7dh89" target="_blank" rel="noopener noreferrer" data-booking-event="directions_click"><i class="ri-map-pin-line" aria-hidden="true"></i>الاتجاهات إلى الفندق</a>
+        </div>
+        <p class="same-day-hero__highlights">قريب من المطار • 10 دقائق من الميدان • شاشة سمارت 50 بوصة • شطاف • أسرّة جديدة • استقبال 24 ساعة</p>
       </div>
     </header>
     <main>
@@ -119,8 +239,36 @@
       </div>
       <div class="footer__bar">© 2026 فندق بليت بارك | جميع الحقوق محفوظة</div>
     </footer>
+    <div class="same-day-mobile-bar" role="navigation" aria-label="إجراءات الحجز السريع">
+      <a class="same-day-mobile-bar__button same-day-mobile-bar__button--primary" href="https://wa.me/905521510012?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D8%A3%D8%A8%D8%AD%D8%AB%20%D8%B9%D9%86%20%D8%BA%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%8A%D9%88%D9%85.%0A%D8%B9%D8%AF%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5%3A%0A%D8%B9%D8%AF%D8%AF%20%D8%A7%D9%84%D9%84%D9%8A%D8%A7%D9%84%D9%8A%3A%0A%D9%88%D9%82%D8%AA%20%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84%20%D8%A7%D9%84%D9%85%D8%AA%D9%88%D9%82%D8%B9%3A" target="_blank" rel="noopener noreferrer" data-booking-event="whatsapp_click"><i class="ri-whatsapp-line" aria-hidden="true"></i>واتساب</a>
+      <a class="same-day-mobile-bar__button" href="https://maps.app.goo.gl/1t5iU6jmtBFL7dh89" target="_blank" rel="noopener noreferrer" data-booking-event="directions_click"><i class="ri-map-pin-line" aria-hidden="true"></i>الاتجاهات</a>
+    </div>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/main.js"></script>
     <script src="/language.js"></script>
+    <script>
+      document.addEventListener("click", function (clickEvent) {
+        var bookingLink = clickEvent.target.closest("[data-booking-event]");
+        if (!bookingLink) return;
+
+        var eventName = bookingLink.getAttribute("data-booking-event");
+        var eventParameters = {
+          page_language: "ar",
+          booking_intent: "same_day"
+        };
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: eventName,
+          page_language: eventParameters.page_language,
+          booking_intent: eventParameters.booking_intent
+        });
+
+        if (typeof window.gtag === "function") {
+          window.gtag("event", eventName, eventParameters);
+        }
+      });
+    </script>
   </body>
 </html>
+
