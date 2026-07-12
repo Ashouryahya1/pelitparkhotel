@@ -10,6 +10,20 @@
 
       gtag('config', 'AW-18172085628');
     </script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18172085628/ug94CNrMjM8cEPyKkNlD',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="فندق بليت بارك طرابزون مناسب للعائلات الخليجية، مع غرف مريحة، موقع قريب من مطار طرابزون، إمكانية التواصل بالعربية عبر واتساب، وعروض خاصة للحجز المباشر." />
@@ -257,10 +271,16 @@
     <script src="/language.js"></script>
     <script>
       document.addEventListener("click", function (clickEvent) {
-        var bookingLink = clickEvent.target.closest("[data-booking-event]");
+        var whatsappLink = clickEvent.target.closest(
+          'a[href*="wa.me/"], a[href*="api.whatsapp.com/"]'
+        );
+        var bookingLink =
+          whatsappLink || clickEvent.target.closest("[data-booking-event]");
         if (!bookingLink) return;
 
-        var eventName = bookingLink.getAttribute("data-booking-event");
+        var eventName = whatsappLink
+          ? "whatsapp_click"
+          : bookingLink.getAttribute("data-booking-event");
         var eventParameters = {
           page_language: "ar",
           booking_intent: "same_day"
@@ -275,6 +295,21 @@
 
         if (typeof window.gtag === "function") {
           window.gtag("event", eventName, eventParameters);
+        }
+
+        if (whatsappLink) {
+          clickEvent.preventDefault();
+
+          var whatsappUrl = whatsappLink.href;
+          window.setTimeout(function () {
+            window.location = whatsappUrl;
+          }, 800);
+
+          try {
+            gtag_report_conversion(whatsappUrl);
+          } catch (conversionError) {
+            window.location = whatsappUrl;
+          }
         }
       });
     </script>
