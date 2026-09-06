@@ -9,6 +9,18 @@
       gtag('js', new Date());
       gtag('config', 'AW-18172085628');
     </script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url !== "undefined") window.location = url;
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-18172085628/ug94CNrMjM8cEPyKkNlD",
+          event_callback: callback
+        });
+        return false;
+      }
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="სასტუმრო ტრაბზონში ბათუმიდან ჩამოსული სტუმრებისთვის — Forum Trabzon-თან, ფარაბის საავადმყოფოსა და KTÜ-სთან ახლოს. უფასო პარკინგი, 24/7 მიმღები, საუზმე და პირდაპირი დაჯავშნა." />
@@ -303,7 +315,7 @@
             <li>Üniversite Mh. Akif Saruhan Cd. No:77/1 Ortahisar / Trabzon</li>
           </ul>
           <div class="footer__socials">
-            <a href="https://wa.me/905521510012" target="_blank" rel="noopener noreferrer"><img src="/assets/whatsapp.webp" alt="WhatsApp" /></a>
+            <a href="https://wa.me/905521510012" target="_blank" rel="noopener noreferrer" data-booking-event="whatsapp_click"><img src="/assets/whatsapp.webp" alt="WhatsApp" /></a>
             <a href="https://www.instagram.com/pelitparkhotel" target="_blank" rel="noopener noreferrer"><img src="/assets/instagram.webp" alt="Instagram" /></a>
             <a href="https://maps.app.goo.gl/AkTMb2R6jq4rDqtZ6" target="_blank" rel="noopener noreferrer"><img src="/assets/maps.webp" alt="Google Maps" /></a>
           </div>
@@ -329,6 +341,17 @@
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event: eventName, page_language: "ka", market: "georgia" });
         if (typeof window.gtag === "function") window.gtag("event", eventName, parameters);
+
+        if (eventName === "whatsapp_click") {
+          event.preventDefault();
+          var whatsappUrl = link.href;
+          window.setTimeout(function () { window.location = whatsappUrl; }, 800);
+          try {
+            gtag_report_conversion(whatsappUrl);
+          } catch (conversionError) {
+            window.location = whatsappUrl;
+          }
+        }
       });
     </script>
   </body>
