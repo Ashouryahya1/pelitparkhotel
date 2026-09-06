@@ -75,7 +75,7 @@
   }
 
   const { pathname, search } = window.location;
-  const isLanguagePath = /^\/(en|ar)(\/|$)/.test(pathname);
+  const isLanguagePath = /^\/(en|ar|ka)(\/|$)/.test(pathname);
   if (isLanguagePath) return;
   if (pathname !== "/") return;
 
@@ -97,7 +97,11 @@
     .map((lang) => (lang || "").toLowerCase());
 
   const match = normalized.find(
-    (lang) => lang.startsWith("tr") || lang.startsWith("en") || lang.startsWith("ar")
+    (lang) =>
+      lang.startsWith("tr") ||
+      lang.startsWith("en") ||
+      lang.startsWith("ar") ||
+      lang.startsWith("ka")
   );
 
   let targetPath = "/en/";
@@ -105,9 +109,11 @@
     if (match.startsWith("tr")) targetPath = "/";
     if (match.startsWith("en")) targetPath = "/en/";
     if (match.startsWith("ar")) targetPath = "/ar/";
+    if (match.startsWith("ka")) targetPath = "/ka/";
   }
 
   if (targetPath === pathname) return;
 
   window.location.replace(targetPath);
 })();
+

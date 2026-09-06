@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700&display=swap");
+
+body.georgian-page {
+  font-family: "Noto Sans Georgian", "Poppins", sans-serif;
+  background: #fffdf9;
+}
+
+.georgian-page .georgian-hero {
+  min-height: 760px;
+  display: flex;
+  flex-direction: column;
+}
+
+.georgian-page .georgian-hero__content {
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+  padding-block: 11rem 6rem;
+  text-align: center;
+}
+
+.georgian-page .georgian-hero__content .section__header {
+  max-width: 900px;
+  font-size: clamp(2.35rem, 5vw, 4.6rem);
+  line-height: 1.15;
+}
+
+.georgian-page .georgian-hero__content .section__description {
+  max-width: 800px;
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+.georgian-hero__actions,
+.georgian-section__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.georgian-hero__actions {
+  justify-content: center;
+}
+
+.georgian-hero__button {
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  font-weight: 600;
+}
+
+.georgian-hero__button--secondary {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.georgian-hero__button--secondary:hover {
+  color: var(--primary-color-dark);
+  background: var(--white);
+}
+
+.georgian-hero__highlights {
+  max-width: 860px;
+  margin: 1.35rem auto 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.9;
+}
+
+.georgian-trust {
+  position: relative;
+  z-index: 2;
+  max-width: 1080px;
+  margin: -3.5rem auto 0;
+  padding: 0 1rem;
+}
+
+.georgian-trust__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  overflow: hidden;
+  border-radius: 1rem;
+  background: var(--white);
+  box-shadow: 0 1.4rem 3rem rgba(23, 23, 23, 0.15);
+}
+
+.georgian-trust__item {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 1.3rem 1rem;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.georgian-trust__item + .georgian-trust__item {
+  border-left: 1px solid #eee9e2;
+}
+
+.georgian-trust__item i {
+  font-size: 1.65rem;
+  color: var(--primary-color);
+}
+
+.georgian-trust__item strong {
+  font-size: 0.92rem;
+}
+
+.georgian-page .georgian-intro {
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.georgian-page .georgian-intro .section__header,
+.georgian-page .georgian-intro .section__description,
+.georgian-page .georgian-rooms .section__header,
+.georgian-page .georgian-rooms > .section__description,
+.georgian-page .georgian-faq .section__header,
+.georgian-page .georgian-faq > .section__description {
+  max-width: 850px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.georgian-page .goal__card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(193, 154, 111, 0.18);
+}
+
+.georgian-page .goal__card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--primary-color);
+}
+
+.georgian-card__icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  border-radius: 50%;
+  color: var(--primary-color-dark);
+  background: #f2e8dc;
+  font-size: 1.35rem;
+}
+
+.georgian-page .goal__card p,
+.georgian-page .room__card__details p {
+  line-height: 1.75;
+  color: var(--text-light);
+}
+
+.georgian-page .room__card__details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.georgian-page .room__card__details .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.georgian-feature {
+  background: #f6f1eb;
+}
+
+.georgian-feature .story__image img {
+  min-height: 420px;
+  object-fit: cover;
+}
+
+.georgian-feature__list {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+  list-style: none;
+}
+
+.georgian-feature__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+.georgian-feature__list i {
+  flex: 0 0 auto;
+  margin-top: 0.15rem;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+.georgian-route {
+  padding: 0 1rem 5rem;
+}
+
+.georgian-route__card {
+  max-width: 1168px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  align-items: center;
+  gap: 2rem;
+  padding: clamp(2rem, 5vw, 4rem);
+  border-radius: 1.25rem;
+  color: var(--white);
+  background: linear-gradient(135deg, #171717, #332a22);
+  box-shadow: 0 1.5rem 3rem rgba(23, 23, 23, 0.18);
+}
+
+.georgian-route__card :is(.section__subheader, .section__header, .section__description) {
+  color: var(--white);
+}
+
+.georgian-route__card .section__description {
+  max-width: 750px;
+  line-height: 1.85;
+}
+
+.georgian-route__visual {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.georgian-route__visual i {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.georgian-route__visual strong {
+  font-size: 1.2rem;
+}
+
+.georgian-faq__list {
+  max-width: 900px;
+  display: grid;
+  gap: 0.8rem;
+  margin: 2.5rem auto 0;
+}
+
+.georgian-faq details {
+  padding: 1.2rem 1.35rem;
+  border: 1px solid #ebe4dc;
+  border-radius: 0.75rem;
+  background: var(--white);
+  box-shadow: 0 0.6rem 1.5rem rgba(23, 23, 23, 0.05);
+}
+
+.georgian-faq summary {
+  cursor: pointer;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.georgian-faq details p {
+  padding-top: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.75;
+}
+
+.georgian-final-cta {
+  padding: 5rem 1rem;
+  text-align: center;
+  background: #f2e8dc;
+}
+
+.georgian-final-cta .section__header,
+.georgian-final-cta .section__description {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.georgian-final-cta .georgian-section__actions {
+  justify-content: center;
+}
+
+.georgian-mobile-bar {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .georgian-trust__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .georgian-trust__item:nth-child(3) {
+    border-left: 0;
+  }
+
+  .georgian-trust__item:nth-child(n + 3) {
+    border-top: 1px solid #eee9e2;
+  }
+
+  .georgian-route__card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 901px) {
+  .georgian-page .goals__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  body.georgian-page {
+    padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+  }
+
+  .georgian-page .nav__bar {
+    grid-template-columns: auto 1fr auto;
+    gap: 0.5rem;
+  }
+
+  .georgian-page .logo img {
+    height: 72px !important;
+  }
+
+  .georgian-page .language-switcher {
+    gap: 0.1rem;
+    padding-inline: 0.2rem;
+  }
+
+  .georgian-page .language-switcher a {
+    padding-inline: 0.45rem;
+    font-size: 0.7rem;
+  }
+
+  .georgian-page .georgian-hero {
+    min-height: 680px;
+  }
+
+  .georgian-page .georgian-hero__content {
+    padding-block: 9rem 4.5rem;
+  }
+
+  .georgian-hero__actions,
+  .georgian-section__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .georgian-hero__button,
+  .georgian-section__actions .btn {
+    width: 100%;
+  }
+
+  .georgian-trust {
+    margin-top: -2rem;
+  }
+
+  .georgian-trust__item {
+    min-height: 105px;
+    padding: 1rem 0.6rem;
+  }
+
+  .georgian-page .georgian-intro {
+    padding-top: 6rem;
+  }
+
+  .georgian-feature .story__image img {
+    min-height: 280px;
+  }
+
+  .georgian-route__visual {
+    min-height: 190px;
+  }
+
+  .georgian-mobile-bar {
+    position: fixed;
+    z-index: 9999;
+    inset-inline: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+    width: 100%;
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 -0.5rem 1.5rem rgba(0, 0, 0, 0.16);
+  }
+
+  .georgian-mobile-bar__button {
+    min-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.65rem;
+    border: 1px solid var(--primary-color-dark);
+    border-radius: 5px;
+    color: var(--primary-color-dark);
+    background: var(--white);
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .georgian-mobile-bar__button--primary {
+    border-color: var(--primary-color);
+    color: var(--white);
+    background: var(--primary-color);
+  }
+}
+
