@@ -116,4 +116,3 @@
 
   window.location.replace(targetPath);
 })();
-
