@@ -4,7 +4,8 @@
   "languageFolders": {
     "tr": "/",
     "en": "/en/",
-    "ar": "/ar/"
+    "ar": "/ar/",
+    "ka": "/ka/"
   },
   "defaultOGImage": "/assets/about.webp"
 }

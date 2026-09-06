@@ -36,7 +36,7 @@ function getTranslation(lang, key) {
 
 function collectPages() {
   const pages = [];
-  const skipDirs = new Set(['en', 'ar', 'translations', 'tools', 'node_modules', '.git']);
+  const skipDirs = new Set(['en', 'ar', 'ka', 'translations', 'tools', 'node_modules', '.git']);
 
   function walk(dir) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -153,6 +153,10 @@ function setCanonicalAndHreflang(html, pagePath, lang) {
     { lang: 'ar', href: normalizeUrl(`${BASE_URL}/ar/${pathPart}`) },
     { lang: 'x-default', href: `${BASE_URL}/` },
   ];
+
+  if (!pathPart) {
+    altLinks.splice(3, 0, { lang: 'ka-GE', href: `${BASE_URL}/ka/` });
+  }
 
   const hreflangMarkup = altLinks
     .map(({ lang: hrefLang, href }) => `    <link rel="alternate" hreflang="${hrefLang}" href="${href}" />`)

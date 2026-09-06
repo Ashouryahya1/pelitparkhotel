@@ -17,13 +17,25 @@
   };
 
   const setupLanguageLinks = () => {
+    document.querySelectorAll(".language-switcher").forEach((switcher) => {
+      if (switcher.querySelector('a[href="/ka/"]')) return;
+      const georgianLink = document.createElement("a");
+      georgianLink.href = "/ka/";
+      georgianLink.textContent = "KA";
+      georgianLink.setAttribute("aria-label", "ქართული");
+      const turkishLink = switcher.querySelector('a[href="/"]');
+      switcher.insertBefore(georgianLink, turkishLink || null);
+    });
+
     const links = document.querySelectorAll(".language-switcher a");
     const path = window.location.pathname || "/";
     const activeHref = path.startsWith("/ar/")
       ? "/ar/"
       : path.startsWith("/en/")
         ? "/en/"
-        : "/";
+        : path.startsWith("/ka/")
+          ? "/ka/"
+          : "/";
 
     links.forEach((link) => {
       const href = link.getAttribute("href");
