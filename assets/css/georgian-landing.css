@@ -5,6 +5,17 @@ body.georgian-page {
   background: #fffdf9;
 }
 
+.georgian-page .footer__links li,
+.georgian-page .footer__links a,
+.georgian-page .footer__phone a {
+  color: var(--text-light);
+}
+
+.georgian-page .footer__links a:hover,
+.georgian-page .footer__phone a:hover {
+  color: var(--white);
+}
+
 .georgian-page .georgian-hero {
   min-height: 760px;
   display: flex;
