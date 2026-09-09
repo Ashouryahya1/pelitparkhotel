@@ -246,6 +246,10 @@ const redirectJs = fs.readFileSync(path.join(ROOT, "assets/js/lang-redirect.js")
 if (redirectJs.includes("updateGoogleRatingDisplay") || /replace\(\/4\\\.8\/g,\s*["']4\.9["']\)/.test(redirectJs)) {
   errors.push("lang-redirect.js must not rewrite a displayed review score");
 }
+const baseCss = fs.readFileSync(path.join(ROOT, "styles.css"), "utf8");
+if (!/img\s*\{[^}]*height:\s*auto\s*;/s.test(baseCss)) {
+  errors.push("styles.css must keep responsive images at their intrinsic aspect ratio");
+}
 
 if (errors.length) {
   console.error("Site validation failed:");
@@ -253,3 +257,4 @@ if (errors.length) {
   process.exit(1);
 }
 console.log(`Validated ${htmlFiles.length} HTML pages and ${GEORGIAN_PAGES.size} Georgian SEO pages.`);
+
