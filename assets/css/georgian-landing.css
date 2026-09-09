@@ -692,25 +692,6 @@ body.georgian-page {
     padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
   }
 
-  .georgian-page .nav__bar {
-    grid-template-columns: auto 1fr auto;
-    gap: 0.5rem;
-  }
-
-  .georgian-page .logo img {
-    height: 72px !important;
-  }
-
-  .georgian-page .language-switcher {
-    gap: 0.1rem;
-    padding-inline: 0.2rem;
-  }
-
-  .georgian-page .language-switcher a {
-    padding-inline: 0.45rem;
-    font-size: 0.7rem;
-  }
-
   .georgian-page .georgian-hero {
     min-height: 680px;
   }

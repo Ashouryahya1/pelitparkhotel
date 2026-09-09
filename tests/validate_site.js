@@ -250,6 +250,16 @@ const baseCss = fs.readFileSync(path.join(ROOT, "styles.css"), "utf8");
 if (!/img\s*\{[^}]*height:\s*auto\s*;/s.test(baseCss)) {
   errors.push("styles.css must keep responsive images at their intrinsic aspect ratio");
 }
+if (!/@media\s*\(max-width:\s*768px\)[\s\S]*?\.nav__bar\s*\{[^}]*display:\s*grid[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)\s+auto\s+auto/s.test(baseCss)) {
+  errors.push("styles.css must keep the mobile header controls in a three-column grid");
+}
+if (!/\.nav__menu__btn\s*\{[^}]*flex:\s*0\s+0\s+44px[^}]*min-width:\s*44px/s.test(baseCss)) {
+  errors.push("styles.css must prevent the mobile menu button from shrinking");
+}
+const mainJs = fs.readFileSync(path.join(ROOT, "main.js"), "utf8");
+if (!/aria-expanded/.test(mainJs) || !/event\.key\s*===\s*["']Escape["']/.test(mainJs)) {
+  errors.push("main.js must expose and close the mobile navigation accessibly");
+}
 
 if (errors.length) {
   console.error("Site validation failed:");

@@ -3,16 +3,47 @@ const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn?.querySelector("i");
 
 if (menuBtn && navLinks && menuBtnIcon) {
-  menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
+  const menuLabels = {
+    ar: "فتح قائمة التنقل",
+    en: "Open navigation menu",
+    ka: "ნავიგაციის მენიუს გახსნა",
+    tr: "Gezinme menüsünü aç",
+  };
+  const pageLanguage = document.documentElement.lang || "tr";
 
-    const isOpen = navLinks.classList.contains("open");
+  menuBtn.setAttribute("role", "button");
+  menuBtn.setAttribute("tabindex", "0");
+  menuBtn.setAttribute("aria-controls", "nav-links");
+  menuBtn.setAttribute("aria-label", menuLabels[pageLanguage] || menuLabels.tr);
+  menuBtn.setAttribute("aria-expanded", "false");
+
+  const setMenuState = (isOpen) => {
+    navLinks.classList.toggle("open", isOpen);
     menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+    menuBtn.setAttribute("aria-expanded", String(isOpen));
+  };
+
+  const toggleMenu = () => {
+    setMenuState(!navLinks.classList.contains("open"));
+  };
+
+  menuBtn.addEventListener("click", toggleMenu);
+  menuBtn.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleMenu();
+    }
   });
 
   navLinks.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    menuBtnIcon.setAttribute("class", "ri-menu-line");
+    setMenuState(false);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && navLinks.classList.contains("open")) {
+      setMenuState(false);
+      menuBtn.focus();
+    }
   });
 }
 

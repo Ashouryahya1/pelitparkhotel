@@ -163,22 +163,6 @@ body {
     overflow-x: hidden;
   }
 
-  .nav__bar {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-  }
-
-  .language-switcher {
-    position: static;
-    transform: none;
-    justify-self: center;
-  }
-
-  .nav__menu__btn {
-    justify-self: end;
-  }
-
   .header__container {
     min-height: 62vh;
     padding-block: 9rem 2rem !important;
@@ -1545,6 +1529,91 @@ button#widgetSubmit {
 
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Keep every header control inside the viewport on phones. This block must
+   follow the base navigation rules above so the mobile grid is not overridden. */
+@media (max-width: 768px) {
+  .nav__bar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 0.375rem;
+    min-width: 0;
+    padding: 0.625rem 0.75rem;
+  }
+
+  .logo {
+    position: relative;
+    z-index: 10002;
+    min-width: 0;
+  }
+
+  .logo a {
+    display: inline-flex;
+    max-width: 100%;
+  }
+
+  .logo img,
+  .georgian-page .logo img,
+  .georgian-content-page .logo img {
+    width: clamp(88px, 27.625vw, 117px) !important;
+    height: auto !important;
+    max-width: 100%;
+    object-fit: contain;
+    flex: none;
+  }
+
+  .language-switcher {
+    position: static;
+    transform: none;
+    justify-self: end;
+    min-width: 0;
+    max-width: 100%;
+    flex: 0 1 auto;
+    gap: 0;
+    padding: 0.15rem;
+    background: rgba(0, 0, 0, 0.72);
+    backdrop-filter: none;
+  }
+
+  .language-switcher,
+  .nav__menu__btn {
+    position: relative;
+    z-index: 10002;
+  }
+
+  .language-switcher a {
+    min-width: 0;
+    padding: 0.35rem 0.4rem;
+    font-size: 0.7rem;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  .nav__menu__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: end;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    line-height: 1;
+  }
+
+  .nav__links {
+    inset-inline: 0;
+    width: 100%;
+  }
+
+  .booking__container .elektraweb-formGroup .form-control {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
   }
 }
 
