@@ -257,4 +257,3 @@ if (errors.length) {
   process.exit(1);
 }
 console.log(`Validated ${htmlFiles.length} HTML pages and ${GEORGIAN_PAGES.size} Georgian SEO pages.`);
-
