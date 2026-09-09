@@ -314,6 +314,344 @@ body.georgian-page {
   display: none;
 }
 
+.georgian-page a:focus-visible,
+.georgian-page summary:focus-visible {
+  outline: 3px solid #e3bd8f;
+  outline-offset: 4px;
+}
+
+.georgian-page .goal__card h3 a {
+  color: var(--text-dark);
+}
+
+.georgian-page .goal__card h3 a:hover,
+.georgian-page .goal__card h3 a:focus-visible,
+.georgian-card__link,
+.georgian-text-link {
+  color: #7a5734;
+}
+
+.georgian-card__link,
+.georgian-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.georgian-content-page .logo img {
+  width: auto;
+  height: 100px;
+}
+
+.georgian-page .georgian-subpage-hero {
+  min-height: 650px;
+}
+
+.georgian-page .georgian-subpage-hero .georgian-hero__content {
+  margin: 0 auto;
+  padding-block: 5rem 6rem;
+}
+
+.georgian-breadcrumb {
+  position: relative;
+  isolation: auto;
+  top: auto;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 8.5rem 1rem 0;
+  z-index: 1;
+}
+
+.georgian-breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.88rem;
+}
+
+.georgian-breadcrumb li + li::before {
+  content: "/";
+  margin-right: 0.55rem;
+  color: var(--primary-color);
+}
+
+.georgian-breadcrumb a {
+  color: var(--white);
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.georgian-article-intro,
+.georgian-map-section,
+.georgian-booking-choices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.georgian-article-intro img {
+  min-height: 360px;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 1rem 2.5rem rgba(23, 23, 23, 0.14);
+}
+
+.georgian-article-intro .section__description,
+.georgian-map-section .section__description,
+.georgian-booking-choices .section__description,
+.georgian-route-steps > .section__description,
+.georgian-room-list > .section__description {
+  max-width: 760px;
+  line-height: 1.85;
+}
+
+.georgian-info-section {
+  background: #f6f1eb;
+}
+
+.georgian-info-section .section__header,
+.georgian-info-section > .section__container > .section__description,
+.georgian-room-list > .section__header,
+.georgian-room-list > .section__description,
+.georgian-route-steps > .section__header,
+.georgian-route-steps > .section__description {
+  max-width: 860px;
+}
+
+.georgian-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.25rem;
+}
+
+.georgian-info-card {
+  padding: 1.6rem;
+  border: 1px solid #e7ded4;
+  border-radius: 0.85rem;
+  background: var(--white);
+  box-shadow: 0 0.7rem 1.8rem rgba(23, 23, 23, 0.06);
+}
+
+.georgian-info-card > i {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.georgian-info-card h3,
+.georgian-route-steps h3,
+.georgian-booking-box h3,
+.georgian-room-list .room__card__details h3 {
+  margin-bottom: 0.65rem;
+  color: var(--text-dark);
+  font-size: 1.08rem;
+}
+
+.georgian-info-card p,
+.georgian-route-steps li p,
+.georgian-booking-box li {
+  color: var(--text-light);
+  line-height: 1.75;
+}
+
+.georgian-info-card a {
+  color: #7a5734;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.georgian-notice {
+  display: flex;
+  gap: 0.8rem;
+  max-width: 900px;
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  border-left: 4px solid var(--primary-color);
+  color: var(--text-dark);
+  background: #fffdf9;
+  line-height: 1.7;
+}
+
+.georgian-notice i {
+  flex: 0 0 auto;
+  color: var(--primary-color);
+  font-size: 1.35rem;
+}
+
+.georgian-map-section iframe {
+  width: 100%;
+  min-height: 420px;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2.5rem rgba(23, 23, 23, 0.12);
+}
+
+.georgian-btn--dark {
+  color: var(--white);
+  background: var(--primary-color-dark);
+}
+
+.georgian-related {
+  color: var(--white);
+  background: linear-gradient(135deg, #171717, #332a22);
+}
+
+.georgian-related .section__container {
+  padding-block: 3rem;
+}
+
+.georgian-related h2 {
+  margin-bottom: 1.25rem;
+  color: var(--white);
+  font-size: 1.55rem;
+}
+
+.georgian-related__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.georgian-related__links a {
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  color: var(--white);
+}
+
+.georgian-related__links a:hover {
+  border-color: var(--primary-color);
+  color: #f3d6b4;
+}
+
+.georgian-route-steps {
+  text-align: left;
+}
+
+.georgian-route-steps ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.georgian-route-steps li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 1.4rem;
+  border: 1px solid #ebe4dc;
+  border-radius: 0.85rem;
+  background: var(--white);
+}
+
+.georgian-route-steps li > span {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--white);
+  background: var(--primary-color);
+  font-weight: 700;
+}
+
+.georgian-room-list {
+  text-align: center;
+}
+
+.georgian-room-list > :is(.section__header, .section__description) {
+  margin-inline: auto;
+}
+
+.georgian-room-list .room__grid {
+  margin-top: 2.2rem;
+  text-align: left;
+}
+
+.georgian-room-list .room__card__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.georgian-room-features {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1rem 0 1.5rem;
+  padding-left: 1.2rem;
+  color: var(--text-light);
+  line-height: 1.65;
+}
+
+.georgian-room-list .room__card__details .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.georgian-table-wrap {
+  overflow-x: auto;
+  margin-top: 2rem;
+  border: 1px solid #e3d8cc;
+  border-radius: 0.8rem;
+  background: var(--white);
+}
+
+.georgian-comparison-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.georgian-comparison-table caption {
+  padding: 1rem;
+  color: var(--text-dark);
+  font-weight: 700;
+  text-align: left;
+}
+
+.georgian-comparison-table :is(th, td) {
+  padding: 1rem;
+  border-top: 1px solid #ebe4dc;
+  color: var(--text-light);
+  vertical-align: top;
+}
+
+.georgian-comparison-table thead th,
+.georgian-comparison-table tbody th {
+  color: var(--text-dark);
+}
+
+.georgian-booking-box {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #f6f1eb;
+}
+
+.georgian-booking-box ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1rem 0 1.5rem;
+  padding-left: 1.2rem;
+}
+
+.georgian-content-page .footer__container {
+  grid-template-columns: 1.2fr 1fr 1fr;
+}
+
 @media (max-width: 900px) {
   .georgian-trust__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -329,6 +667,17 @@ body.georgian-page {
 
   .georgian-route__card {
     grid-template-columns: 1fr;
+  }
+
+  .georgian-article-intro,
+  .georgian-map-section,
+  .georgian-booking-choices,
+  .georgian-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .georgian-content-page .footer__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -370,6 +719,14 @@ body.georgian-page {
     padding-block: 9rem 4.5rem;
   }
 
+  .georgian-page .georgian-subpage-hero .georgian-hero__content {
+    padding-block: 3rem 4.5rem;
+  }
+
+  .georgian-breadcrumb {
+    padding-top: 7rem;
+  }
+
   .georgian-hero__actions,
   .georgian-section__actions {
     flex-direction: column;
@@ -400,6 +757,19 @@ body.georgian-page {
 
   .georgian-route__visual {
     min-height: 190px;
+  }
+
+  .georgian-route-steps ol,
+  .georgian-content-page .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  .georgian-article-intro img {
+    min-height: 260px;
+  }
+
+  .georgian-map-section iframe {
+    min-height: 330px;
   }
 
   .georgian-mobile-bar {

@@ -57,7 +57,8 @@ function collectPages() {
 
 function normalizePath(dirPath) {
   if (!dirPath || dirPath === '.') return '';
-  return dirPath.endsWith('/') ? dirPath : `${dirPath}/`;
+  const normalized = dirPath.replace(/\\/g, '/').replace(/^\/+|\/+$/g, '');
+  return normalized ? `${normalized}/` : '';
 }
 
 function applyTranslations(html, lang) {
@@ -145,17 +146,20 @@ function setCanonicalAndHreflang(html, pagePath, lang) {
   }
 
   // Remove existing hreflang tags to avoid duplicates
-  html = html.replace(/<link[^>]*rel=\"alternate\"[^>]*>/gi, '');
+  html = html.replace(/^[\t ]*<link[^>]*rel=\"alternate\"[^>]*>[\t ]*\r?\n?/gim, '');
 
   const altLinks = [
     { lang: 'tr-TR', href: normalizeUrl(`${BASE_URL}/${pathPart}`) },
     { lang: 'en', href: normalizeUrl(`${BASE_URL}/en/${pathPart}`) },
     { lang: 'ar', href: normalizeUrl(`${BASE_URL}/ar/${pathPart}`) },
-    { lang: 'x-default', href: `${BASE_URL}/` },
+    { lang: 'x-default', href: normalizeUrl(`${BASE_URL}/${pathPart}`) },
   ];
 
-  if (!pathPart) {
+  if (!pathPart || pathPart === 'room-types/') {
     altLinks.splice(3, 0, { lang: 'ka-GE', href: `${BASE_URL}/ka/` });
+    if (pathPart === 'room-types/') {
+      altLinks[3].href = `${BASE_URL}/ka/room-types/`;
+    }
   }
 
   const hreflangMarkup = altLinks
@@ -166,10 +170,33 @@ function setCanonicalAndHreflang(html, pagePath, lang) {
   return html;
 }
 
+function ensureGeorgianLanguageLink(html) {
+  return html.replace(
+    /<div\s+[^>]*class=["'][^"']*language-switcher[^"']*["'][^>]*>[\s\S]*?<\/div>/gi,
+    (switcher) => {
+      if (/<a\s+[^>]*href=["']\/ka\/["'][^>]*>/i.test(switcher)) return switcher;
+      return switcher.replace(
+        /(<a\s+[^>]*href=["']\/["'][^>]*>\s*TR\s*<\/a>)/i,
+        '<a href="/ka/" aria-label="ქართული">KA</a>$1'
+      );
+    }
+  );
+}
+
 function localizeLinks(html, lang, pageDir) {
   if (lang === 'tr') return html;
   const langPrefix = `/${lang}`;
   const targetPages = ['about', 'explore', 'room-types', 'travel-tips', 'reviews'];
+  const protectedSwitchers = [];
+
+  html = html.replace(
+    /<div\s+[^>]*class=["'][^"']*language-switcher[^"']*["'][^>]*>[\s\S]*?<\/div>/gi,
+    (switcher) => {
+      const token = `__LANGUAGE_SWITCHER_${protectedSwitchers.length}__`;
+      protectedSwitchers.push(switcher);
+      return token;
+    }
+  );
 
   const anchorRegex = /<a\s+([^>]*?)href=(\"|\')([^\"\']+)(\2)([^>]*)>/gi;
   html = html.replace(anchorRegex, (full, before, quote, href, _quote, after) => {
@@ -225,6 +252,15 @@ function ensureRtlStyles(html, lang) {
   return html.replace(/<\/head>/i, `  ${rtlLink}\n  </head>`);
 }
 
+function normalizeAssetPaths(html) {
+  html = html.replace(/\b(src|href)=(["'])(?:\.\/)?assets\//gi, '$1=$2/assets/');
+  html = html.replace(
+    /\b(src|href)=(["'])(?:\.\/)?(styles\.css|main\.js|language\.js)(["'])/gi,
+    '$1=$2/$3$4'
+  );
+  return html.replace(/__LANGUAGE_SWITCHER_(\d+)__/g, (_match, index) => protectedSwitchers[Number(index)]);
+}
+
 function lockLanguage(html, lang) {
   if (lang === 'tr') return html;
   const forcedUserLang = /let userLang = [^;]+;/;
@@ -262,12 +298,31 @@ function buildPage(page) {
   const pageKey = getPageKey(page);
 
   const turkishPath = path.join(ROOT, page);
-  const turkishWithHreflang = setCanonicalAndHreflang(html, normalizedDir, 'tr');
+  const turkishWithHreflang = ensureGeorgianLanguageLink(
+    setCanonicalAndHreflang(html, normalizedDir, 'tr')
+  );
   if (turkishWithHreflang !== html) {
     fs.writeFileSync(turkishPath, turkishWithHreflang, 'utf8');
   }
 
   for (const lang of OUTPUT_LANGS) {
+    const outputPath = path.join(ROOT, lang, normalizedDir, 'index.html');
+
+    if (!/data-translate=["'][^"']+["']/i.test(html)) {
+      if (!fs.existsSync(outputPath)) {
+        throw new Error(`Cannot build ${lang}/${normalizedDir || ''}index.html: Turkish source has no translation markers and no localized page exists.`);
+      }
+
+      let localized = fs.readFileSync(outputPath, 'utf8');
+      localized = setCanonicalAndHreflang(localized, normalizedDir, lang);
+      localized = ensureRtlStyles(localized, lang);
+      localized = ensureGeorgianLanguageLink(localized);
+      localized = normalizeAssetPaths(localized);
+      fs.writeFileSync(outputPath, localized, 'utf8');
+      console.log(`Updated ${lang}/${normalizedDir || ''}index.html (preserved localized content)`);
+      continue;
+    }
+
     let localized = html;
     localized = updateLangAttributes(localized, lang);
     localized = applyTranslations(localized, lang);
@@ -276,8 +331,9 @@ function buildPage(page) {
     localized = ensureRtlStyles(localized, lang);
     localized = lockLanguage(localized, lang);
     localized = localizeLinks(localized, lang, normalizedDir);
+    localized = ensureGeorgianLanguageLink(localized);
+    localized = normalizeAssetPaths(localized);
 
-    const outputPath = path.join(ROOT, lang, normalizedDir, 'index.html');
     ensureOutputDir(outputPath);
     fs.writeFileSync(outputPath, localized, 'utf8');
     console.log(`Built ${lang}/${normalizedDir || ''}index.html`);

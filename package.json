@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build:i18n": "node tools/build-i18n.js"
+    "build:i18n": "node tools/build-i18n.js",
+    "test": "node tests/validate_site.js && node tests/validate_translations.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0"
