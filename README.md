@@ -22,6 +22,13 @@ npm test
 The checks validate local links and images, Georgian SEO metadata, structured
 data, language menus, hreflang reciprocity, robots.txt, and sitemap entries.
 
+Run the complete deterministic build before validation:
+
+```powershell
+npm run build
+npm test
+```
+
 ## Localized page generation
 
 Run the localization maintenance command with:
@@ -37,6 +44,14 @@ language-menu, and asset-path markup. This guard prevents localized content
 from being overwritten by Turkish copy.
 
 The Georgian landing pages are maintained directly under `ka/`.
+
+The complete build also regenerates the multilingual airport, Forum Trabzon,
+and KTÜ Farabi Hospital landing pages, the review-source pages, normalized
+Hotel structured data, campaign-page indexing rules, and `sitemap.xml`.
+
+Stable contact, booking, parking, room-view, breakfast, and arrival facts are
+maintained in `data/hotel-facts.json`. Update that reviewed source before
+changing the same claim across languages or generators.
 
 ## Publishing
 

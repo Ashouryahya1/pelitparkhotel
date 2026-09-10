@@ -4,6 +4,12 @@
   "private": true,
   "scripts": {
     "build:i18n": "node tools/build-i18n.js",
+    "build:locations": "node tools/build-location-pages.js",
+    "build:reviews": "node tools/build-review-pages.js",
+    "clean:campaigns": "node tools/clean-campaign-pages.js",
+    "normalize:schema": "node tools/normalize-structured-data.js",
+    "build:sitemap": "node tools/build-sitemap.js",
+    "build": "npm run build:locations && npm run build:reviews && npm run build:i18n && npm run clean:campaigns && npm run normalize:schema && npm run build:sitemap",
     "test": "node tests/validate_site.js && node tests/validate_translations.js"
   },
   "dependencies": {

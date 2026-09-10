@@ -7,6 +7,7 @@ const GEORGIAN_PAGES = new Map([
   ["ka/index.html", `${DOMAIN}/ka/`],
   ["ka/hotel-near-forum-trabzon/index.html", `${DOMAIN}/ka/hotel-near-forum-trabzon/`],
   ["ka/hotel-near-farabi-hospital/index.html", `${DOMAIN}/ka/hotel-near-farabi-hospital/`],
+  ["ka/hotel-near-trabzon-airport/index.html", `${DOMAIN}/ka/hotel-near-trabzon-airport/`],
   ["ka/batumi-trabzon/index.html", `${DOMAIN}/ka/batumi-trabzon/`],
   ["ka/room-types/index.html", `${DOMAIN}/ka/room-types/`],
 ]);
@@ -14,16 +15,32 @@ const GENERATED_LANGUAGE_PAGES = [
   "index.html",
   "about/index.html",
   "explore/index.html",
-  "reviews/index.html",
   "room-types/index.html",
   "services/Consulting-Service/index.html",
   "services/airport-transfers/index.html",
   "services/flexible-booking/index.html",
   "travel-tips/index.html",
 ];
-const SITEMAP_LASTMOD = "2026-09-09";
+const GEORGIAN_SITEMAP_DATES = new Map([
+  [`${DOMAIN}/ka/`, "2026-09-10"],
+  [`${DOMAIN}/ka/hotel-near-forum-trabzon/`, "2026-09-10"],
+  [`${DOMAIN}/ka/hotel-near-farabi-hospital/`, "2026-09-10"],
+  [`${DOMAIN}/ka/hotel-near-trabzon-airport/`, "2026-09-10"],
+  [`${DOMAIN}/ka/batumi-trabzon/`, "2026-09-09"],
+  [`${DOMAIN}/ka/room-types/`, "2026-09-09"],
+]);
 
 const errors = [];
+const hotelFacts = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "hotel-facts.json"), "utf8"));
+if (hotelFacts.identity.canonicalUrl !== `${DOMAIN}/` || !hotelFacts.identity.telephone || !hotelFacts.identity.email) {
+  errors.push("data/hotel-facts.json must contain the canonical hotel identity and contact details");
+}
+if (hotelFacts.arrival.hotelOperatedAirportTransferPublished !== false || hotelFacts.rooms.twin.viewPublished !== false) {
+  errors.push("unverified airport-transfer and Twin-view claims must remain unpublished in hotel-facts.json");
+}
+if (!hotelFacts.booking.breakfastPolicy.toLowerCase().includes("selected rate")) {
+  errors.push("hotel-facts.json must keep breakfast inclusion dependent on the selected rate");
+}
 
 function walk(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
@@ -114,9 +131,10 @@ for (const file of htmlFiles) {
   }
   for (const match of page.html.matchAll(/<div[^>]+class=["'][^"']*language-switcher[^"']*["'][^>]*>([\s\S]*?)<\/div>/gi)) {
     const languageHrefs = [...match[1].matchAll(/<a\s+[^>]*href=["']([^"']+)["']/gi)].map((item) => item[1]);
-    for (const expectedHref of ["/ar/", "/en/", "/ka/", "/"]) {
-      const count = languageHrefs.filter((href) => href === expectedHref).length;
-      if (count !== 1) errors.push(`${rel}: language menu must contain exactly one ${expectedHref} link`);
+    const languageCode = (href) => href.startsWith("/ar/") ? "ar" : href.startsWith("/en/") ? "en" : href.startsWith("/ka/") ? "ka" : href.startsWith("/") ? "tr" : "";
+    for (const expectedLanguage of ["ar", "en", "ka", "tr"]) {
+      const count = languageHrefs.filter((href) => languageCode(href) === expectedLanguage).length;
+      if (count !== 1) errors.push(`${rel}: language menu must contain exactly one ${expectedLanguage} link`);
     }
   }
 }
@@ -170,13 +188,30 @@ for (const [rel, canonical] of GEORGIAN_PAGES) {
   if (!page.anchors.some((item) => item.href?.includes("wa.me/905521510012"))) errors.push(`${rel}: WhatsApp link missing`);
 }
 
-for (const url of [
-  `${DOMAIN}/ka/hotel-near-forum-trabzon/`,
-  `${DOMAIN}/ka/hotel-near-farabi-hospital/`,
-  `${DOMAIN}/ka/batumi-trabzon/`,
-]) {
+for (const url of [`${DOMAIN}/ka/batumi-trabzon/`]) {
   if (Object.keys(georgianByUrl.get(url)?.alternates || {}).length) {
     errors.push(`${url}: untranslated article must not advertise hreflang alternates`);
+  }
+}
+
+const locationGroups = [
+  {
+    pages: ["trabzon-havalimanina-yakin-otel/index.html", "en/hotel-near-trabzon-airport/index.html", "ar/hotel-near-trabzon-airport/index.html", "ka/hotel-near-trabzon-airport/index.html"],
+    alternates: { "tr-TR": `${DOMAIN}/trabzon-havalimanina-yakin-otel/`, en: `${DOMAIN}/en/hotel-near-trabzon-airport/`, ar: `${DOMAIN}/ar/hotel-near-trabzon-airport/`, "ka-GE": `${DOMAIN}/ka/hotel-near-trabzon-airport/`, "x-default": `${DOMAIN}/trabzon-havalimanina-yakin-otel/` },
+  },
+  {
+    pages: ["forum-trabzon-yakin-otel/index.html", "en/hotel-near-forum-trabzon/index.html", "ar/hotel-near-forum-trabzon/index.html", "ka/hotel-near-forum-trabzon/index.html"],
+    alternates: { "tr-TR": `${DOMAIN}/forum-trabzon-yakin-otel/`, en: `${DOMAIN}/en/hotel-near-forum-trabzon/`, ar: `${DOMAIN}/ar/hotel-near-forum-trabzon/`, "ka-GE": `${DOMAIN}/ka/hotel-near-forum-trabzon/`, "x-default": `${DOMAIN}/forum-trabzon-yakin-otel/` },
+  },
+  {
+    pages: ["farabi-hastanesi-yakin-otel/index.html", "en/hotel-near-farabi-hospital/index.html", "ar/hotel-near-farabi-hospital/index.html", "ka/hotel-near-farabi-hospital/index.html"],
+    alternates: { "tr-TR": `${DOMAIN}/farabi-hastanesi-yakin-otel/`, en: `${DOMAIN}/en/hotel-near-farabi-hospital/`, ar: `${DOMAIN}/ar/hotel-near-farabi-hospital/`, "ka-GE": `${DOMAIN}/ka/hotel-near-farabi-hospital/`, "x-default": `${DOMAIN}/farabi-hastanesi-yakin-otel/` },
+  },
+];
+for (const group of locationGroups) {
+  for (const rel of group.pages) {
+    const actual = parsePage(path.join(ROOT, rel)).alternates;
+    if (JSON.stringify(actual) !== JSON.stringify(group.alternates)) errors.push(`${rel}: location-page hreflang group is inconsistent`);
   }
 }
 
@@ -220,8 +255,8 @@ const localCanonicals = new Set(
 for (const sitemapUrl of sitemapUrls) {
   if (!localCanonicals.has(sitemapUrl)) errors.push(`sitemap URL has no matching local canonical: ${sitemapUrl}`);
 }
-for (const canonical of GEORGIAN_PAGES.values()) {
-  if (sitemapRows.get(canonical) !== SITEMAP_LASTMOD) errors.push(`sitemap missing current Georgian URL/date: ${canonical}`);
+for (const [canonical, expectedDate] of GEORGIAN_SITEMAP_DATES) {
+  if (sitemapRows.get(canonical) !== expectedDate) errors.push(`sitemap missing current Georgian URL/date: ${canonical}`);
 }
 
 const georgianHomeLinks = new Set(georgianByUrl.get(`${DOMAIN}/ka/`)?.anchors.map((item) => item.href));
@@ -249,6 +284,10 @@ if (redirectJs.includes("updateGoogleRatingDisplay") || /replace\(\/4\\\.8\/g,\s
 const baseCss = fs.readFileSync(path.join(ROOT, "styles.css"), "utf8");
 if (!/img\s*\{[^}]*height:\s*auto\s*;/s.test(baseCss)) {
   errors.push("styles.css must keep responsive images at their intrinsic aspect ratio");
+}
+if (!/\.room__card__image\s*\{[^}]*aspect-ratio:\s*40\s*\/\s*29/s.test(baseCss) ||
+    !/\.room__card__image img\s*\{[^}]*height:\s*100%[^}]*object-fit:\s*cover/s.test(baseCss)) {
+  errors.push("styles.css must give every room-card image the verified 1600:1160 crop without distortion");
 }
 if (!/@media\s*\(max-width:\s*768px\)[\s\S]*?\.nav__bar\s*\{[^}]*display:\s*grid[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)\s+auto\s+auto/s.test(baseCss)) {
   errors.push("styles.css must keep the mobile header controls in a three-column grid");

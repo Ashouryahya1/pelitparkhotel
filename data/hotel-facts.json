@@ -1,0 +1,57 @@
+{
+  "lastReviewed": "2026-09-10",
+  "identity": {
+    "name": "Pelit Park Hotel",
+    "canonicalUrl": "https://pelitparkhotel.com/",
+    "address": {
+      "streetAddress": "Üniversite Mh. Akif Saruhan Cd. No:77/1",
+      "addressLocality": "Ortahisar",
+      "addressRegion": "Trabzon",
+      "addressCountry": "TR"
+    },
+    "telephone": "+90 552 151 00 12",
+    "email": "info@pelitparkhotel.com",
+    "mapUrl": "https://maps.app.goo.gl/AkTMb2R6jq4rDqtZ6",
+    "instagramUrl": "https://www.instagram.com/pelitparkhotel"
+  },
+  "booking": {
+    "engineUrl": "https://pelit-park.rezervasyonal.com/",
+    "whatsappUrl": "https://wa.me/905521510012",
+    "ratePolicy": "Prices and availability are dynamic and must be checked for the selected dates and room.",
+    "breakfastPolicy": "Breakfast inclusion depends on the selected rate and must be confirmed before booking."
+  },
+  "parking": {
+    "publishedFact": "Complimentary on-site parking is available for hotel guests.",
+    "capacityPublished": false
+  },
+  "rooms": {
+    "deluxeDouble": {
+      "beds": "one double bed",
+      "seaViewPublished": true,
+      "balconyPublishedForEveryRoom": false
+    },
+    "twin": {
+      "beds": "two separate single beds",
+      "viewPublished": false,
+      "balconyPublishedForEveryRoom": false
+    },
+    "standardDouble": {
+      "beds": "one double bed",
+      "viewPublished": false,
+      "balconyPublishedForEveryRoom": false
+    }
+  },
+  "arrival": {
+    "fixedTravelTimesPublished": false,
+    "hotelOperatedAirportTransferPublished": false,
+    "instruction": "Use a live map and current official transport information; confirm any provider, price and conditions before travel."
+  },
+  "notYetConfirmedForPublication": [
+    "parking capacity and reserved-space policy",
+    "breakfast format, service hours and walk-in price",
+    "balcony and view allocation for each exact Twin and Standard room",
+    "languages guaranteed on every reception shift",
+    "hotel-operated airport transfer availability and conditions",
+    "accessibility details and step-free room inventory"
+  ]
+}

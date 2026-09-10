@@ -19,17 +19,26 @@
   const setupLanguageLinks = () => {
     const links = document.querySelectorAll(".language-switcher a");
     const path = window.location.pathname || "/";
-    const activeHref = path.startsWith("/ar/")
-      ? "/ar/"
+    const activeLanguage = path.startsWith("/ar/")
+      ? "ar"
       : path.startsWith("/en/")
-        ? "/en/"
+        ? "en"
         : path.startsWith("/ka/")
-          ? "/ka/"
-          : "/";
+          ? "ka"
+          : "tr";
 
     links.forEach((link) => {
       const href = link.getAttribute("href");
-      const isActive = href === activeHref;
+      const linkLanguage = href?.startsWith("/ar/")
+        ? "ar"
+        : href?.startsWith("/en/")
+          ? "en"
+          : href?.startsWith("/ka/")
+            ? "ka"
+            : href?.startsWith("/")
+              ? "tr"
+              : "";
+      const isActive = linkLanguage === activeLanguage;
       link.classList.toggle("is-active", isActive);
       if (isActive) {
         link.setAttribute("aria-current", "page");

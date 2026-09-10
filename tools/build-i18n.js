@@ -5,6 +5,11 @@ const path = require('node:path');
 const ROOT = path.resolve(__dirname, '..');
 const OUTPUT_LANGS = ['en', 'ar'];
 const BASE_URL = 'https://pelitparkhotel.com';
+const MANUAL_PAGE_DIRS = new Set([
+  'trabzon-havalimanina-yakin-otel/',
+  'forum-trabzon-yakin-otel/',
+  'farabi-hastanesi-yakin-otel/',
+]);
 const TRANSLATIONS = loadTranslations();
 
 function loadTranslations() {
@@ -42,7 +47,9 @@ function collectPages() {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
     const hasIndex = entries.some((entry) => entry.isFile() && entry.name === 'index.html');
     if (hasIndex) {
-      pages.push(path.relative(ROOT, path.join(dir, 'index.html')));
+      const relativePage = path.relative(ROOT, path.join(dir, 'index.html'));
+      const normalizedDir = normalizePath(path.dirname(relativePage));
+      if (!MANUAL_PAGE_DIRS.has(normalizedDir)) pages.push(relativePage);
     }
     for (const entry of entries) {
       if (!entry.isDirectory()) continue;
@@ -183,8 +190,15 @@ function ensureGeorgianLanguageLink(html) {
   );
 }
 
+function normalizeAirportGuideLabels(html) {
+  return html
+    .replace(/>Airport Transfers</g, '>Airport Arrival Guide<')
+    .replace(/>Havalimanı Transferleri</g, '>Havalimanı Ulaşım Rehberi<')
+    .replace(/>خدمة نقل المطار</g, '>دليل الوصول من المطار<');
+}
+
 function localizeLinks(html, lang, pageDir) {
-  if (lang === 'tr') return html;
+  if (lang === 'tr') return { html, protectedSwitchers: [] };
   const langPrefix = `/${lang}`;
   const targetPages = ['about', 'explore', 'room-types', 'travel-tips', 'reviews'];
   const protectedSwitchers = [];
@@ -206,7 +220,7 @@ function localizeLinks(html, lang, pageDir) {
     const suffix = after || '';
     return `<a ${prefix}href=${quote}${newHref}${quote}${suffix}>`;
   });
-  return html;
+  return { html, protectedSwitchers };
 }
 
 function rewriteHref(href, prefix, targetPages) {
@@ -252,7 +266,7 @@ function ensureRtlStyles(html, lang) {
   return html.replace(/<\/head>/i, `  ${rtlLink}\n  </head>`);
 }
 
-function normalizeAssetPaths(html) {
+function normalizeAssetPaths(html, protectedSwitchers = []) {
   html = html.replace(/\b(src|href)=(["'])(?:\.\/)?assets\//gi, '$1=$2/assets/');
   html = html.replace(
     /\b(src|href)=(["'])(?:\.\/)?(styles\.css|main\.js|language\.js)(["'])/gi,
@@ -298,9 +312,9 @@ function buildPage(page) {
   const pageKey = getPageKey(page);
 
   const turkishPath = path.join(ROOT, page);
-  const turkishWithHreflang = ensureGeorgianLanguageLink(
+  const turkishWithHreflang = normalizeAirportGuideLabels(ensureGeorgianLanguageLink(
     setCanonicalAndHreflang(html, normalizedDir, 'tr')
-  );
+  ));
   if (turkishWithHreflang !== html) {
     fs.writeFileSync(turkishPath, turkishWithHreflang, 'utf8');
   }
@@ -317,6 +331,7 @@ function buildPage(page) {
       localized = setCanonicalAndHreflang(localized, normalizedDir, lang);
       localized = ensureRtlStyles(localized, lang);
       localized = ensureGeorgianLanguageLink(localized);
+      localized = normalizeAirportGuideLabels(localized);
       localized = normalizeAssetPaths(localized);
       fs.writeFileSync(outputPath, localized, 'utf8');
       console.log(`Updated ${lang}/${normalizedDir || ''}index.html (preserved localized content)`);
@@ -330,9 +345,11 @@ function buildPage(page) {
     localized = setCanonicalAndHreflang(localized, normalizedDir, lang);
     localized = ensureRtlStyles(localized, lang);
     localized = lockLanguage(localized, lang);
-    localized = localizeLinks(localized, lang, normalizedDir);
+    const localizedLinks = localizeLinks(localized, lang, normalizedDir);
+    localized = localizedLinks.html;
     localized = ensureGeorgianLanguageLink(localized);
-    localized = normalizeAssetPaths(localized);
+    localized = normalizeAirportGuideLabels(localized);
+    localized = normalizeAssetPaths(localized, localizedLinks.protectedSwitchers);
 
     ensureOutputDir(outputPath);
     fs.writeFileSync(outputPath, localized, 'utf8');

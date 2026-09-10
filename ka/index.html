@@ -51,56 +51,79 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
     <link rel="manifest" href="/assets/site.webmanifest" />
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Hotel",
-            "name": "Pelit Park Hotel",
-            "url": "https://pelitparkhotel.com/ka/",
-            "image": "https://pelitparkhotel.com/assets/room-1.webp",
-            "description": "კომფორტული სასტუმრო ტრაბზონში Forum Trabzon-თან, ფარაბის საავადმყოფოსა და კარადენიზის ტექნიკურ უნივერსიტეტთან ახლოს.",
-            "telephone": "+90 552 151 00 12",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Üniversite Mh. Akif Saruhan Cd. No:77/1",
-              "addressLocality": "Ortahisar",
-              "addressRegion": "Trabzon",
-              "addressCountry": "TR"
-            },
-            "amenityFeature": [
-              {"@type": "LocationFeatureSpecification", "name": "უფასო პარკინგი", "value": true},
-              {"@type": "LocationFeatureSpecification", "name": "24/7 მიმღები", "value": true},
-              {"@type": "LocationFeatureSpecification", "name": "საუზმე", "value": true}
-            ],
-            "hasMap": "https://maps.app.goo.gl/AkTMb2R6jq4rDqtZ6",
-            "sameAs": [
-              "https://www.instagram.com/pelitparkhotel",
-              "https://maps.app.goo.gl/AkTMb2R6jq4rDqtZ6"
-            ]
-          },
-          {
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "მოსახერხებელია თუ არა სასტუმრო ბათუმიდან ავტომობილით ჩამოსვლისას?",
-                "acceptedAnswer": {"@type": "Answer", "text": "დიახ. ტრაბზონში ჩამოსვლის შემდეგ სასტუმრომდე მისვლა მარტივია, ადგილზე კი სტუმრებისთვის უფასო პარკინგია."}
-              },
-              {
-                "@type": "Question",
-                "name": "Pelit Park Hotel ახლოს არის Forum Trabzon-თან?",
-                "acceptedAnswer": {"@type": "Answer", "text": "დიახ. სასტუმრო Forum Trabzon-თან ახლოს მდებარეობს და მოსახერხებელია შოპინგზე ჩამოსული სტუმრებისთვის."}
-              },
-              {
-                "@type": "Question",
-                "name": "საუზმე ოთახის ფასში შედის?",
-                "acceptedAnswer": {"@type": "Answer", "text": "საუზმის ჩართვა არჩეულ ტარიფზეა დამოკიდებული. დაჯავშნის სისტემაში ან WhatsApp-ზე გადაამოწმეთ კონკრეტული თარიღის შეთავაზება."}
-              }
-            ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Hotel",
+      "name": "Pelit Park Hotel",
+      "url": "https://pelitparkhotel.com/",
+      "image": "https://pelitparkhotel.com/assets/room-1.webp",
+      "description": "კომფორტული სასტუმრო ტრაბზონში Forum Trabzon-თან, ფარაბის საავადმყოფოსა და კარადენიზის ტექნიკურ უნივერსიტეტთან ახლოს.",
+      "telephone": "+90 552 151 00 12",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Üniversite Mh. Akif Saruhan Cd. No:77/1",
+        "addressLocality": "Ortahisar",
+        "addressRegion": "Trabzon",
+        "addressCountry": "TR"
+      },
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "უფასო პარკინგი",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "24/7 მიმღები",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "საუზმე",
+          "value": true
+        }
+      ],
+      "hasMap": "https://maps.app.goo.gl/AkTMb2R6jq4rDqtZ6",
+      "sameAs": [
+        "https://www.instagram.com/pelitparkhotel",
+        "https://maps.app.goo.gl/AkTMb2R6jq4rDqtZ6"
+      ],
+      "@id": "https://pelitparkhotel.com/#hotel",
+      "email": "info@pelitparkhotel.com"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "მოსახერხებელია თუ არა სასტუმრო ბათუმიდან ავტომობილით ჩამოსვლისას?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "დიახ. ტრაბზონში ჩამოსვლის შემდეგ სასტუმრომდე მისვლა მარტივია, ადგილზე კი სტუმრებისთვის უფასო პარკინგია."
           }
-        ]
-      }
+        },
+        {
+          "@type": "Question",
+          "name": "Pelit Park Hotel ახლოს არის Forum Trabzon-თან?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "დიახ. სასტუმრო Forum Trabzon-თან ახლოს მდებარეობს და მოსახერხებელია შოპინგზე ჩამოსული სტუმრებისთვის."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "საუზმე ოთახის ფასში შედის?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "საუზმის ჩართვა არჩეულ ტარიფზეა დამოკიდებული. დაჯავშნის სისტემაში ან WhatsApp-ზე გადაამოწმეთ კონკრეტული თარიღის შეთავაზება."
+          }
+        }
+      ]
+    }
+  ]
+}
     </script>
   </head>
   <body class="georgian-page">
@@ -159,6 +182,12 @@
               <h3><a href="/ka/hotel-near-forum-trabzon/">შოპინგი ტრაბზონში</a></h3>
               <p>Forum Trabzon-თან ახლოს მდებარეობა, ქალაქში მარტივი გადაადგილება და უფასო პარკინგი კომფორტულს ხდის მოკლე სავაჭრო მოგზაურობას.</p>
               <a class="georgian-card__link" href="/ka/hotel-near-forum-trabzon/">იხილეთ გზა და პრაქტიკული ინფორმაცია</a>
+          </article>
+          <article class="goal__card">
+            <span class="georgian-card__icon"><i class="ri-flight-takeoff-line" aria-hidden="true"></i></span>
+              <h3><a href="/ka/hotel-near-trabzon-airport/">ტრაბზონის აეროპორტთან განთავსება</a></h3>
+              <p>იხილეთ DHMİ-ის მიმდინარე სატრანსპორტო ვარიანტები, ცოცხალი მარშრუტი და გვიანი ჩამოსვლის პრაქტიკული გეგმა.</p>
+              <a class="georgian-card__link" href="/ka/hotel-near-trabzon-airport/">გახსენით აეროპორტის გზამკვლევი</a>
           </article>
           <article class="goal__card">
             <span class="georgian-card__icon"><i class="ri-heart-pulse-line" aria-hidden="true"></i></span>
@@ -300,6 +329,7 @@
           <ul class="footer__links">
             <li><a href="/ka/hotel-near-forum-trabzon/">Forum Trabzon-თან ახლოს</a></li>
             <li><a href="/ka/hotel-near-farabi-hospital/">ფარაბის საავადმყოფოსთან ახლოს</a></li>
+            <li><a href="/ka/hotel-near-trabzon-airport/">ტრაბზონის აეროპორტთან ახლოს</a></li>
             <li><a href="/ka/batumi-trabzon/">გზა ბათუმიდან</a></li>
             <li><a href="/ka/room-types/">ოთახების შედარება</a></li>
           </ul>
