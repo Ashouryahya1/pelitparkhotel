@@ -20,7 +20,7 @@ This handover reconciles the 18 actions in the supplied workbook with the reposi
 | 12 | P1 | Measurement | Partially completed | Shared `assets/js/booking-events.js` now records language/path and avoids duplicate events; 45 pages normalized. | Events are outbound clicks only. Confirmed bookings require a booking-provider callback/postback or provider analytics access. |
 | 13 | P1 | Maps / NAP | Partially blocked | Google and Booking show No:77; website shows No:77/1; no speculative correction made. | Obtain the hotel’s current government/municipal/UAVT address record, then update every citation and add current entrance/parking photos. |
 | 14 | P1 | Google Hotels | Provider-blocked | The hotel and partner rates are visible in Google Hotels, but the current account alone does not establish who owns the Hotel Center/feed connection. | Ask ElektraWeb/Rezervasyonal for Property ID, feed status, Free Booking Links status and access/activation requirements. |
-| 15 | P1 | Indexing | Partially completed | `robots.txt`, sitemap, canonical and hreflang are valid; Yandex 10 queued + 2 processed; Google 7 accepted + 5 pending. | Submission/processing is not indexing. Monitor coverage and do not resubmit accepted requests. |
+| 15 | P1 | Indexing | Partially completed | `robots.txt`, sitemap, canonical and hreflang are valid; Yandex 10 queued + 2 processed; Google 11 requests accepted, while the remaining Georgian Farabi URL was already indexed at inspection and was not resubmitted. | Submission/processing is not indexing. Monitor coverage and do not resubmit accepted or already indexed URLs. |
 | 16 | P2 | Articles | Partially completed | Twelve localized location/arrival pages and the Georgian Batumi guide are published. | Broader “where to stay” and other long-form articles are editorially deferred until original local evidence, appropriate language review and post-launch demand data exist. |
 | 17 | P2 | Local links | Intentionally deferred | No invented or paid-looking partnership links were created. | Requires genuine, documented external partnerships and appropriate local directories. |
 | 18 | P2 | Optimisation cycle | Partially completed | GSC baseline exported through 2026-09-08: 979 query rows, 27 page rows and 113 countries. | Run 30/60/90-day reviews after new pages have data and after confirmed-booking measurement is connected. |
@@ -72,14 +72,14 @@ No separate blog section was invented. These are practical location/arrival cont
 | Airport | Georgian | Accepted, prior confirmed | In queue, 2026-09-10 12:33 |
 | Forum | Turkish | Accepted, prior confirmed | In queue, 2026-09-10 12:33 |
 | Forum | English | Accepted 2026-09-11; not indexed at inspection time | In queue, 2026-09-10 12:33 |
-| Forum | Arabic | Pending; inspected as not indexed, retry did not show acceptance | In queue, 2026-09-10 12:33 |
+| Forum | Arabic | Accepted 2026-09-11; not indexed at inspection time | In queue, 2026-09-10 12:33 |
 | Forum | Georgian | Accepted, prior confirmed | Request processed, 2026-09-09 12:49 |
-| Farabi | Turkish | Pending after Google quota | In queue, 2026-09-10 12:33 |
-| Farabi | English | Pending after Google quota | In queue, 2026-09-10 12:33 |
-| Farabi | Arabic | Pending; not retried after quota | In queue, 2026-09-10 12:33 |
-| Farabi | Georgian | Pending; not retried after quota | Request processed, 2026-09-09 12:49 |
+| Farabi | Turkish | Accepted 2026-09-11; not indexed at inspection time | In queue, 2026-09-10 12:33 |
+| Farabi | English | Accepted 2026-09-11; not indexed at inspection time | In queue, 2026-09-10 12:33 |
+| Farabi | Arabic | Accepted 2026-09-11; not indexed at inspection time | In queue, 2026-09-10 12:33 |
+| Farabi | Georgian | Indexed at inspection 2026-09-11; not resubmitted | Request processed, 2026-09-09 12:49 |
 
-Accepted Google requests and processed Yandex requests are not confirmed indexing. The Yandex property was verified; after the submissions, the displayed daily recrawl allowance had 140 remaining. The sitemap was also shown in processing.
+Accepted Google requests and processed Yandex requests are not confirmed indexing. Google showed the Georgian Farabi URL as indexed, with HTTPS and one valid breadcrumb item; that indexed state is distinct from the other 11 accepted requests. The Yandex property was verified; after the submissions, the displayed daily recrawl allowance had 140 remaining. The sitemap was also shown in processing.
 
 ## Search Console baseline
 
