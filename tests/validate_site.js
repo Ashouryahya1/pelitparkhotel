@@ -123,6 +123,7 @@ const htmlFiles = walk(ROOT).filter((file) => file.endsWith(".html"));
 for (const file of htmlFiles) {
   const page = parsePage(file);
   const rel = path.relative(ROOT, file).replaceAll(path.sep, "/");
+  if (page.hasBreadcrumb) errors.push(`${rel}: visible page breadcrumbs must be removed`);
   for (const anchor of page.anchors) {
     if (!localTargetExists(anchor.href, file)) errors.push(`${rel}: broken local link ${anchor.href}`);
   }
@@ -192,7 +193,6 @@ for (const [rel, canonical] of GEORGIAN_PAGES) {
   if (rel !== "ka/index.html" && !types.has("BreadcrumbList")) {
     errors.push(`${rel}: BreadcrumbList structured data missing`);
   }
-  if (page.hasBreadcrumb) errors.push(`${rel}: Georgian pages must not show a visible breadcrumb`);
   if (!page.anchors.some((item) => item.href?.includes("pelit-park.rezervasyonal.com"))) errors.push(`${rel}: booking link missing`);
   if (!page.anchors.some((item) => item.href?.includes("wa.me/905521510012"))) errors.push(`${rel}: WhatsApp link missing`);
 }

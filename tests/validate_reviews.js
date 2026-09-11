@@ -21,7 +21,7 @@ for (const prefix of ["", "en/", "ar/"]) {
   for (const author of authors) assert.ok(booking.includes(`data-review-author="${author}"`), `${prefix}: missing ${author}`);
   assert.match(booking, /<strong dir="ltr">9<small> \/ 10<\/small><\/strong>/, `${prefix}: Booking score must remain 9/10`);
   assert.equal(normalizeFooter(html), normalizeFooter(home), `${prefix}: review footer must match the localized homepage`);
-  assert.doesNotMatch(html.split("</header>")[0], /georgian-breadcrumb/, `${prefix}: keep breadcrumbs out of the hero`);
+  assert.doesNotMatch(html, /georgian-breadcrumb/, `${prefix}: keep visible breadcrumbs off the review page`);
   assert.doesNotMatch(html, /aggregateRating|Instead of publishing a fixed rating|doğrudan bağlantı veriyoruz|بدل نشر تقييم/, `${prefix}: do not restore removed ratings markup or bureaucratic copy`);
   assert.equal((html.match(/<h1\b/g) || []).length, 1, `${prefix}: keep one page heading`);
 }

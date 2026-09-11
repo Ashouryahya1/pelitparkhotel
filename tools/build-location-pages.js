@@ -245,7 +245,7 @@ ${alternateMarkup(topic)}
     <meta name="twitter:image" content="${BASE}${page.image}" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/assets/css/georgian-landing.css${lang === "ka" ? "?v=ka-breadcrumbs-20260911" : ""}" />
+    <link rel="stylesheet" href="/assets/css/georgian-landing.css?v=nav-cleanup-20260911" />
 ${rtlCss}    <title>${esc(copy.title)}</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
@@ -256,8 +256,7 @@ ${rtlCss}    <title>${esc(copy.title)}</title>
   <body class="georgian-page georgian-content-page">
     <header class="subpage__header roomtypes__header georgian-hero georgian-subpage-hero">
       <nav><div class="nav__bar"><div class="logo"><a href="${meta.home}"><img src="/assets/logo.png" alt="Pelit Park Hotel" width="637" height="392" /></a></div><ul class="nav__links" id="nav-links"><li><a href="${meta.home}">${esc(labels.home)}</a></li><li><a href="${slugs.airport[lang]}">${esc(labels.airport)}</a></li><li><a href="${slugs.forum[lang]}">${esc(labels.forum)}</a></li><li><a href="${slugs.farabi[lang]}">${esc(labels.farabi)}</a></li><li><a href="${meta.home}room-types/">${esc(labels.rooms)}</a></li></ul><div class="language-switcher" aria-label="${esc(labels.nav)}">${languageSwitcher(topic, lang)}</div><div class="nav__menu__btn" id="menu-btn"><i class="ri-menu-line"></i></div></div></nav>
-${lang === "ka" ? "" : `      <nav class="georgian-breadcrumb" aria-label="${esc(labels.breadcrumb)}"><ol><li><a href="${meta.home}">${esc(labels.home)}</a></li><li aria-current="page">${esc(copy.h1)}</li></ol></nav>
-`}      <div class="section__container georgian-hero__content"><p class="section__subheader">${esc(copy.eyebrow)}</p><h1 class="section__header">${esc(copy.h1)}</h1><p class="section__description">${esc(copy.lead)}</p><div class="georgian-hero__actions"><a class="btn georgian-hero__button" href="${BOOKING}" target="_blank" rel="noopener noreferrer" data-booking-event="booking_click"><i class="ri-calendar-check-line" aria-hidden="true"></i>${esc(labels.book)}</a><a class="btn georgian-hero__button georgian-hero__button--secondary" href="${route}" target="_blank" rel="noopener noreferrer" data-booking-event="directions_click"><i class="ri-route-line" aria-hidden="true"></i>${esc(labels.route)}</a></div></div>
+      <div class="section__container georgian-hero__content"><p class="section__subheader">${esc(copy.eyebrow)}</p><h1 class="section__header">${esc(copy.h1)}</h1><p class="section__description">${esc(copy.lead)}</p><div class="georgian-hero__actions"><a class="btn georgian-hero__button" href="${BOOKING}" target="_blank" rel="noopener noreferrer" data-booking-event="booking_click"><i class="ri-calendar-check-line" aria-hidden="true"></i>${esc(labels.book)}</a><a class="btn georgian-hero__button georgian-hero__button--secondary" href="${route}" target="_blank" rel="noopener noreferrer" data-booking-event="directions_click"><i class="ri-route-line" aria-hidden="true"></i>${esc(labels.route)}</a></div></div>
     </header>
     <main>
       <section class="section__container georgian-article-intro"><div><p class="section__subheader">${esc(copy.eyebrow)}</p><h2 class="section__header">${esc(copy.introTitle)}</h2><p class="section__description">${esc(copy.intro)}</p></div><img src="${page.image}" alt="${esc(copy.imageAlt)}" width="1600" height="${page.image.endsWith('/lobi.webp') ? '1142' : '1160'}" loading="lazy" decoding="async" /></section>

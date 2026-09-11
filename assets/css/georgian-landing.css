@@ -708,8 +708,8 @@ body.georgian-page {
     padding-top: 7rem;
   }
 
-  /* Georgian subpages need room for the fixed navigation after removing breadcrumbs. */
-  html[lang="ka"] .georgian-subpage-hero .georgian-hero__content {
+  /* Keep subpage titles below the fixed mobile navigation. */
+  html .georgian-page .georgian-subpage-hero .georgian-hero__content {
     padding-top: 9rem;
   }
 

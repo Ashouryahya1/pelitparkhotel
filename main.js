@@ -228,7 +228,8 @@ if (typeof ScrollReveal === "function") {
     delay: 500,
   });
 
-  ScrollReveal().reveal(".goal__card", {
+  // Keep homepage navigation cards visible without a scroll animation.
+  ScrollReveal().reveal(".goal__card:not(.location-page-link)", {
     ...scrollRevealOption,
     interval: 200,
   });

@@ -1887,3 +1887,41 @@ button#widgetSubmit {
 [data-translate="comfort"] {
   white-space: pre-line;
 }
+
+/* Direct access to nearby hotel pages from the homepage. */
+#location-pages,
+#arabic-booking-pages {
+  scroll-margin-top: 9rem;
+}
+
+.location-page-link .location-card__cta {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #7a5734;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+@media (min-width: 769px) {
+  .homepage-location-nav .nav__bar {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+
+  .homepage-location-nav .nav__links {
+    flex-wrap: wrap;
+    gap: 0.5rem clamp(0.6rem, 1.6vw, 1.3rem);
+  }
+
+  .homepage-location-nav .nav__links a,
+  .homepage-location-nav .nav__link__button {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-location-nav .nav__links.open {
+    max-height: calc(100dvh - 8rem);
+    overflow-y: auto;
+  }
+}
