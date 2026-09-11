@@ -6,6 +6,7 @@ const ROOT = path.resolve(__dirname, '..');
 const OUTPUT_LANGS = ['en', 'ar'];
 const BASE_URL = 'https://pelitparkhotel.com';
 const MANUAL_PAGE_DIRS = new Set([
+  'reviews/', // Owned by build-review-pages.js in each locale.
   'trabzon-havalimanina-yakin-otel/',
   'forum-trabzon-yakin-otel/',
   'farabi-hastanesi-yakin-otel/',

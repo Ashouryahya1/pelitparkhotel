@@ -1,0 +1,178 @@
+{
+  "bookingScore": 9,
+  "bookingScale": 10,
+  "provenance": {
+    "commit": "76198a6",
+    "description": "Review excerpts restored from the last version before the September 2026 SEO rewrite. Static selections, not a live feed. Booking score 9/10 reconfirmed by the hotel owner on 2026-09-11."
+  },
+  "locales": {
+    "tr": {
+      "google": [
+        {
+          "quoteHtml": "“Trabzon’daki Hotel Pelit’te yakın zamanda konakladım ve çok etkilendim. Otel son derece temizdi ve hizmet mükemmeldi – personel her zaman güler yüzlü ve yardımseverdi.<br /><br />Beni en çok kahvaltı etkiledi. Harika çeşitlilikte lezzetli seçenekler vardı. Seçilecek o kadar çok şey vardı ki; her şey taze ve özenle hazırlanmıştı. Favorim kesinlikle çıtır çıtır ve enfes sigara böreğiydi.<br /><br />Genel olarak Hotel Pelit harika bir fiyat-performans, konfor ve misafirperverlik sunuyor. Burada yeniden kalmaktan mutluluk duyarım ve Trabzon’u ziyaret eden herkese gönülden tavsiye ederim.”",
+          "author": "Dobar Dan",
+          "details": "Ağustos 2025'te konakladı · Arkadaşlarla tatil"
+        },
+        {
+          "quoteHtml": "“Trabzon’da bir spor etkinliği için konakladığımız çok hoş bir otel. Personel her konuda güler yüzlü ve yardımseverdi. Çok rahat ettik ve gönülden tavsiye ediyorum.<br /><br />Odalar tertemizdi ve kahvaltı doyurucu bir açık büfeydi. Teşekkürler Pelit Park Hotel!”",
+          "author": "Gözde Öztürk",
+          "details": "Nisan 2025'te konakladı · Arkadaşlarla iş seyahati"
+        },
+        {
+          "quoteHtml": "“Deneyimlediğim en iyi otellerden biri. Kahvaltı muhteşemdi, otel tertemizdi ve ekibin her üyesi çok yardımseverdi, daima gülümsüyordu. Şiddetle tavsiye ederim.”",
+          "author": "Fuad Eshaq",
+          "details": "2024'te konakladı · Aile tatili"
+        },
+        {
+          "quoteHtml": "“Bölgede birçok yerde kaldım ama burası en rahat ve en temiz otel. Keşke tüm işletmeler sizin kadar samimi ve dürüst olsa. Aynen devam edin.”",
+          "author": "Hakan Düzgün",
+          "details": "Nisan 2025'te konakladı · Arkadaşlarla iş seyahati"
+        },
+        {
+          "quoteHtml": "“Gerçekten fiyat-performans oranı çok iyi. Konaklamam boyunca odalar, hizmet ve konum en yüksek puanı hak etti.”",
+          "author": "Matías D'Angelo",
+          "details": "Nisan 2025'te konakladı · Tatil konaklaması"
+        }
+      ],
+      "booking": [
+        {
+          "quoteHtml": "“Otel beklentilerimizi aştı. Her şey tertemizdi, personel çok ilgiliydi ve kahvaltıda tüm aile için bolca seçenek vardı.”",
+          "author": "Turnay",
+          "details": "Mayıs 2025'te konakladı · Aile seyahati"
+        },
+        {
+          "quoteHtml": "“Yataklar çok rahattı ve oda oldukça genişti. Trabzon’u keşfettiğimiz uzun bir günün ardından sakin atmosfer ve hızlı Wi-Fi tam da ihtiyacımız olan şeydi.”",
+          "author": "Arina",
+          "details": "Mayıs 2025'te konakladı · Çift kaçamağı"
+        },
+        {
+          "quoteHtml": "“Trabzon’daki harika otel! Güler yüzlü personel, lezzetli kahvaltı ve özel otopark iş seyahatimizi çok kolaylaştırdı. Yakında tekrar geleceğiz.”",
+          "author": "Sergey",
+          "details": "Haziran 2025'te konakladı · İş seyahati"
+        },
+        {
+          "quoteHtml": "“Balkonumuzdan deniz manzarası harikaydı. Samimi resepsiyon ekibini ve otelin hemen arkasındaki pratik otoparkı çok sevdik.”",
+          "author": "Juliane",
+          "details": "Eylül 2025'te konakladı · Çift kaçamağı"
+        },
+        {
+          "quoteHtml": "“Çok erken geldim ve ekip yine de oda ayarlamayı başardı. Misafirperverlikleri unutulmazdı; otelden yenilenmiş ve minnettar ayrıldım.”",
+          "author": "Aytan",
+          "details": "Ekim 2025'te konakladı · Yalnız seyahat"
+        }
+      ]
+    },
+    "en": {
+      "google": [
+        {
+          "quoteHtml": "“I recently stayed at Hotel Pelit in Trabzon, and I was very impressed. The hotel was exceptionally clean, and the service was excellent – the staff were always friendly and helpful.<br /><br />What really stood out was the breakfast. It was absolutely fantastic, with a wide variety of delicious options. There was so much food to choose from, and everything was fresh and well-prepared. My favorite was definitely the sigara börek, which was crispy, flavorful, and perfectly made.<br /><br />Overall, Hotel Pelit offers great value, comfort, and hospitality. I would happily stay here again and highly recommend it to anyone visiting Trabzon.”",
+          "author": "Dobar Dan",
+          "details": "Stayed August 2025 · Vacation with friends"
+        },
+        {
+          "quoteHtml": "“A lovely hotel where we stayed while visiting Trabzon for a sporting event. The staff was friendly and helpful in every way. It was a comfortable place, and I wholeheartedly recommend it.<br /><br />The rooms were spotless, and the breakfast was a hearty buffet. Thank you, Pelit Park Hotel!”",
+          "author": "Gözde Öztürk",
+          "details": "Stayed April 2025 · Business with friends"
+        },
+        {
+          "quoteHtml": "“One of the best hotels I have experienced. The breakfast was magnificent, the hotel spotless, and every member of the team was very helpful and smiling all the time. I highly recommend it.”",
+          "author": "Fuad Eshaq",
+          "details": "Stayed 2024 · Family vacation"
+        },
+        {
+          "quoteHtml": "“I've stayed in many places in the area, but this is the most comfortable and clean hotel. I wish all businesses were as friendly and honest as you. Keep up the good work.”",
+          "author": "Hakan Düzgün",
+          "details": "Stayed April 2025 · Business trip with friends"
+        },
+        {
+          "quoteHtml": "“Honestly, the price-quality ratio is very good. The rooms, service, and location all deserved top scores during my stay.”",
+          "author": "Matías D'Angelo",
+          "details": "Stayed April 2025 · Leisure stay"
+        }
+      ],
+      "booking": [
+        {
+          "quoteHtml": "“The hotel exceeded our expectations. Everything was spotlessly clean, the staff were attentive, and the breakfast had plenty of choice for the whole family.”",
+          "author": "Turnay",
+          "details": "Stayed May 2025 · Family trip"
+        },
+        {
+          "quoteHtml": "“Very comfortable beds and a generous room size. After a long day exploring Trabzon, the quiet atmosphere and fast Wi-Fi were just what we needed.”",
+          "author": "Arina",
+          "details": "Stayed May 2025 · Couple getaway"
+        },
+        {
+          "quoteHtml": "“Superb hotel in Trabzon! Friendly staff, delicious breakfast, and private parking made our business trip effortless. We’ll be back soon.”",
+          "author": "Sergey",
+          "details": "Stayed June 2025 · Business trip"
+        },
+        {
+          "quoteHtml": "“The sea view from our balcony was beautiful. We appreciated the friendly reception team and the convenient parking just behind the hotel.”",
+          "author": "Juliane",
+          "details": "Stayed September 2025 · Couple getaway"
+        },
+        {
+          "quoteHtml": "“I arrived very early and the team still managed to arrange a room. Their hospitality was memorable, and I left feeling refreshed and grateful.”",
+          "author": "Aytan",
+          "details": "Stayed October 2025 · Solo traveler"
+        }
+      ]
+    },
+    "ar": {
+      "google": [
+        {
+          "quoteHtml": "“أقمت مؤخراً في فندق بيليت في طرابزون وكنت في غاية الإعجاب. كان الفندق نظيفاً بشكل استثنائي وكانت الخدمة ممتازة – كان الموظفون دائماً ودودين ومتعاونين.<br /><br />ما أعجبني أكثر هو وجبة الإفطار؛ كانت رائعة مع تشكيلة واسعة من الخيارات الشهية. كان هناك الكثير للاختيار منه، وكل شيء طازج ومعد بعناية. كان طبقي المفضل هو السيجار بوريك المقرمش واللذيذ والمحضّر بإتقان.<br /><br />بشكل عام يقدم فندق بيليت قيمة رائعة وراحة وضيافة مميزة. سأعود للإقامة هنا بكل سرور وأنصح به بشدة لكل من يزور طرابزون.”",
+          "author": "Dobar Dan",
+          "details": "أقام في أغسطس 2025 · إجازة مع الأصدقاء"
+        },
+        {
+          "quoteHtml": "“فندق جميل أقمنا فيه أثناء زيارتنا طرابزون لحضور فعالية رياضية. كان الطاقم ودوداً ومساعداً في كل شيء. كان المكان مريحاً وأنصح به من كل قلبي.<br /><br />كانت الغرف نظيفة تماماً، والإفطار بوفيه غني ومشبع. شكراً فندق بيليت بارك!”",
+          "author": "Gözde Öztürk",
+          "details": "أقام في أبريل 2025 · رحلة عمل مع الأصدقاء"
+        },
+        {
+          "quoteHtml": "“من أفضل الفنادق التي أقمت فيها. كان الإفطار رائعاً، والفندق نظيفاً جداً، وكل فرد من الفريق كان متعاوناً ومبتسماً باستمرار. أوصي به بشدة.”",
+          "author": "Fuad Eshaq",
+          "details": "أقام في 2024 · إجازة عائلية"
+        },
+        {
+          "quoteHtml": "“أقمت في أماكن كثيرة في المنطقة، لكن هذا الفندق هو الأكثر راحة ونظافة. ليت كل الأعمال كانت بقدر صدقكم وودكم. استمروا على هذا المستوى.”",
+          "author": "Hakan Düzgün",
+          "details": "أقام في أبريل 2025 · رحلة عمل مع الأصدقاء"
+        },
+        {
+          "quoteHtml": "“بصراحة نسبة الجودة إلى السعر ممتازة. الغرف والخدمة والموقع استحقوا أعلى الدرجات خلال إقامتي.”",
+          "author": "Matías D'Angelo",
+          "details": "أقام في أبريل 2025 · إقامة للترفيه"
+        }
+      ],
+      "booking": [
+        {
+          "quoteHtml": "“تجاوز الفندق توقعاتنا. كان كل شيء نظيفاً للغاية، وكان الطاقم يقظاً، ووفرت وجبة الإفطار خيارات كثيرة لكل العائلة.”",
+          "author": "Turnay",
+          "details": "أقام في مايو 2025 · رحلة عائلية"
+        },
+        {
+          "quoteHtml": "“الأسرة مريحة جداً وحجم الغرفة واسع. بعد يوم طويل في استكشاف طرابزون كان الهدوء وخدمة الواي فاي السريعة ما نحتاجه تماماً.”",
+          "author": "Arina",
+          "details": "أقام في مايو 2025 · إجازة للزوجين"
+        },
+        {
+          "quoteHtml": "“فندق رائع في طرابزون! طاقم ودود، إفطار لذيذ، وموقف سيارات خاص جعل رحلة العمل سهلة جداً. سنعود قريباً.”",
+          "author": "Sergey",
+          "details": "أقام في يونيو 2025 · رحلة عمل"
+        },
+        {
+          "quoteHtml": "“إطلالة البحر من شرفتنا كانت جميلة. قدرنا فريق الاستقبال اللطيف وموقف السيارات المريح خلف الفندق مباشرة.”",
+          "author": "Juliane",
+          "details": "أقام في سبتمبر 2025 · إجازة للزوجين"
+        },
+        {
+          "quoteHtml": "“وصلت في وقت مبكر جداً ومع ذلك تمكن الفريق من تجهيز غرفة. ضيافتهم كانت لا تُنسى وغادرت وأنا أشعر بالانتعاش والامتنان.”",
+          "author": "Aytan",
+          "details": "أقام في أكتوبر 2025 · مسافر منفرد"
+        }
+      ]
+    }
+  }
+}

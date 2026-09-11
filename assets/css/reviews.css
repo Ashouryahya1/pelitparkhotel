@@ -1,0 +1,88 @@
+.guest-reviews-page .georgian-hero__content {
+  padding-block: 5rem 4rem;
+}
+
+.guest-reviews-page .georgian-hero__content .section__header {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.guest-reviews-page main > .georgian-breadcrumb {
+  position: static;
+  padding-block: 1.25rem;
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+.guest-reviews-page main > .georgian-breadcrumb a,
+.guest-reviews-page main > .georgian-breadcrumb li {
+  color: var(--text-light);
+}
+
+.guest-reviews__intro {
+  padding-block: 2rem 0;
+  text-align: center;
+}
+
+.guest-reviews__intro .section__header {
+  margin-inline: auto;
+}
+
+.guest-reviews__group {
+  padding-block: 2rem 3rem;
+  scroll-margin-top: 110px;
+}
+
+.guest-reviews__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.guest-reviews__heading .section__header {
+  margin-bottom: 0.35rem;
+}
+
+.guest-reviews__score {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background: #003580;
+  color: #fff;
+  text-align: center;
+}
+
+.guest-reviews__score strong { font-size: 2.5rem; }
+.guest-reviews__score small { font-size: 1.125rem; font-weight: 400; }
+.guest-reviews__score > span { font-size: 0.85rem; }
+
+.guest-reviews__cards { columns: 2; column-gap: 1.5rem; }
+
+.guest-review {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  border: 1px solid #eadfce;
+  border-radius: 1.2rem;
+  background: #fff;
+  box-shadow: 0 0.75rem 2rem rgba(12, 10, 9, 0.04);
+  overflow-wrap: anywhere;
+}
+
+.guest-review .review__quote { margin: 0; text-align: start; }
+.guest-review .review__meta { flex-direction: column; gap: 0.35rem; }
+.guest-review__source { display: inline-block; margin-top: 1rem; font-size: 0.85rem; }
+.guest-reviews__all { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; text-decoration: underline; }
+.guest-reviews-page a:focus-visible { outline: 3px solid #b07d46; outline-offset: 4px; }
+
+@media (max-width: 640px) {
+  .guest-reviews__cards { columns: 1; }
+  .guest-review { padding: 1.5rem; }
+  .guest-reviews-page .georgian-hero__content { padding-block: 3.5rem 3rem; }
+}
+body.guest-reviews-page { font-family: "Poppins", sans-serif; }
