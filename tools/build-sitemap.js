@@ -48,7 +48,7 @@ for (const file of walk(ROOT).filter((item) => item.endsWith("index.html"))) {
   const relative = path.relative(ROOT, file).replace(/\\/g, "/");
   const lastmod = dirty.has(relative) || !oldDates.has(canonical) ? TODAY : oldDates.get(canonical);
   const urlPath = new URL(canonical).pathname;
-  const isHome = ["/", "/en/", "/ar/", "/ka/"].includes(urlPath);
+  const isHome = ["/", "/en/", "/ar/", "/ka/", "/ru/", "/az/"].includes(urlPath);
   const isLocation = /(airport|havaliman|forum-trabzon|farabi)/i.test(urlPath);
   rows.push({ canonical, lastmod, changefreq: isHome ? "weekly" : "monthly", priority: urlPath === "/" ? "1.0" : isHome ? "0.9" : isLocation ? "0.8" : "0.7" });
 }

@@ -1,0 +1,36 @@
+/* Shared presentation for the Russian and Azerbaijani editions. */
+body.international-page { font-family: "Poppins", Arial, sans-serif; }
+.international-page .section__description { line-height: 1.8; }
+.international-page .section__description + .section__description { margin-top: 1rem; }
+.international-page .room__card__details h3 { font-size: 1.2rem; line-height: 1.4; margin-bottom: .75rem; }
+.international-page .room__card__details .room__amenities { margin-bottom: 1.5rem; }
+.international-page .room__card__details .btn { margin-top: auto; }
+.international-page .room__card { display: flex; flex-direction: column; }
+.international-page .room__card__image { flex: none; }
+.international-page .goal__card h2 { font-size: 1.35rem; margin-bottom: .75rem; }
+.international-page .goal__card h3 { margin-bottom: .75rem; }
+.international-page .footer__brand { font-size: 1.75rem; font-weight: 700; color: var(--primary-color); }
+.international-page .footer__col { min-width: 0; overflow-wrap: anywhere; }
+.international-page .international-prose { max-width: 950px; }
+.international-page .georgian-final-cta .georgian-section__actions { justify-content: center; }
+.international-page .georgian-hero__content .section__description { margin-inline: auto; }
+.international-page .header__container h2 { margin-top: .75rem; }
+.international-page .international-more { margin-top: 1.5rem; font-weight: 600; }
+.international-page .international-features { display: grid; gap: 1.5rem; margin-top: 2rem; }
+.international-page .international-faq { max-width: 900px; margin: 2rem auto 0; }
+.international-faq details { padding: 1.25rem 0; border-bottom: 1px solid #e6ded3; }
+.international-faq summary { cursor: pointer; font-weight: 600; line-height: 1.5; }
+.international-faq details p { padding-top: .75rem; line-height: 1.8; color: var(--text-light); }
+.international-page a:focus-visible, .international-page summary:focus-visible { outline: 3px solid #b07d46; outline-offset: 4px; }
+@media (min-width: 601px) {
+  .international-page .international-features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 901px) {
+  html body.international-page footer#contact .footer__container { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); justify-items: stretch; gap: 2rem; }
+}
+@media (max-width: 768px) {
+  .international-page .georgian-hero__content { padding-top: 9rem; }
+  .international-page .georgian-hero__content .section__header { font-size: clamp(1.85rem, 6.5vw, 3rem); overflow-wrap: break-word; }
+  .international-page .header__container h1 { font-size: clamp(2.2rem, 9vw, 4rem); }
+}
+

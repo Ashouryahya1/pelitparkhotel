@@ -4,9 +4,41 @@
   "googleRating": "4.9 / 5",
   "completedBookings": "6,000+",
   "labels": {
-    "tr": { "section": "Misafirlerimizin güveni", "booking": "Booking.com Puanı", "google": "Google Puanı", "bookings": "Tamamlanan Rezervasyonlar" },
-    "en": { "section": "Trusted by our guests", "booking": "Booking.com Rating", "google": "Google Rating", "bookings": "Bookings Completed" },
-    "ar": { "section": "ثقة ضيوفنا", "booking": "تقييم Booking.com", "google": "تقييم Google", "bookings": "حجز مكتمل" },
-    "ka": { "section": "სტუმრების ნდობა", "booking": "Booking.com-ის შეფასება", "google": "Google-ის შეფასება", "bookings": "დასრულებული ჯავშანი" }
+    "tr": {
+      "section": "Misafirlerimizin güveni",
+      "booking": "Booking.com Puanı",
+      "google": "Google Puanı",
+      "bookings": "Tamamlanan Rezervasyonlar"
+    },
+    "en": {
+      "section": "Trusted by our guests",
+      "booking": "Booking.com Rating",
+      "google": "Google Rating",
+      "bookings": "Bookings Completed"
+    },
+    "ar": {
+      "section": "ثقة ضيوفنا",
+      "booking": "تقييم Booking.com",
+      "google": "تقييم Google",
+      "bookings": "حجز مكتمل"
+    },
+    "ka": {
+      "section": "სტუმრების ნდობა",
+      "booking": "Booking.com-ის შეფასება",
+      "google": "Google-ის შეფასება",
+      "bookings": "დასრულებული ჯავშანი"
+    },
+    "ru": {
+      "section": "Оценки гостей и бронирования",
+      "booking": "Оценка на Booking.com",
+      "google": "Оценка в Google",
+      "bookings": "Завершённых бронирований"
+    },
+    "az": {
+      "section": "Qonaq qiymətləri və rezervasiyalar",
+      "booking": "Booking.com qiyməti",
+      "google": "Google qiyməti",
+      "bookings": "Tamamlanmış rezervasiya"
+    }
   }
 }

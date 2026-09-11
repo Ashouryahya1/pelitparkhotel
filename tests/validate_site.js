@@ -131,7 +131,7 @@ for (const file of htmlFiles) {
     if (!localTargetExists(image.src, file)) errors.push(`${rel}: missing image ${image.src}`);
   }
   if (/https:\/\/(?:wa\.me|api\.whatsapp\.com|pelit-park\.rezervasyonal\.com)/i.test(page.html)) {
-    const trackingScripts = page.html.match(/<script\s+src=["']\/assets\/js\/booking-events\.js["']\s*><\/script>/gi) || [];
+    const trackingScripts = page.html.match(/<script\s+src=["']\/assets\/js\/booking-events\.js(?:\?[^"']*)?["']\s*><\/script>/gi) || [];
     if (trackingScripts.length !== 1) errors.push(`${rel}: expected exactly one shared booking-events script`);
     if (/function\s+gtag_report_conversion\s*\(/.test(page.html)) errors.push(`${rel}: legacy conversion callback must be removed`);
     if (/document\.addEventListener\s*\(\s*["']click["'][\s\S]{0,1200}(?:market:\s*["']georgia|booking_intent:\s*["']same_day)/.test(page.html)) {
@@ -140,8 +140,8 @@ for (const file of htmlFiles) {
   }
   for (const match of page.html.matchAll(/<div[^>]+class=["'][^"']*language-switcher[^"']*["'][^>]*>([\s\S]*?)<\/div>/gi)) {
     const languageHrefs = [...match[1].matchAll(/<a\s+[^>]*href=["']([^"']+)["']/gi)].map((item) => item[1]);
-    const languageCode = (href) => href.startsWith("/ar/") ? "ar" : href.startsWith("/en/") ? "en" : href.startsWith("/ka/") ? "ka" : href.startsWith("/") ? "tr" : "";
-    for (const expectedLanguage of ["ar", "en", "ka", "tr"]) {
+    const languageCode = (href) => href.match(/^\/(ar|en|ka|ru|az)\//)?.[1] || (href.startsWith("/") ? "tr" : "");
+    for (const expectedLanguage of ["ar", "en", "ka", "tr", "ru", "az"]) {
       const count = languageHrefs.filter((href) => languageCode(href) === expectedLanguage).length;
       if (count !== 1) errors.push(`${rel}: language menu must contain exactly one ${expectedLanguage} link`);
     }
@@ -203,49 +203,15 @@ for (const url of [`${DOMAIN}/ka/batumi-trabzon/`]) {
   }
 }
 
-const locationGroups = [
-  {
-    pages: ["trabzon-havalimanina-yakin-otel/index.html", "en/hotel-near-trabzon-airport/index.html", "ar/hotel-near-trabzon-airport/index.html", "ka/hotel-near-trabzon-airport/index.html"],
-    alternates: { "tr-TR": `${DOMAIN}/trabzon-havalimanina-yakin-otel/`, en: `${DOMAIN}/en/hotel-near-trabzon-airport/`, ar: `${DOMAIN}/ar/hotel-near-trabzon-airport/`, "ka-GE": `${DOMAIN}/ka/hotel-near-trabzon-airport/`, "x-default": `${DOMAIN}/trabzon-havalimanina-yakin-otel/` },
-  },
-  {
-    pages: ["forum-trabzon-yakin-otel/index.html", "en/hotel-near-forum-trabzon/index.html", "ar/hotel-near-forum-trabzon/index.html", "ka/hotel-near-forum-trabzon/index.html"],
-    alternates: { "tr-TR": `${DOMAIN}/forum-trabzon-yakin-otel/`, en: `${DOMAIN}/en/hotel-near-forum-trabzon/`, ar: `${DOMAIN}/ar/hotel-near-forum-trabzon/`, "ka-GE": `${DOMAIN}/ka/hotel-near-forum-trabzon/`, "x-default": `${DOMAIN}/forum-trabzon-yakin-otel/` },
-  },
-  {
-    pages: ["farabi-hastanesi-yakin-otel/index.html", "en/hotel-near-farabi-hospital/index.html", "ar/hotel-near-farabi-hospital/index.html", "ka/hotel-near-farabi-hospital/index.html"],
-    alternates: { "tr-TR": `${DOMAIN}/farabi-hastanesi-yakin-otel/`, en: `${DOMAIN}/en/hotel-near-farabi-hospital/`, ar: `${DOMAIN}/ar/hotel-near-farabi-hospital/`, "ka-GE": `${DOMAIN}/ka/hotel-near-farabi-hospital/`, "x-default": `${DOMAIN}/farabi-hastanesi-yakin-otel/` },
-  },
-];
-for (const group of locationGroups) {
-  for (const rel of group.pages) {
-    const actual = parsePage(path.join(ROOT, rel)).alternates;
-    if (JSON.stringify(actual) !== JSON.stringify(group.alternates)) errors.push(`${rel}: location-page hreflang group is inconsistent`);
-  }
-}
-
-const roomGroup = {
-  "tr-TR": `${DOMAIN}/room-types/`,
-  en: `${DOMAIN}/en/room-types/`,
-  ar: `${DOMAIN}/ar/room-types/`,
-  "ka-GE": `${DOMAIN}/ka/room-types/`,
-  "x-default": `${DOMAIN}/room-types/`,
-};
-const homeGroup = {
-  "tr-TR": `${DOMAIN}/`,
-  en: `${DOMAIN}/en/`,
-  ar: `${DOMAIN}/ar/`,
-  "ka-GE": `${DOMAIN}/ka/`,
-  "x-default": `${DOMAIN}/`,
-};
-for (const rel of ["index.html", "en/index.html", "ar/index.html", "ka/index.html"]) {
-  if (JSON.stringify(parsePage(path.join(ROOT, rel)).alternates) !== JSON.stringify(homeGroup)) {
-    errors.push(`${rel}: home-page hreflang group is inconsistent`);
-  }
-}
-for (const rel of ["room-types/index.html", "en/room-types/index.html", "ar/room-types/index.html", "ka/room-types/index.html"]) {
-  if (JSON.stringify(parsePage(path.join(ROOT, rel)).alternates) !== JSON.stringify(roomGroup)) {
-    errors.push(`${rel}: room-type hreflang group is inconsistent`);
+// All real translations must advertise the same reciprocal group.
+const { groups, alternates } = require("../tools/lib/site-languages");
+for (const [key, group] of Object.entries(groups)) {
+  const expected = alternates(group);
+  for (const urlPath of Object.values(group)) {
+    const rel = urlPath.slice(1) + "index.html";
+    if (JSON.stringify(parsePage(path.join(ROOT, rel)).alternates) !== JSON.stringify(expected)) {
+      errors.push(rel + ": " + key + " hreflang group is inconsistent");
+    }
   }
 }
 

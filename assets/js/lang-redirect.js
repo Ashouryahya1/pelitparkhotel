@@ -2,6 +2,8 @@
   if (typeof window === "undefined" || window.location.pathname !== "/") return;
 
   const labels = {
+    ru: { message: "Хотите открыть сайт на русском языке?", action: "Русский", close: "Закрыть предложение языка" },
+    az: { message: "Saytı azərbaycanca açmaq istəyirsiniz?", action: "Azərbaycanca", close: "Dil təklifini bağlayın" },
     ar: { message: "هل تفضّل تصفح الموقع بالعربية؟", action: "العربية", close: "إغلاق اقتراح اللغة" },
     en: { message: "Would you prefer to view the site in English?", action: "English", close: "Dismiss language suggestion" },
     ka: { message: "გსურთ ვებსაიტის ქართულად ნახვა?", action: "ქართული", close: "ენის შეთავაზების დახურვა" },
@@ -20,7 +22,7 @@
     : [navigator.language || ""];
   const match = browserLanguages
     .map((language) => String(language).toLowerCase())
-    .find((language) => /^(ar|en|ka)(-|$)/.test(language));
+    .find((language) => /^(ar|en|ka|ru|az)(-|$)/.test(language));
   if (!match) return;
 
   const language = match.split("-")[0];

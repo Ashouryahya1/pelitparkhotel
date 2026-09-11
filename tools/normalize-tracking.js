@@ -24,7 +24,7 @@ for (const file of walk(ROOT).filter((item) => item.endsWith(".html"))) {
         /(?:data-booking-event|whatsappLink|whatsapp_click)/.test(block)) return "";
     return block;
   });
-  html = html.replace(/\s*<script\s+src=["']\/assets\/js\/booking-events\.js["']\s*><\/script>/gi, "");
+  html = html.replace(/\s*<script\s+src=["']\/assets\/js\/booking-events\.js(?:\?[^"']*)?["']\s*><\/script>/gi, "");
   html = html.replace(/\s*<\/body>/i, `\n    ${SHARED_SCRIPT}\n  </body>`);
 
   if (html !== original) {

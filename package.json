@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build:i18n": "node tools/build-i18n.js",
+    "build:i18n": "node tools/build-i18n.js && npm run normalize:languages",
     "build:locations": "node tools/build-location-pages.js",
     "build:reviews": "node tools/build-review-pages.js",
     "build:home-stats": "node tools/build-home-stats.js",
@@ -11,8 +11,10 @@
     "normalize:schema": "node tools/normalize-structured-data.js",
     "normalize:tracking": "node tools/normalize-tracking.js",
     "build:sitemap": "node tools/build-sitemap.js",
-    "build": "npm run build:locations && npm run build:i18n && npm run build:home-stats && npm run build:reviews && npm run clean:campaigns && npm run normalize:schema && npm run normalize:tracking && npm run build:sitemap",
-    "test": "node tests/validate_site.js && node tests/validate_translations.js && node tests/validate_reviews.js"
+    "build": "npm run build:locations && npm run build:i18n && npm run build:international && npm run build:home-stats && npm run build:reviews && npm run clean:campaigns && npm run normalize:schema && npm run normalize:tracking && npm run normalize:languages && npm run build:sitemap",
+    "test": "node tests/validate_site.js && node tests/validate_translations.js && node tests/validate_reviews.js && node tests/validate_international.js",
+    "build:international": "node tools/build-international-pages.js",
+    "normalize:languages": "node tools/normalize-language-links.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0"

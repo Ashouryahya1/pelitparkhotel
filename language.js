@@ -19,25 +19,12 @@
   const setupLanguageLinks = () => {
     const links = document.querySelectorAll(".language-switcher a");
     const path = window.location.pathname || "/";
-    const activeLanguage = path.startsWith("/ar/")
-      ? "ar"
-      : path.startsWith("/en/")
-        ? "en"
-        : path.startsWith("/ka/")
-          ? "ka"
-          : "tr";
+    const languageForPath = (value) => value?.match(/^\/(ar|en|ka|ru|az)(?:\/|$)/)?.[1] || (value?.startsWith("/") ? "tr" : "");
+    const activeLanguage = languageForPath(path);
 
     links.forEach((link) => {
       const href = link.getAttribute("href");
-      const linkLanguage = href?.startsWith("/ar/")
-        ? "ar"
-        : href?.startsWith("/en/")
-          ? "en"
-          : href?.startsWith("/ka/")
-            ? "ka"
-            : href?.startsWith("/")
-              ? "tr"
-              : "";
+      const linkLanguage = languageForPath(href);
       const isActive = linkLanguage === activeLanguage;
       link.classList.toggle("is-active", isActive);
       if (isActive) {

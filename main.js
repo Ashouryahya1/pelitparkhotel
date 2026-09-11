@@ -8,6 +8,8 @@ if (menuBtn && navLinks && menuBtnIcon) {
     en: "Open navigation menu",
     ka: "ნავიგაციის მენიუს გახსნა",
     tr: "Gezinme menüsünü aç",
+    ru: "Открыть меню навигации",
+    az: "Naviqasiya menyusunu açın",
   };
   const pageLanguage = document.documentElement.lang || "tr";
 
