@@ -24,6 +24,12 @@
     "publishedFact": "Complimentary on-site parking is available for hotel guests.",
     "capacityPublished": false
   },
+  "roomAmenities": {
+    "smartTvInches": 50,
+    "bidetAvailable": true,
+    "bidetCopyLanguages": ["ar"],
+    "confirmedByHotelManagementOn": "2026-09-11"
+  },
   "rooms": {
     "deluxeDouble": {
       "beds": "one double bed",
