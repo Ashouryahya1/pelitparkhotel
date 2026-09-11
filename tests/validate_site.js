@@ -22,12 +22,12 @@ const GENERATED_LANGUAGE_PAGES = [
   "travel-tips/index.html",
 ];
 const GEORGIAN_SITEMAP_DATES = new Map([
-  [`${DOMAIN}/ka/`, "2026-09-10"],
-  [`${DOMAIN}/ka/hotel-near-forum-trabzon/`, "2026-09-10"],
-  [`${DOMAIN}/ka/hotel-near-farabi-hospital/`, "2026-09-10"],
-  [`${DOMAIN}/ka/hotel-near-trabzon-airport/`, "2026-09-10"],
-  [`${DOMAIN}/ka/batumi-trabzon/`, "2026-09-09"],
-  [`${DOMAIN}/ka/room-types/`, "2026-09-09"],
+  [`${DOMAIN}/ka/`, "2026-09-11"],
+  [`${DOMAIN}/ka/hotel-near-forum-trabzon/`, "2026-09-11"],
+  [`${DOMAIN}/ka/hotel-near-farabi-hospital/`, "2026-09-11"],
+  [`${DOMAIN}/ka/hotel-near-trabzon-airport/`, "2026-09-11"],
+  [`${DOMAIN}/ka/batumi-trabzon/`, "2026-09-11"],
+  [`${DOMAIN}/ka/room-types/`, "2026-09-11"],
 ]);
 
 const errors = [];
@@ -128,6 +128,14 @@ for (const file of htmlFiles) {
   }
   for (const image of page.images) {
     if (!localTargetExists(image.src, file)) errors.push(`${rel}: missing image ${image.src}`);
+  }
+  if (/https:\/\/(?:wa\.me|api\.whatsapp\.com|pelit-park\.rezervasyonal\.com)/i.test(page.html)) {
+    const trackingScripts = page.html.match(/<script\s+src=["']\/assets\/js\/booking-events\.js["']\s*><\/script>/gi) || [];
+    if (trackingScripts.length !== 1) errors.push(`${rel}: expected exactly one shared booking-events script`);
+    if (/function\s+gtag_report_conversion\s*\(/.test(page.html)) errors.push(`${rel}: legacy conversion callback must be removed`);
+    if (/document\.addEventListener\s*\(\s*["']click["'][\s\S]{0,1200}(?:market:\s*["']georgia|booking_intent:\s*["']same_day)/.test(page.html)) {
+      errors.push(`${rel}: legacy page-specific click tracking must be removed`);
+    }
   }
   for (const match of page.html.matchAll(/<div[^>]+class=["'][^"']*language-switcher[^"']*["'][^>]*>([\s\S]*?)<\/div>/gi)) {
     const languageHrefs = [...match[1].matchAll(/<a\s+[^>]*href=["']([^"']+)["']/gi)].map((item) => item[1]);
@@ -276,6 +284,14 @@ if (!robots.includes("Allow: /") || !robots.includes(`Sitemap: ${DOMAIN}/sitemap
 const languageJs = fs.readFileSync(path.join(ROOT, "language.js"), "utf8");
 if (languageJs.includes("createElement") || languageJs.includes("insertBefore")) {
   errors.push("language.js must not inject the Georgian language link");
+}
+const bookingEventsJs = fs.readFileSync(path.join(ROOT, "assets", "js", "booking-events.js"), "utf8");
+if (/page_language:\s*["']ka["']|market:\s*["']georgia["']/.test(bookingEventsJs)) {
+  errors.push("booking-events.js must derive the page language instead of hard-coding Georgian traffic");
+}
+if (!/conversion_stage:\s*["']outbound_click["']/.test(bookingEventsJs) ||
+    !/booking_confirmed:\s*false/.test(bookingEventsJs)) {
+  errors.push("booking-events.js must label outbound clicks separately from confirmed bookings");
 }
 const redirectJs = fs.readFileSync(path.join(ROOT, "assets/js/lang-redirect.js"), "utf8");
 if (redirectJs.includes("updateGoogleRatingDisplay") || /replace\(\/4\\\.8\/g,\s*["']4\.9["']\)/.test(redirectJs)) {

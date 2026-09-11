@@ -10,27 +10,14 @@
 
       gtag('config', 'AW-18172085628');
     </script>
-    <script>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-18172085628/ug94CNrMjM8cEPyKkNlD',
-            'event_callback': callback
-        });
-        return false;
-      }
-    </script>
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="دليل عملي للعائلات الخليجية لاختيار غرفة في Pelit Park Hotel بطرابزون، مع موقف مجاني وتواصل عبر واتساب وأسعار حالية من نظام الحجز." />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://pelitparkhotel.com/ar/gulf-family-hotel-trabzon/" />
     <meta property="og:title" content="فندق في طرابزون للعائلات الخليجية | بليت بارك هوتيل" />
-    <meta property="og:description" content="إقامة مريحة للعائلات الخليجية في طرابزون مع تواصل مباشر باللغة العربية عبر واتساب وأسعار خاصة للحجز المباشر." />
+    <meta property="og:description" content="إقامة مريحة للعائلات الخليجية في طرابزون مع تواصل مباشر باللغة العربية عبر واتساب وأسعار حالية من نظام الحجز." />
     <meta property="og:url" content="https://pelitparkhotel.com/ar/gulf-family-hotel-trabzon/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Pelit Park Hotel" />
@@ -250,7 +237,7 @@
         <h2 class="section__header">مزايا مهمة للعائلات</h2>
         <div class="goals__grid">
           <div class="goal__card"><h3>تواصل باللغة العربية</h3><p>تحدث معنا مباشرة عبر واتساب لمعرفة الأسعار، نوع الغرفة، وتفاصيل الحجز.</p></div>
-          <div class="goal__card"><h3>حجز مباشر بسعر خاص</h3><p>تتوفر الخصومات حسب تاريخ الإقامة ونوع الغرفة وعدد الليالي.</p></div>
+          <div class="goal__card"><h3>سعر مباشر ومحدّث</h3><p>تتغير الأسعار والتوفر حسب تاريخ الإقامة ونوع الغرفة وشروط السعر؛ راجع نظام الحجز أو اسأل عبر واتساب.</p></div>
           <div class="goal__card"><h3>الوصول من مطار طرابزون</h3><p>راجع خيارات النقل الرسمية والمسار الحي في يوم السفر، دون الاعتماد على مدة ثابتة أو خدمة غير مؤكدة.</p></div>
         </div>
       </section>
@@ -278,50 +265,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/main.js"></script>
     <script src="/language.js"></script>
-    <script>
-      document.addEventListener("click", function (clickEvent) {
-        var whatsappLink = clickEvent.target.closest(
-          'a[href*="wa.me/"], a[href*="api.whatsapp.com/"]'
-        );
-        var bookingLink =
-          whatsappLink || clickEvent.target.closest("[data-booking-event]");
-        if (!bookingLink) return;
-
-        var eventName = whatsappLink
-          ? "whatsapp_click"
-          : bookingLink.getAttribute("data-booking-event");
-        var eventParameters = {
-          page_language: "ar",
-          booking_intent: "same_day"
-        };
-
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          event: eventName,
-          page_language: eventParameters.page_language,
-          booking_intent: eventParameters.booking_intent
-        });
-
-        if (typeof window.gtag === "function") {
-          window.gtag("event", eventName, eventParameters);
-        }
-
-        if (whatsappLink) {
-          clickEvent.preventDefault();
-
-          var whatsappUrl = whatsappLink.href;
-          window.setTimeout(function () {
-            window.location = whatsappUrl;
-          }, 800);
-
-          try {
-            gtag_report_conversion(whatsappUrl);
-          } catch (conversionError) {
-            window.location = whatsappUrl;
-          }
-        }
-      });
-    </script>
+    <script src="/assets/js/booking-events.js"></script>
   </body>
 </html>
 
