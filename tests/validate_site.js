@@ -189,9 +189,10 @@ for (const [rel, canonical] of GEORGIAN_PAGES) {
   }
   const types = collectTypes(page.jsonld);
   if (!types.has("Hotel")) errors.push(`${rel}: Hotel structured data missing`);
-  if (rel !== "ka/index.html" && (!types.has("BreadcrumbList") || !page.hasBreadcrumb)) {
-    errors.push(`${rel}: BreadcrumbList or visible breadcrumb missing`);
+  if (rel !== "ka/index.html" && !types.has("BreadcrumbList")) {
+    errors.push(`${rel}: BreadcrumbList structured data missing`);
   }
+  if (page.hasBreadcrumb) errors.push(`${rel}: Georgian pages must not show a visible breadcrumb`);
   if (!page.anchors.some((item) => item.href?.includes("pelit-park.rezervasyonal.com"))) errors.push(`${rel}: booking link missing`);
   if (!page.anchors.some((item) => item.href?.includes("wa.me/905521510012"))) errors.push(`${rel}: WhatsApp link missing`);
 }
