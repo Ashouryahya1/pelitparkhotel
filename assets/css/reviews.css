@@ -86,3 +86,18 @@
   .guest-reviews-page .georgian-hero__content { padding-block: 3.5rem 3rem; }
 }
 body.guest-reviews-page { font-family: "Poppins", sans-serif; }
+
+/* The shared footer has four sections. Keep them in one desktop row,
+   overriding the landing-page grid and the older Arabic flex layout. */
+@media (min-width: 901px) {
+  html body.guest-reviews-page footer#contact .footer__container {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-items: stretch;
+  }
+
+  html body.guest-reviews-page footer#contact .footer__col {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
