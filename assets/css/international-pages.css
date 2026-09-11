@@ -1,5 +1,6 @@
 /* Shared presentation for the Russian and Azerbaijani editions. */
 body.international-page { font-family: "Poppins", Arial, sans-serif; }
+.international-page .logo img { width: 150px; height: auto; max-width: 100%; }
 .international-page .section__description { line-height: 1.8; }
 .international-page .section__description + .section__description { margin-top: 1rem; }
 .international-page .room__card__details h3 { font-size: 1.2rem; line-height: 1.4; margin-bottom: .75rem; }
@@ -33,4 +34,3 @@ body.international-page { font-family: "Poppins", Arial, sans-serif; }
   .international-page .georgian-hero__content .section__header { font-size: clamp(1.85rem, 6.5vw, 3rem); overflow-wrap: break-word; }
   .international-page .header__container h1 { font-size: clamp(2.2rem, 9vw, 4rem); }
 }
-
