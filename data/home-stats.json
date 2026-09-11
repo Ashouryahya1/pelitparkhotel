@@ -1,0 +1,12 @@
+{
+  "source": "Figures supplied for publication by the hotel representative on 2026-09-11. Manually maintained; not an API feed or a live verification.",
+  "bookingRating": "9 / 10",
+  "googleRating": "4.9 / 5",
+  "completedBookings": "6,000+",
+  "labels": {
+    "tr": { "section": "Misafirlerimizin güveni", "booking": "Booking.com Puanı", "google": "Google Puanı", "bookings": "Tamamlanan Rezervasyonlar" },
+    "en": { "section": "Trusted by our guests", "booking": "Booking.com Rating", "google": "Google Rating", "bookings": "Bookings Completed" },
+    "ar": { "section": "ثقة ضيوفنا", "booking": "تقييم Booking.com", "google": "تقييم Google", "bookings": "حجز مكتمل" },
+    "ka": { "section": "სტუმრების ნდობა", "booking": "Booking.com-ის შეფასება", "google": "Google-ის შეფასება", "bookings": "დასრულებული ჯავშანი" }
+  }
+}
