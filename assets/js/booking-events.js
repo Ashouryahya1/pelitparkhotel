@@ -3,9 +3,9 @@
 
   function pageLanguage() {
     const declared = (document.documentElement.lang || "").toLowerCase().split("-")[0];
-    if (["tr", "en", "ar", "ka", "ru", "az"].includes(declared)) return declared;
+    if (["tr", "en", "ar", "ka", "ru", "az", "fa"].includes(declared)) return declared;
     const segment = window.location.pathname.split("/").filter(Boolean)[0];
-    return ["en", "ar", "ka", "ru", "az"].includes(segment) ? segment : "tr";
+    return ["en", "ar", "ka", "ru", "az", "fa"].includes(segment) ? segment : "tr";
   }
 
   function inferredEvent(link) {

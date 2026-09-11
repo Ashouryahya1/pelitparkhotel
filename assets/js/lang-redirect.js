@@ -2,6 +2,7 @@
   if (typeof window === "undefined" || window.location.pathname !== "/") return;
 
   const labels = {
+    fa: { message: "مایلید سایت را به فارسی ببینید؟", action: "فارسی", close: "بستن پیشنهاد زبان" },
     ru: { message: "Хотите открыть сайт на русском языке?", action: "Русский", close: "Закрыть предложение языка" },
     az: { message: "Saytı azərbaycanca açmaq istəyirsiniz?", action: "Azərbaycanca", close: "Dil təklifini bağlayın" },
     ar: { message: "هل تفضّل تصفح الموقع بالعربية؟", action: "العربية", close: "إغلاق اقتراح اللغة" },
@@ -22,7 +23,7 @@
     : [navigator.language || ""];
   const match = browserLanguages
     .map((language) => String(language).toLowerCase())
-    .find((language) => /^(ar|en|ka|ru|az)(-|$)/.test(language));
+    .find((language) => /^(ar|en|ka|ru|az|fa)(-|$)/.test(language));
   if (!match) return;
 
   const language = match.split("-")[0];

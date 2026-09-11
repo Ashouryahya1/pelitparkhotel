@@ -10,6 +10,7 @@ if (menuBtn && navLinks && menuBtnIcon) {
     tr: "Gezinme menüsünü aç",
     ru: "Открыть меню навигации",
     az: "Naviqasiya menyusunu açın",
+    fa: "باز کردن منوی پیمایش",
   };
   const pageLanguage = document.documentElement.lang || "tr";
 

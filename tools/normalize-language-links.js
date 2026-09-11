@@ -2,7 +2,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const crypto = require("node:crypto");
 const { ROOT, BASE, languages, languageForPath, groupForPath, alternates } = require("./lib/site-languages");
-const escapeHtml = (s) => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const { languageSelector } = require("./lib/language-selector");
 function walk(dir) {
   return fs.readdirSync(dir, {withFileTypes:true}).flatMap(entry => {
     if ([".git", "node_modules", ".codex-tmp"].includes(entry.name)) return [];
@@ -29,17 +29,13 @@ for (const file of walk(ROOT).filter(file => file.endsWith(".html"))) {
       head.replace(/[ \t]*<link\b(?=[^>]*\brel=["']alternate["'])(?=[^>]*\bhreflang=)[^>]*>[ \t]*\r?\n?/gi,"")
         .replace(/<\/head>/i, `  ${alternateMarkup}\n</head>`));
   }
-  html = html.replace(/(<div\b[^>]*class=["'][^"']*\blanguage-switcher\b[^"']*["'][^>]*>)([\s\S]*?)(<\/div>)/gi, (_,open,body,close) => {
-    const existing = {};
+  html = html.replace(/<(div|details)\b[^>]*class=["'][^"']*\blanguage-switcher\b[^"']*["'][^>]*>([\s\S]*?)<\/\1>/gi, (_,tag,body) => {
+    const paths = {};
     for (const anchor of body.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>/g)) {
-      if (anchor[1].startsWith("/")) existing[languageForPath(anchor[1])] = anchor[1];
+      if (anchor[1].startsWith("/")) paths[languageForPath(anchor[1])] = anchor[1];
     }
-    const buttons = Object.entries(languages).map(([code, info]) => {
-      const href = match?.[1][code] || existing[code] || info.home;
-      const current = code === active ? ' class="is-active" aria-current="page"' : "";
-      return `<a href="${escapeHtml(href)}" lang="${code}" hreflang="${info.hreflang}" aria-label="${info.name}" title="${info.name}"${current}>${code.toUpperCase()}</a>`;
-    }).join("");
-    return `${open}${buttons}${close}`;
+    Object.assign(paths, match?.[1] || {});
+    return languageSelector(active,paths);
   });
   html = html.replace(/\b(href|src)=(["'])([^"']+)\2/g, (full,attr,quote,value) => {
     if (/^(https?:|\/\/|#)/.test(value)) return full;
@@ -49,5 +45,5 @@ for (const file of walk(ROOT).filter(file => file.endsWith(".html"))) {
   });
   if (before !== html) { fs.writeFileSync(file,html); count++; }
 }
-console.log(`Normalized six-language navigation and reciprocal hreflang on ${count} pages.`);
+console.log(`Normalized seven-language dropdown and reciprocal hreflang on ${count} pages.`);
 

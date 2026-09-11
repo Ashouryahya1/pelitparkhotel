@@ -138,10 +138,10 @@ for (const file of htmlFiles) {
       errors.push(`${rel}: legacy page-specific click tracking must be removed`);
     }
   }
-  for (const match of page.html.matchAll(/<div[^>]+class=["'][^"']*language-switcher[^"']*["'][^>]*>([\s\S]*?)<\/div>/gi)) {
+  for (const match of page.html.matchAll(/<details[^>]+class=["'][^"']*language-switcher[^"']*["'][^>]*>([\s\S]*?)<\/details>/gi)) {
     const languageHrefs = [...match[1].matchAll(/<a\s+[^>]*href=["']([^"']+)["']/gi)].map((item) => item[1]);
-    const languageCode = (href) => href.match(/^\/(ar|en|ka|ru|az)\//)?.[1] || (href.startsWith("/") ? "tr" : "");
-    for (const expectedLanguage of ["ar", "en", "ka", "tr", "ru", "az"]) {
+    const languageCode = (href) => href.match(/^\/(ar|en|ka|ru|az|fa)\//)?.[1] || (href.startsWith("/") ? "tr" : "");
+    for (const expectedLanguage of ["ar", "en", "ka", "tr", "ru", "az", "fa"]) {
       const count = languageHrefs.filter((href) => languageCode(href) === expectedLanguage).length;
       if (count !== 1) errors.push(`${rel}: language menu must contain exactly one ${expectedLanguage} link`);
     }

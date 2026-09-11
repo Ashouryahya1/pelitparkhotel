@@ -3,6 +3,7 @@ const path = require("node:path");
 const crypto = require("node:crypto");
 const { ROOT, BASE, languages, slugs, groups, alternates } = require("./lib/site-languages");
 const facts = require("../data/hotel-facts.json");
+const { languageSelector } = require("./lib/language-selector");
 const selections = require("../data/review-selections.json");
 const stats = require("../data/home-stats.json");
 const e = value => String(value).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -26,14 +27,14 @@ function header(d,key) {
   const l=d.labels,lang=d.language,home=groups.home[lang];
   const nav = [["home",home],["about",groups.about[lang]],["rooms",groups.rooms[lang]],["reviews",groups.reviews[lang]],["location",home+"#location-pages"],["contact","#contact"]]
     .map(([label,url])=>`<li><a href="${url}"${key===label?' aria-current="page"':""}>${e(l[label])}</a></li>`).join("");
-  const switcher = Object.entries(languages).map(([code,info]) => `<a href="${groups[key][code]||info.home}" lang="${code}" aria-label="${info.name}"${code===lang?' class="is-active" aria-current="page"':""}>${code.toUpperCase()}</a>`).join("");
+  const switcher = languageSelector(lang,groups[key]);
   const homeHero = `<p>${e(d.home.welcome)}</p><h1>${e(d.seo.home[2])}</h1><h2>${e(d.home.slogan)}</h2>${actions(d,true)}`;
   const lead = key==="home" ? d.home.aboutText : key==="about" ? d.about.paragraphs[0] : key==="rooms" ? d.roomIntro : key==="reviews" ? d.reviewsLead : d.locations[key].lead;
   const subHero = `<p class="section__subheader">${e(d.locations[key]?.eyebrow || (key==="about"?l.about:key==="rooms"?l.rooms:l.reviews))}</p><h1 class="section__header">${e(d.seo[key][2])}</h1><p class="section__description">${e(lead)}</p>${actions(d,true)}`;
   return `<header class="${key==="home"?"header":"subpage__header roomtypes__header georgian-hero georgian-subpage-hero"}">
   <nav><div class="nav__bar"><div class="logo"><a href="${home}"><img src="/assets/logo.png" alt="Pelit Park Hotel" width="637" height="392" /></a></div>
     <ul class="nav__links" id="nav-links">${nav}</ul>
-    <div class="language-switcher" aria-label="${e(l.languages)}">${switcher}</div>
+    ${switcher}
     <div class="nav__menu__btn" id="menu-btn" role="button" tabindex="0" aria-label="${e(l.menu)}" aria-controls="nav-links" aria-expanded="false"><i class="ri-menu-line" aria-hidden="true"></i></div>
   </div></nav><div class="section__container ${key==="home"?"header__container":"georgian-hero__content"}" id="home">${key==="home"?homeHero:subHero}</div></header>`;
 }
@@ -109,7 +110,7 @@ function html(d,key) {
   if(key!=="home") schema["@graph"].push({"@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:d.labels.home,item:BASE+groups.home[d.language]},{"@type":"ListItem",position:2,name:d.seo[key][2],item:canonical}]});
   const content=key==="home"?home(d):key==="about"?about(d):key==="rooms"?`<section class="section__container room__container"><h2 class="section__header">${e(d.home.roomTitle)}</h2>${cards(d)}</section>${faq(d,d.roomFaq)}${locations(d)}`:key==="reviews"?reviews(d):place(d,key);
   return `<!DOCTYPE html>
-<html lang="${d.language}" dir="ltr"><head>
+<html lang="${d.language}" dir="${d.language==="fa"?"rtl":"ltr"}"><head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${e(title)}</title><meta name="description" content="${e(description)}" /><meta name="robots" content="index,follow" /><link rel="canonical" href="${canonical}" />
   ${Object.entries(alternates(groups[key])).map(([code,url])=>`<link rel="alternate" hreflang="${code}" href="${url}" />`).join("\n  ")}
@@ -130,7 +131,7 @@ function html(d,key) {
 </body></html>
 `;
 }
-for(const lang of ["ru","az"]) {
+for(const lang of ["ru","az","fa"]) {
   const data=JSON.parse(fs.readFileSync(path.join(ROOT,`data/locales/${lang}.json`),"utf8"));
   for(const key of Object.keys(slugs)) {
     const file=path.join(ROOT,groups[key][lang],"index.html");

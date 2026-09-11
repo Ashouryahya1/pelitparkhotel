@@ -39,6 +39,12 @@
       "booking": "Booking.com qiyməti",
       "google": "Google qiyməti",
       "bookings": "Tamamlanmış rezervasiya"
+    },
+    "fa": {
+      "section": "امتیاز مهمانان و رزروها",
+      "booking": "امتیاز در Booking.com",
+      "google": "امتیاز در Google",
+      "bookings": "رزرو تکمیل‌شده"
     }
   }
 }

@@ -9,6 +9,7 @@ const languages = {
   ka: { name: "ქართული", hreflang: "ka-GE", home: "/ka/" },
   ru: { name: "Русский", hreflang: "ru", home: "/ru/" },
   az: { name: "Azərbaycanca", hreflang: "az", home: "/az/" },
+  fa: { name: "فارسی", hreflang: "fa", home: "/fa/" },
 };
 const slugs = {
   home: "", about: "about/", rooms: "room-types/", reviews: "reviews/",
@@ -19,7 +20,7 @@ const groups = Object.fromEntries(Object.entries(slugs).map(([key, slug]) => [ke
   Object.fromEntries(Object.entries(languages).filter(([lang]) => lang !== "ka" || !["about", "reviews"].includes(key))
     .map(([lang, info]) => [lang, `${info.home}${lang === "tr" ? turkish[key] || slug : slug}`]))
 ]));
-const languageForPath = (urlPath) => urlPath.match(/^\/(en|ar|ka|ru|az)(?:\/|$)/)?.[1] || "tr";
+const languageForPath = (urlPath) => urlPath.match(/^\/(en|ar|ka|ru|az|fa)(?:\/|$)/)?.[1] || "tr";
 const groupForPath = (urlPath) => Object.entries(groups).find(([, group]) => Object.values(group).includes(urlPath));
 function availableGroup(group) {
   return Object.entries(group).filter(([, urlPath]) => fs.existsSync(path.join(ROOT, urlPath, "index.html")));

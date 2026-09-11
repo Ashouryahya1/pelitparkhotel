@@ -16,13 +16,14 @@ function signature(value) {
 const ru=JSON.parse(fs.readFileSync(path.join(root,"data/locales/ru.json")));
 const az=JSON.parse(fs.readFileSync(path.join(root,"data/locales/az.json")));
 assert.deepEqual(signature(ru),signature(az),"Language packs must have complete matching content, with no silent fallback");
-for(const lang of ["ru","az"]) {
-  const data=lang==="ru"?ru:az;
+for(const lang of ["ru","az","fa"]) {
+  const data=lang==="ru"?ru:lang==="az"?az:JSON.parse(fs.readFileSync(path.join(root,"data/locales/fa.json")));
+  assert.deepEqual(signature(data),signature(ru),lang+": complete locale pack");
   const home=fs.readFileSync(path.join(root,lang,"index.html"),"utf8");
   for(const slug of slugs){
     const relative=`${lang}/${slug}index.html`,url=`https://pelitparkhotel.com/${lang}/${slug}`;
     const html=fs.readFileSync(path.join(root,relative),"utf8");
-    assert.match(html,new RegExp(`<html lang="${lang}" dir="ltr">`),relative);
+    assert.match(html,new RegExp(`<html lang="${lang}" dir="${lang==="fa"?"rtl":"ltr"}">`),relative);
     assert.equal((html.match(/<h1\b/g)||[]).length,1,relative+": one H1");
     assert.doesNotMatch(html,/undefined|data-translate=|class="[^"]*breadcrumb|aggregateRating/,relative+": no fallback or visible breadcrumbs");
     assert.equal(footer(html),footer(home),relative+": same shared localized footer");
@@ -36,12 +37,12 @@ for(const lang of ["ru","az"]) {
     assert.ok(description.length>70&&!descriptions.has(description),relative+": unique useful description");
     titles.add(title);descriptions.add(description);
     assert.match(html,new RegExp(`property="og:locale" content="${data.locale}"`),relative);
-    const languageMenu=html.match(/<div class="language-switcher"[^>]*>([\s\S]*?)<\/div>/)[1];
-    assert.equal((languageMenu.match(/<a\b/g)||[]).length,6,relative+": all six languages");
+    const languageMenu=html.match(/<details class="language-switcher"[^>]*>([\s\S]*?)<\/details>/)[1];
+    assert.equal((languageMenu.match(/<a\b/g)||[]).length,7,relative+": all seven languages");
     assert.equal((languageMenu.match(/aria-current="page"/g)||[]).length,1,relative);
     // Independently verify the actual alternate destinations and their backlinks.
     const alternateTags=[...html.matchAll(/<link\b[^>]*rel="alternate"[^>]*>/g)].map(m=>m[0]);
-    assert.equal(alternateTags.length,["about/","reviews/"].includes(slug)?6:7,relative+": equivalent languages only");
+    assert.equal(alternateTags.length,["about/","reviews/"].includes(slug)?7:8,relative+": equivalent languages only");
     assert.equal(new Set(alternateTags.map(t=>attr(t,"hreflang"))).size,alternateTags.length,relative+": no duplicate alternates");
     for(const tag of alternateTags){
       const href=attr(tag,"href"),code=attr(tag,"hreflang"),destination=new URL(href).pathname;
@@ -73,7 +74,7 @@ for(const lang of ["ru","az"]) {
     assert.match(room.description,/50/);
     assert.ok(roomPage.includes(room.description)&&home.includes(room.description),lang+": same localized descriptions on home and rooms");
   }
-  assert.doesNotMatch(JSON.stringify(data),/bidet|биде|شطاف/i,lang+": bidet copy remains Arabic only");
+  assert.doesNotMatch(JSON.stringify(data),/bidet|биде|شطاف|بیده|شلنگ/i,lang+": bidet copy remains Arabic only");
   const reviews=fs.readFileSync(path.join(root,lang,"reviews/index.html"),"utf8");
   assert.equal((reviews.match(/<blockquote\b/g)||[]).length,10,lang+": both platforms' archived selections");
   assert.ok(reviews.includes(data.labels.translated),lang+": translations disclosed");
@@ -81,7 +82,7 @@ for(const lang of ["ru","az"]) {
 }
 // Verify new languages are attributed correctly, including the URL fallback.
 const tracking=fs.readFileSync(path.join(root,"assets/js/booking-events.js"),"utf8");
-for(const lang of ["ru","az"]){
+for(const lang of ["ru","az","fa"]){
   for(const declared of [lang,""]){
     let click;
     const sent=[];
@@ -97,5 +98,5 @@ for(const lang of ["ru","az"]){
     assert.equal(sent[0][2].booking_confirmed,false);
   }
 }
-console.log("Validated 14 Russian/Azerbaijani pages, six-language reciprocity, shared footers, reviews, room amenities, assets and booking attribution.");
+console.log("Validated 21 Russian/Azerbaijani/Persian pages, seven-language reciprocity, shared footers, reviews, room amenities, assets and booking attribution.");
 

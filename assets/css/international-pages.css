@@ -34,3 +34,18 @@ body.international-page { font-family: "Poppins", Arial, sans-serif; }
   .international-page .georgian-hero__content .section__header { font-size: clamp(1.85rem, 6.5vw, 3rem); overflow-wrap: break-word; }
   .international-page .header__container h1 { font-size: clamp(2.2rem, 9vw, 4rem); }
 }
+
+/* Persian uses its own text direction without changing the other editions. */
+body.international-page:lang(fa) { font-family: Tahoma, Arial, sans-serif; text-align: right; }
+.international-page:lang(fa) .section__subheader { letter-spacing: 0; }
+.international-page:lang(fa) .section__header,
+.international-page:lang(fa) .room__card__details h3 { line-height: 1.6; }
+.international-page:lang(fa) .section__description,
+.international-page:lang(fa) .goal__card p,
+.international-page:lang(fa) .room__card p,
+.international-page:lang(fa) .review__quote { line-height: 2; }
+.international-page:lang(fa) .header__container,
+.international-page:lang(fa) .georgian-hero__content,
+.international-page:lang(fa) .georgian-final-cta { text-align: center; }
+.international-page:lang(fa) .header__container h1 { line-height: 1.45; }
+.international-page:lang(fa) .footer__col { align-items: flex-start; text-align: right; }
