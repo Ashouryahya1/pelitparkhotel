@@ -3,6 +3,9 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const ROOT = path.resolve(__dirname, "..");
+const REVIEW_STYLES_VERSION = require("node:crypto").createHash("sha256")
+  .update(fs.readFileSync(path.join(ROOT, "assets/css/reviews.css")))
+  .digest("hex").slice(0, 12);
 const BASE = "https://pelitparkhotel.com";
 const BOOKING_ENGINE = "https://pelit-park.rezervasyonal.com/";
 const WHATSAPP = "https://wa.me/905521510012";
@@ -86,7 +89,7 @@ function html(lang, page) {
   <link rel="alternate" hreflang="x-default" href="${BASE}/reviews/" />
   <meta property="og:title" content="${e(page.title)}" /><meta property="og:description" content="${e(page.desc)}" /><meta property="og:url" content="${canonical}" /><meta property="og:type" content="website" /><meta property="og:site_name" content="Pelit Park Hotel" /><meta property="og:image" content="${BASE}/assets/about.webp" /><meta property="og:locale" content="${page.locale}" />
   <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="${e(page.title)}" /><meta name="twitter:description" content="${e(page.desc)}" /><meta name="twitter:image" content="${BASE}/assets/about.webp" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" /><link rel="stylesheet" href="/styles.css" /><link rel="stylesheet" href="/assets/css/georgian-landing.css" /><link rel="stylesheet" href="/assets/css/reviews.css" />${rtl}<title>${e(page.title)}</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" /><link rel="stylesheet" href="/styles.css" /><link rel="stylesheet" href="/assets/css/georgian-landing.css" /><link rel="stylesheet" href="/assets/css/reviews.css?v=${REVIEW_STYLES_VERSION}" />${rtl}<title>${e(page.title)}</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" /><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" /><link rel="manifest" href="/assets/site.webmanifest" />
   <script type="application/ld+json">${JSON.stringify(schema)}</script>
 </head><body class="georgian-page georgian-content-page guest-reviews-page">
