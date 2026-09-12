@@ -1,8 +1,8 @@
 {
   "labels": {
-    "indexTitle": "Trabzon hotel and travel guides",
-    "indexDescription": "Practical guides to choosing a hotel in Trabzon, comparing rooms and prices, and planning your arrival, shopping and sightseeing.",
-    "intro": "Make your next stay easier to plan. These guides answer the questions that matter before you book a hotel in Trabzon.",
+    "indexTitle": "Trabzon from Pelit Park: rooms, neighbourhood and local tips",
+    "indexDescription": "Advice from Pelit Park Hotel's team: reaching Meydan and the airport, family rooms, breakfast, parking, nearby food and a three-day Trabzon stay.",
+    "intro": "Real answers from the people who welcome you: how to get around, what our rooms include, where we eat and how to make your first days in Trabzon easier.",
     "guides": "Travel guides",
     "home": "Home",
     "rooms": "Rooms",
@@ -10,7 +10,7 @@
     "contact": "Contact",
     "read": "Read guide",
     "contents": "In this guide",
-    "checklist": "Before you book",
+    "checklist": "Useful facts at a glance",
     "faq": "Common questions",
     "related": "More planning guides",
     "sources": "Official information",
@@ -21,398 +21,398 @@
     "updated": "Updated",
     "all": "All guides",
     "homeTitle": "Plan your Trabzon stay",
-    "homeIntro": "Room choices, travel plans and practical answers for your next visit.",
+    "homeIntro": "Local routes, honest room details and recommendations from our hotel team.",
     "imageAlt": "A guest room at Pelit Park Hotel in Trabzon",
     "rights": "All rights reserved"
   },
   "articles": {
     "where-to-stay": {
-      "title": "Where to stay in Trabzon: choose a hotel around your plans",
-      "description": "Compare a city-focused stay with airport, Forum Trabzon and Ortahisar plans. A practical guide to choosing the right hotel location for your trip.",
-      "intro": "The best place to stay in Trabzon depends on what you will do after leaving the hotel. A central address, easy parking and an airport route solve different problems. Start with your itinerary, then compare hotels using the same dates and guest count.",
+      "title": "Where to stay in Trabzon: a quiet base between the airport and Meydan",
+      "description": "Stay near Forum Trabzon with dolmuş outside the hotel, free parking and practical access to Meydan, the airport, KTÜ and Farabi from Pelit Park.",
+      "intro": "A stay in Trabzon does not have to mean sleeping beside the busiest streets of Meydan. Pelit Park Hotel offers a quieter, family-run base in the Forum and university area, with public transport outside and convenient access to the centre. Here is how that location works in everyday use.",
       "sections": [
         [
-          "Put your main destination on the map",
-          "Mark your hotel, arrival point and the places you expect to visit most often. A hotel described as being in Ortahisar is not automatically beside Meydan: the district name alone is too broad to judge a walking route. Check the actual entrance and route, not just a straight line between map pins."
+          "Meydan for the evening, a quieter neighbourhood for the night",
+          "Meydan suits visitors who want to step straight into the central streets. It also brings traffic, evening noise and the challenge of finding somewhere to park. Our guests often prefer to visit the centre and return to a calmer neighbourhood. Cleanliness, comfortable new beds and a welcoming family atmosphere are the qualities they most often mention to our team.\n\nOur published Google guest rating is 4.9/5. Alongside the score, the qualities guests most often discuss with our team are cleanliness, rest and the family atmosphere."
         ],
         [
-          "Choose between walking and driving",
-          "If your evenings revolve around the city centre, compare the walk back as carefully as the outward trip. If you will drive to several places, convenient parking may matter more than a central label. Travellers with luggage or children should include the return journey in their decision."
+          "Four useful driving times",
+          "From Pelit Park, management's usual driving estimates are about 10 minutes to Meydan, 5 minutes to Trabzon Airport, 2 minutes to Forum Trabzon and 3 minutes to the bus terminal. These are approximate journey times and increase with traffic. The location is especially practical when your stay combines arrival or departure, shopping and time in the city rather than a single destination."
         ],
         [
-          "Plan around Forum, the airport or Farabi",
-          "Shopping, an early flight and a hospital visit each create a different daily route. Open the relevant location guide and check the journeys you will repeat. Avoid treating a quoted travel time as a promise: route conditions and the exact destination entrance affect the trip."
+          "Getting into town without a car",
+          "Dolmuş minibuses pass directly in front of the hotel. For the centre, take one displaying Meydan; from Meydan, the return service to look for is TRT Bostancı. For the Ganita waterfront, take the Moloz direction. These names are useful to keep on your phone in Turkish. Reception can also call a taxi when you have luggage or prefer a direct ride."
         ],
         [
-          "How Pelit Park fits into the choice",
-          "Pelit Park Hotel is in Ortahisar and offers free on-site parking, a 24-hour reception and three room categories. Use its airport, Forum and Farabi pages to compare your routes. Choose it when the location and room arrangement fit your plans, rather than relying on a broad city-centre label."
+          "What is within walking distance",
+          "Forum Trabzon is approximately 15 minutes away on foot. The outward walk is comfortable, while the uphill return takes more effort, particularly with shopping bags or a pushchair. A ŞOK market is around a two-minute walk away. For visitors to KTÜ or relatives at Farabi, the neighbourhood also provides an ordinary hotel base close to the university and hospital area."
         ]
       ],
       "checklist": [
-        "Save the hotel's full address and map pin.",
-        "Compare the outward and return routes.",
-        "Match parking and luggage needs to your transport.",
-        "Check the exact room category before paying."
+        "Meydan: about 10 minutes by car, depending on traffic.",
+        "Dolmuş destination signs: Meydan, TRT Bostancı and Moloz.",
+        "Forum: about 15 minutes on foot; uphill on the way back.",
+        "Free hotel parking and 24-hour reception."
       ],
       "faq": [
         [
-          "Should I choose a hotel near the airport or city centre?",
-          "Use the place you will visit most often as your starting point, then compare the other journeys."
+          "Is Pelit Park actually on Meydan?",
+          "No. It is in a quieter part of Trabzon around the Forum and university area, approximately 10 minutes from Meydan by car in usual conditions."
         ],
         [
-          "Does an Ortahisar address mean I can walk to Meydan?",
-          "No. Check the actual hotel location and walking route before making that assumption."
+          "Can I stay here without hiring a car?",
+          "Yes. Dolmuş passes the hotel for trips toward Meydan and Moloz, Forum is walkable, and reception can call a taxi."
         ]
       ]
     },
     "hotel-prices": {
-      "title": "Trabzon hotel prices: compare the full cost of your stay",
-      "description": "Compare Trabzon hotel rates fairly by checking dates, room types, breakfast, parking and cancellation conditions before choosing your accommodation.",
-      "intro": "A cheap hotel in Trabzon is only good value when the final booking covers what you need. The headline nightly rate may describe a different room, guest count or cancellation condition from the offer beside it. Build a like-for-like comparison before deciding.",
+      "title": "Trabzon hotel costs: rooms, breakfast and the extras families pay",
+      "description": "Understand Pelit Park's room-only and breakfast rates, free parking, €10 daily extra beds and €5 baby cots, with a worked three-night family example.",
+      "intro": "A useful hotel budget starts with real inclusions and known extras. At Pelit Park, parking is free, breakfast can be included or excluded from the room rate, and the charges for an additional bed or baby cot are clear. This makes it easier to budget beyond the first price in a search result.",
       "sections": [
         [
-          "Start with identical search details",
-          "Search using the same check-in and check-out dates, number of adults and children's ages. A different occupancy can change the available rooms and total. Compare the same category too: a Standard room and a sea-view Deluxe room are different products even when the hotel name is identical."
+          "What the room price buys",
+          "Standard Double has a double bed; Twin has two separate single beds; Deluxe Double is the sea-view double category. The family suite is a separate two-bedroom option. All rooms have new comfortable beds, a 50-inch Smart TV and a private bathroom. An economy room and a sea-view room represent different stays, so a low headline price does not describe every room in the hotel."
         ],
         [
-          "Separate included items from extras",
-          "Write down the room total and check whether breakfast is included. Then consider parking, local transport and any requested extra sleeping arrangement. Do not assume an item is free because it appears in a photograph or a guest review; the selected offer should explain what is included."
+          "Known extras, with a three-night example",
+          "An extra bed suitable for an adult costs €10 per day. A baby cot costs €5 per day. Over three charged days, one extra bed adds €30 to the room total, while one cot adds €15. These are separate examples: they do not establish that both fit into the same room. Regular rooms accommodate two guests, or three with the appropriate additional sleeping arrangement."
         ],
         [
-          "Compare flexibility alongside the price",
-          "A lower non-refundable price and a flexible rate are not equivalent. Read the payment timing, cancellation deadline and conditions for changing dates. If your plans are uncertain, work out what you could lose after a change instead of judging the booking only by its initial price."
+          "Breakfast and parking in your budget",
+          "The Turkish open buffet runs from 08:00 to 11:00 in the breakfast room reached using the R lift button. It includes cold dishes, hot selections, tea and coffee, with views of the sea and Boztepe. Some rates include breakfast and some are room-only; use the inclusion shown on your selected offer. Hotel parking has no extra charge, which is useful for a driving holiday."
         ],
         [
-          "Check a current Pelit Park quotation",
-          "Pelit Park has free on-site parking; breakfast inclusion depends on the selected rate. Deluxe, Twin and Standard rooms all have a 50-inch Smart TV. Enter your dates in the booking system for current prices, then contact the hotel if a room or payment condition is unclear."
+          "Choosing value instead of the smallest room price",
+          "Direct contact helps our team match the room to your group: separate beds, a Deluxe sea view or the family suite can matter more than the cheapest category. Direct reservations also allow a conversation about flexibility, with the agreed terms recorded in the booking. Nightly room prices vary by date and availability; the booking system gives the current room total rather than a permanent price in this guide."
         ]
       ],
       "checklist": [
-        "Compare the same dates and occupancy.",
-        "Record the full stay total and currency.",
-        "Confirm breakfast and requested extras.",
-        "Read payment, change and cancellation terms."
+        "Adult extra bed: €10 per day.",
+        "Baby cot: €5 per day.",
+        "Hotel parking: complimentary.",
+        "Breakfast: included only in the selected breakfast-inclusive rate."
       ],
       "faq": [
         [
-          "Where can I see current Trabzon hotel prices?",
-          "Use a live booking search for your exact dates; a fixed price in an old article may not apply."
+          "What does an extra bed cost for three days?",
+          "€30 for one extra bed at €10 per day, in addition to the booked room price."
         ],
         [
-          "Is the cheapest nightly rate always the best choice?",
-          "Compare the total cost and conditions, including items you would otherwise purchase separately."
+          "Does direct booking automatically mean a lower price?",
+          "Not always. Its practical benefit is personal help choosing a suitable room and discussing the arrangements available for your stay."
         ]
       ]
     },
     "family-stays": {
-      "title": "Choosing a family hotel in Trabzon: beds, rooms and daily routines",
-      "description": "Plan a family stay in Trabzon by checking bed layouts, children's occupancy, breakfast and transport instead of relying on room names or photographs.",
-      "intro": "For a family trip, a suitable hotel room starts with a clear sleeping arrangement. Two adults, a child and several suitcases need a different plan from two friends sharing a Twin room. Explain your group before booking so the hotel can confirm an appropriate option.",
+      "title": "Family rooms in Trabzon: a two-bedroom suite or a room for three",
+      "description": "Pelit Park's family suite has a double room, twin room, two bathrooms and one sea-view bedroom. Read the capacity, extra-bed fees and fifth-floor access.",
+      "intro": "Families choose Pelit Park for its quiet atmosphere, cleanliness and personal welcome. The right sleeping arrangement is just as important. A couple with one child has different needs from a family of five, so here are the actual room layouts and the access details that matter.",
       "sections": [
         [
-          "Describe everyone who will stay",
-          "Enter every adult and child, including each child's age. Ask for a confirmed room arrangement rather than assuming a child can use an existing bed. If your group needs more than one room, request nearby rooms in advance and understand that a preference is not a confirmed allocation."
+          "A regular room for two or three guests",
+          "Our regular rooms are arranged for two guests. An extra bed can accommodate a third person and is suitable for an adult; it costs €10 per day. A baby cot costs €5 per day. Standard and Deluxe Double rooms have a double bed, while Twin rooms have two separate beds. All have new comfortable beds and a 50-inch Smart TV for time spent resting between outings."
         ],
         [
-          "Understand Double, Twin and Deluxe",
-          "A Double normally describes a double bed; Twin describes separate beds. At Pelit Park, Deluxe and Standard have one double bed, while Twin has two separate single beds. A sea-view category does not itself mean the room accommodates more guests. Confirm capacity for your actual group."
+          "Inside the two-bedroom family suite",
+          "The family suite consists of two bedrooms connected by their own private corridor. One bedroom has a double bed and the other has two separate single beds. Each bedroom has its own bathroom, making two bathrooms in total. The suite accommodates four guests, or five with an additional bed. A panoramic sea view is available from one bedroom, not both."
         ],
         [
-          "Build a manageable daily routine",
-          "Consider breakfast arrangements, the day's transport and how you will return for a rest. A shorter sightseeing list can make a family trip easier than trying to combine every attraction. If stairs, lift access or step-free movement matter, ask about the exact route to the proposed room."
+          "The fifth floor, stairs and the attic ceiling",
+          "The suite is on the fifth floor. The lift reaches the fourth floor, and the final floor is reached by stairs. It also has a sloping attic ceiling, known in Turkish as a çatı ceiling. These are part of the room's layout, alongside its impressive view. Guests who need a step-free route should choose a different arrangement with the hotel; the suite is not accessible solely by lift."
         ],
         [
-          "Match amenities to your family's needs",
-          "Pelit Park rooms include a 50-inch Smart TV, Wi-Fi and a private bathroom, and the hotel offers free parking. Breakfast depends on your rate. Ask about any cot, extra bed or specific accessibility need before payment; these should not be inferred from general room photographs."
+          "An easier family morning",
+          "Breakfast is a Turkish open buffet from 08:00 to 11:00, with cheeses, olives, honey, pastries and changing hot dishes. Breakfast-inclusive and room-only rates are both available. If a room is ready, arrival from 09:00 can be accommodated free of charge; otherwise reception can keep your bags. Forum is about 15 minutes away on foot, with a more demanding uphill walk back."
         ]
       ],
       "checklist": [
-        "Provide children's ages and the full guest count.",
-        "Confirm beds and maximum occupancy in writing.",
-        "Ask about any required cot or extra bed.",
-        "Plan transport and a realistic return time."
+        "Suite: four guests, or five with one extra bed.",
+        "Two bedrooms, a private corridor and two bathrooms.",
+        "Panoramic sea view from one bedroom.",
+        "Fifth floor: lift to floor four, then stairs; sloping ceiling."
       ],
       "faq": [
         [
-          "Can three guests automatically use a Double room?",
-          "No. Ask the hotel to confirm occupancy and the sleeping arrangement for the exact booking."
+          "Can five adults use the family suite?",
+          "The suite can accommodate five guests with one additional adult-suitable bed, charged at €10 per day."
         ],
         [
-          "Does Twin mean a family room?",
-          "Twin refers to two separate beds; it does not by itself establish family capacity."
+          "Does the lift reach the family suite?",
+          "No. It reaches floor four; the suite is on floor five and requires the final stairs."
         ]
       ]
     },
     "parking": {
-      "title": "A Trabzon hotel with free parking: a practical arrival checklist",
-      "description": "Choose a hotel in Trabzon for a driving trip by checking parking access, luggage unloading, car-rental return and the routes you will actually use.",
-      "intro": "When driving in Trabzon, parking affects more than the nightly budget. Finding the entrance, unloading bags and setting off again can shape the whole stay. Ask a few specific questions before arrival instead of relying only on a parking symbol in a listing.",
+      "title": "A Trabzon hotel with free parking: driving from Pelit Park",
+      "description": "Free parking at Pelit Park, reception-assisted overflow, short drives to the airport and Forum, and a dolmuş alternative for busy Meydan visits.",
+      "intro": "Having a car in Trabzon is convenient, but parking in the busiest central streets can become the least relaxing part of the day. Pelit Park provides complimentary parking and a quieter base, so you can choose when to drive and when to leave the car behind.",
       "sections": [
         [
-          "Confirm how to reach the hotel entrance",
-          "Save the exact address and check the final approach on a live map. Your navigation app's destination pin may not identify the easiest place to stop with luggage. If you arrive after dark or in an unfamiliar vehicle, contact reception for current arrival directions before you set off."
+          "How our parking works",
+          "Hotel guests use the parking area free of charge. When it fills up, reception can coordinate an arrangement in the access lane, with the vehicle key left at reception so cars can be moved when needed. Speak to the team on arrival for this arrangement. It is a practical overflow solution, rather than an individually reserved space or an unlimited parking promise."
         ],
         [
-          "Ask about the space you need",
-          "Free parking describes a charge policy, not a guarantee about reserved spaces, covered bays or vehicle dimensions. Explain if you have a large vehicle or unusual luggage. Ask how access works at your arrival time and whether you should speak to reception before leaving the vehicle."
+          "Short drives for arrival, shopping and departure",
+          "Our usual estimates are approximately 5 minutes by car to Trabzon Airport, 3 minutes to the bus terminal and 2 minutes to Forum Trabzon. Meydan is approximately 10 minutes away. Traffic changes these times, so they describe the location rather than a guaranteed journey. The combination is useful when a rental car is part of your holiday."
         ],
         [
-          "Coordinate parking with your day trips",
-          "Plan where you will park at each destination as well as at the hotel. A shopping stop and a full-day outing create different luggage and return-time needs. If you rent a car, check the rental company's return location and arrangements separately from your hotel checkout."
+          "Leave the car for a Meydan evening",
+          "A central outing does not require taking the car into Meydan's traffic and finding another parking space. Dolmuş passes the hotel: take the Meydan direction into town and TRT Bostancı for the return. The Moloz direction is useful for the Ganita waterfront. Reception can call a taxi if you prefer to return directly after dinner."
         ],
         [
-          "Parking at Pelit Park Hotel",
-          "Guests can use free on-site parking at Pelit Park Hotel. Contact reception if you need specific arrival guidance or have a question about the available space. The hotel has 24-hour reception; room availability and arrival arrangements should still be tied to your confirmed reservation."
+          "Arriving before the room is ready",
+          "Standard check-in begins at 14:00, but free early check-in is possible from 09:00 when a room is available. If it is not ready, leave your bags with reception and start the day without carrying them. Reception operates around the clock, so a late arrival has someone to welcome you. Midnight arrival still needs the appropriate night's room reservation."
         ]
       ],
       "checklist": [
-        "Save the full hotel address before driving.",
-        "Ask about any unusual vehicle requirements.",
-        "Confirm unloading and parking access with reception.",
-        "Check your rental-car return arrangement separately."
+        "Parking carries no additional hotel charge.",
+        "Reception coordinates overflow and keeps the vehicle key.",
+        "Meydan-bound dolmuş passes directly outside.",
+        "Check-in 14:00; free early access from 09:00 when available."
       ],
       "faq": [
         [
-          "Does free parking mean a reserved space?",
-          "Not necessarily. Ask the hotel if you need a specific space or arrangement."
+          "What happens when the main parking area is full?",
+          "Reception can arrange parking in the access lane and will need the vehicle key to coordinate moving cars."
         ],
         [
-          "Should I arrange airport car return through the hotel?",
-          "Confirm return conditions directly with the rental company; a hotel booking does not replace that agreement."
+          "Can we visit the centre while leaving the car at the hotel?",
+          "Yes. Use the Meydan dolmuş from outside the hotel; for the return, look for TRT Bostancı."
         ]
       ]
     },
     "sea-view-rooms": {
-      "title": "Sea-view hotel rooms in Trabzon: what to check before booking",
-      "description": "Understand sea-view room categories, double and twin beds, and balcony requests when comparing Trabzon hotels and Pelit Park room options.",
-      "intro": "A sea view can be a memorable part of a Trabzon stay, but the hotel's best photograph may belong to only one room category. Compare the name and description of the room you are reserving, not just the hotel's overall gallery.",
+      "title": "Sea-view rooms in Trabzon: Deluxe Double and the family suite",
+      "description": "Choose between Pelit Park's Deluxe Double and family suite: one panoramic suite bedroom, two bathrooms, attic stairs and a breakfast room with sea views.",
+      "intro": "A sea view is worth describing precisely. At Pelit Park, couples can choose the Deluxe Double category, while a larger family can stay in the two-bedroom suite. These options have different layouts and access, and the suite's view belongs to one of its two bedrooms.",
       "sections": [
         [
-          "Look for the view in the room description",
-          "Check whether the selected room explicitly includes a sea view. A hotel being near the coast does not establish what you will see from every window. If the view is the reason for the booking, keep a copy of the category and conditions shown in your confirmation."
+          "Deluxe Double for a couple",
+          "The Deluxe Double category combines a double bed with a sea view. It suits two guests who want the view without choosing a two-bedroom family arrangement. New comfortable beds and a 50-inch Smart TV are part of the room amenities. Standard Double and Twin describe other room choices; neither category carries a general sea-view promise."
         ],
         [
-          "Treat a balcony as a separate feature",
-          "A sea view and a balcony are different features. Ask about the exact available room if outdoor space is important. Photographs can illustrate a category without showing every layout, so request clarification before paying rather than expecting every room to match one image."
+          "A panoramic bedroom in the family suite",
+          "The suite has one double bedroom and one bedroom with two single beds, connected by a private corridor. Each has its own bathroom. One bedroom offers the panoramic sea view; the other does not have that same outlook. Four people can stay in the suite, or five with an extra bed charged at €10 per day."
         ],
         [
-          "Choose the bed arrangement first",
-          "Couples may prefer a double bed, while friends or colleagues may need separate beds. Do not sacrifice the required sleeping arrangement simply to select a scenic photograph. Compare occupancy, bed type and view together, and ask the hotel which available category fits all your essential needs."
+          "The view comes with an attic layout",
+          "The family suite is on floor five under a sloping attic ceiling. The lift stops at floor four, so the final floor requires stairs. That access detail belongs in the room choice as much as the photograph of the sea. A guest unable to use stairs needs another arrangement; this suite does not offer a completely step-free route."
         ],
         [
-          "Understand Pelit Park's categories",
-          "Pelit Park's Deluxe Double category offers a sea view. Twin has two separate single beds, and Standard has one double bed; a sea view is not promised for these categories. All three have a 50-inch Smart TV. Ask separately about any balcony preference and the exact room available."
+          "Sea and Boztepe views over breakfast",
+          "The view is not limited to sleeping rooms. The breakfast room, reached with the lift's R button, looks toward the sea and Boztepe. The Turkish buffet is served from 08:00 to 11:00, with cheeses, olives, jams, honey, hot selections, tea and coffee. Breakfast is available through breakfast-inclusive rates; room-only bookings are also offered."
         ]
       ],
       "checklist": [
-        "Check the view in the selected category.",
-        "Confirm Double or Twin beds and occupancy.",
-        "Ask separately about balcony availability.",
-        "Keep the room description with your booking."
+        "Deluxe Double is a sea-view double category.",
+        "Only one of the suite's two bedrooms has the panoramic view.",
+        "Suite access includes stairs and a sloping attic ceiling.",
+        "The breakfast room overlooks the sea and Boztepe."
       ],
       "faq": [
         [
-          "Do all Pelit Park rooms have a sea view?",
-          "No. The published sea-view category is Deluxe Double; Twin and Standard do not carry that promise."
+          "Do both family-suite bedrooms face the sea?",
+          "No. The panoramic sea view is in one bedroom only."
         ],
         [
-          "Does sea view automatically include a balcony?",
-          "No. Confirm the balcony feature for the specific available room."
+          "Does a sea-view room necessarily have a balcony?",
+          "A balcony is a separate feature and is not promised for every room in these categories."
         ]
       ]
     },
     "airport-arrival": {
-      "title": "Arriving at Trabzon Airport: organise your hotel check-in",
-      "description": "Plan your Trabzon Airport arrival, transport and late hotel check-in with a checklist covering dates, luggage, reception and the return flight.",
-      "intro": "A smooth arrival starts before the plane lands. Keep your hotel's address, reservation dates and contact details together, especially when your flight arrives late. Choosing a hotel near Trabzon Airport helps only when the booking and the journey match your actual schedule.",
+      "title": "Trabzon Airport arrival: a nearby hotel with free early check-in",
+      "description": "Pelit Park is about five minutes from Trabzon Airport by car in usual conditions, with 24-hour reception, luggage storage and free early access from 09:00 if ready.",
+      "intro": "After a flight, the useful questions are simple: how far is the hotel, will someone welcome you, and what happens if you arrive early? Pelit Park is approximately five minutes from Trabzon Airport by car in usual conditions, and reception is staffed 24 hours.",
       "sections": [
         [
-          "Check the date when you arrive after midnight",
-          "The calendar date changes at midnight, but a room reservation follows its booked nights and check-in conditions. If you expect to arrive in the early hours, send the flight arrival time and date to the hotel. Ask which night to reserve before completing payment."
+          "The short airport-to-hotel journey",
+          "The airport is one of the reasons guests choose this part of Trabzon. Management's approximate driving estimate is five minutes, depending on traffic. Reception can call a taxi for your departure and help you communicate your destination. This is taxi assistance; a private airport transfer is not included automatically with the room. The airport's official transport page is linked below."
         ],
         [
-          "Choose transport using current information",
-          "DHMİ lists taxis, public transport, shuttles and rental cars among airport access options. Check the current service and route for your arrival time. Consider luggage and your group size, and use the hotel's full address so that the driver or navigation app identifies the correct destination."
+          "Free early check-in from 09:00 when available",
+          "Normal check-in is 14:00. If a room is available and ready, we offer early check-in from 09:00 without an extra fee. When a room is not yet ready, reception can keep your luggage while you go out. This gives you an option for the morning without treating early room access as guaranteed."
         ],
         [
-          "Keep late arrival separate from early check-in",
-          "A 24-hour reception means staff can be contacted around the clock; it does not make every room available at any hour. Confirm arrival against your reservation and tell the hotel about a substantial delay. Early access to a room needs separate agreement."
+          "Late flights and the first night's reservation",
+          "Reception works around the clock, with Turkish, English and Arabic communication available within the team. Translation tools help with other languages. A very late flight does not mean the hotel closes, but the room must be booked for the night you intend to use. Arrival shortly after midnight is different from the normal afternoon check-in for that calendar date."
         ],
         [
-          "Prepare the return journey too",
-          "On departure day, allow time for packing, transport and airport procedures. Confirm taxi or rental-return arrangements with the relevant provider. Pelit Park has 24-hour reception and free on-site parking; use its airport location page and WhatsApp contact to coordinate your stay."
+          "A gentle first morning and the return flight",
+          "The Turkish breakfast buffet runs from 08:00 to 11:00 in the room marked R in the lift, with sea and Boztepe views. Breakfast inclusion follows the booked rate. If you arrive before your room is ready, nearby markets or a Forum visit can fill the time. Checkout is at 12:00; allow airport preparation time in addition to the short road journey."
         ]
       ],
       "checklist": [
-        "Send both the arrival date and local time.",
-        "Confirm the correct room night before paying.",
-        "Save the hotel address and reservation number.",
-        "Check transport again before the return flight."
+        "Airport: approximately five minutes by car, traffic-dependent.",
+        "Reception is open 24 hours.",
+        "Free early check-in from 09:00, subject to a ready room.",
+        "Normal check-in 14:00; checkout 12:00."
       ],
       "faq": [
         [
-          "Does a 2 a.m. arrival count as a normal afternoon check-in?",
-          "Do not assume so. Confirm the booked night and arrival arrangement with the hotel."
+          "Do I pay extra for check-in at 09:00?",
+          "No, when a room is available and ready. Early access is offered free of charge from 09:00."
         ],
         [
-          "Does Pelit Park offer an airport transfer in the booking?",
-          "Do not assume transport is included; use current transport options and confirm any arrangement separately."
+          "What if my room is not ready when I arrive?",
+          "Reception can keep your bags so you can go out while the room is being prepared."
         ]
       ]
     },
     "forum-shopping": {
-      "title": "A Forum Trabzon shopping trip: plan your hotel stay",
-      "description": "Organise shopping at Forum Trabzon around your hotel, parking, luggage and return journey, with room-choice tips for couples, families and friends.",
-      "intro": "A shopping trip works better when the hotel is part of the plan. Think about how you will carry purchases, whether everyone wants the same schedule and when you will return. A hotel near Forum Trabzon should fit these practical details as well as the map.",
+      "title": "Near Forum Trabzon: walking, shopping and everyday essentials",
+      "description": "Forum is about 15 minutes on foot from Pelit Park, with an uphill return. Find nearby markets, a local döner option and the official duty-pharmacy list.",
+      "intro": "Forum Trabzon is an easy outing from Pelit Park, but a useful neighbourhood guide should also explain the walk back and where to find everyday essentials. Here are the details our reception team gives guests who want to shop, pick up groceries or eat nearby.",
       "sections": [
         [
-          "Make a short shopping plan",
-          "Use Forum Trabzon's official website for shops, dining, cinema and current information. Identify your priority stops before leaving the hotel. If people in your group have different interests, agree on a meeting point and a way to contact one another instead of planning an overpacked shared schedule."
+          "The Forum walk, including the return",
+          "The walk from the hotel to Forum Trabzon takes approximately 15 minutes. The outward journey is comfortable; coming back involves an uphill stretch and can feel harder with bags or children. You can walk down and use a taxi for the return if that suits your group. By car, management estimates around two minutes in usual traffic conditions."
         ],
         [
-          "Plan the journey with shopping bags in mind",
-          "The outward journey may be easy with empty hands, while the return trip looks different after shopping. Compare the live route and your transport options in both directions. If driving, check parking arrangements at the destination separately from the hotel's parking policy."
+          "Groceries close to the hotel",
+          "There are three markets in the surrounding area. ŞOK is about a two-minute walk from the hotel, with usual hours reported by our team as 09:00–21:00. Neşe is the local option we point guests toward later in the evening and usually remains open until midnight. Holiday or branch hours may differ, but these names give you a useful starting point without a trip to the centre."
         ],
         [
-          "Pick a room that suits the group",
-          "Friends may prefer a Twin with separate beds; a couple may prefer a double bed. Ask about occupancy when travelling with children. Leave time to organise luggage before departure, especially if shopping happens on your final day and your flight is later than hotel checkout."
+          "A nearby meal or dinner on the seafront",
+          "For a convenient nearby döner, our team recommends Maydonoz Döner. If you combine shopping with an evening in the centre, our Katık recommendation refers specifically to its Meydan branch. For seafood beside the water, we recommend Ganita. These are the reception team's local suggestions, not meal services included in your hotel reservation."
         ],
         [
-          "Use Pelit Park as a comfortable base",
-          "Pelit Park offers Deluxe Double, Twin and Standard rooms, all with a 50-inch Smart TV, and free on-site parking. Its Forum Trabzon page provides a route link. Ask reception about your arrival or checkout needs in advance rather than assuming luggage or late-checkout arrangements."
+          "Nearby pharmacies and out-of-hours help",
+          "İlknur Eczanesi, Alper Eczanesi and Yağız Eczanesi are nearby pharmacies identified by our team. For a pharmacy outside normal opening hours, use the Trabzon Chamber of Pharmacists' current Ortahisar duty list linked below. It shows the pharmacies on duty for the relevant date, rather than relying on an old article to name a permanently open shop."
         ]
       ],
       "checklist": [
-        "Check current shops and activities with Forum.",
-        "Plan how you will bring purchases back.",
-        "Confirm the group's bed and occupancy needs.",
-        "Coordinate your final shopping day with departure."
+        "Forum: about 15 minutes walking, with an uphill return.",
+        "ŞOK: approximately two minutes on foot.",
+        "Neşe is the team's usual late-evening market suggestion.",
+        "An official Ortahisar duty-pharmacy link appears below."
       ],
       "faq": [
         [
-          "Can I assume Forum's opening hours stay the same?",
-          "Check the shopping centre's current official information before your visit."
+          "Is walking back from Forum as easy as walking there?",
+          "The return is uphill and more demanding, especially with shopping or a pushchair; a taxi is another option."
         ],
         [
-          "Which room suits two friends on a shopping trip?",
-          "Pelit Park's Twin has two separate single beds; check availability for your dates."
+          "Where can I find a pharmacy at night?",
+          "Use the official Ortahisar duty-pharmacy list linked in this guide for that day's pharmacy and contact details."
         ]
       ]
     },
     "first-visit": {
-      "title": "Your first Trabzon trip: a flexible three-day hotel-based plan",
-      "description": "Build a realistic first visit to Trabzon with separate city and day-trip plans, room-choice advice and time for arrival, rest and departure.",
-      "intro": "Three days in Trabzon can be enjoyable without becoming a race between landmarks. This sample plan keeps arrival, a main outing and a flexible final day separate. Adapt it to flight times, weather and your interests rather than treating it as a fixed tour timetable.",
+      "title": "Three days in Trabzon: Meydan, Ganita and a relaxed local stay",
+      "description": "A practical three-day city plan from Pelit Park: Turkish breakfast, Meydan and Ganita by dolmuş, local food, Forum shopping and a gentle departure day.",
+      "intro": "For a first short stay, three manageable days can be more enjoyable than a long list of distant attractions. This plan uses Pelit Park as a base for the city, waterfront and Forum area, leaving time for meals and rest. It can be rearranged around your flight.",
       "sections": [
         [
-          "Day one: settle in and explore at your own pace",
-          "Check in according to your reservation, then choose a manageable city outing such as Meydan and nearby streets. Keep the first evening flexible if you have travelled overnight. Save longer plans for a day when the whole group is rested and can agree on the pace."
+          "Day one: settle in and explore the neighbourhood",
+          "Leave luggage at reception if the room is not ready; free early room access starts at 09:00 when available. For essentials, ŞOK is approximately two minutes away on foot. Forum is about a 15-minute walk, with an uphill return. A nearby Maydonoz Döner meal gives you a simple first-day option without committing to another trip across the city."
         ],
         [
-          "Day two: choose one main excursion",
-          "GoTürkiye highlights Uzungöl's natural setting and Sümela Monastery among Trabzon's attractions. Pick the outing that interests you most and check current access and transport with official information or your chosen operator. Do not assume distant stops all fit comfortably into one day."
+          "Day two: breakfast, Meydan and the waterfront",
+          "Start with the 08:00–11:00 Turkish buffet if your rate includes breakfast. Then take a dolmuş marked Meydan from outside the hotel for time in the centre. Our team's döner recommendation there is Katık's Meydan branch. Ganita is the seafront option for a stroll and seafood; from the hotel, Moloz is the dolmuş direction used for that waterfront outing.\n\nUsual cold choices include several cheeses, olives, jams, honey and labneh. Hot selections include fries, börek, mini pizzas, pastries and omelette, alongside tea and coffee; some dishes change from day to day."
         ],
         [
-          "Day three: match the plan to departure",
-          "Use the final day for a shorter city visit, a shopping stop or an unhurried breakfast, depending on your departure. Confirm checkout and transport first. If you want more time in the region, extending your stay can be more practical than squeezing a full outing between checkout and a flight."
+          "Choose a comfortable return, not a rushed evening",
+          "For the return from Meydan, look for TRT Bostancı. Keep that name in Turkish on your phone, or ask reception to call a taxi when a direct trip suits you better. A quieter evening back at the hotel leaves time to rest on the new comfortable beds. Rooms also have a 50-inch Smart TV for a break between outings."
         ],
         [
-          "Choose a base for the whole itinerary",
-          "List the journeys you will repeat and compare hotel location, parking and room layout. Pelit Park offers free parking, 24-hour reception and Deluxe, Twin and Standard rooms. Check whether breakfast is included in your selected rate and discuss any late arrival before booking."
+          "Day three: views over breakfast and departure",
+          "The breakfast room has views of Boztepe and the sea and is reached with the R lift button. Keep the last morning light if you have a flight: checkout is 12:00, and the drive to Trabzon Airport is approximately five minutes in usual conditions. That road estimate does not include airport formalities. If you have more time, the official Trabzon tourism guide below offers ideas for extending the trip."
         ]
       ],
       "checklist": [
-        "Keep arrival day lighter than a full sightseeing day.",
-        "Choose one main outing for the middle day.",
-        "Check current access and transport before departure.",
-        "Leave time for checkout and the airport journey."
+        "Day one: neighbourhood essentials and Forum.",
+        "Day two: Meydan, local döner and Ganita.",
+        "Return from Meydan: TRT Bostancı dolmuş.",
+        "Day three: breakfast views and a manageable departure."
       ],
       "faq": [
         [
-          "Is this a bookable tour programme?",
-          "No. It is a flexible planning example; transport and visits need their own arrangements."
+          "Do I need a rental car for this city plan?",
+          "No. It uses walkable neighbourhood stops, dolmuş routes and optional taxis."
         ],
         [
-          "Can I combine every famous attraction in three days?",
-          "Prioritise the places you care about and check routes rather than promising yourself an overloaded schedule."
+          "Does this itinerary include distant day trips?",
+          "No. It is a relaxed introduction to the city and waterfront, leaving longer excursions for extra days."
         ]
       ]
     },
     "direct-booking": {
-      "title": "Booking a Trabzon hotel directly: what to confirm first",
-      "description": "Use a practical direct hotel booking checklist for Trabzon: room category, dates, breakfast, payment, cancellation and written confirmation.",
-      "intro": "Direct hotel booking gives you a chance to clarify details with the property before arrival. It does not automatically mean the lowest price or the most flexible conditions. Compare the actual offer and make sure the confirmation records the room and services you intend to buy.",
+      "title": "Booking Pelit Park directly: the right room and a more personal stay",
+      "description": "Direct booking at Pelit Park helps you choose beyond the economy room, discuss flexible arrangements and plan beds, breakfast and arrival with the team.",
+      "intro": "A direct reservation is useful because you can describe the stay you actually want. Many online searches start with the economy category, while a sea view, separate beds or two bedrooms may suit your trip better. Our team can explain those differences before you choose.",
       "sections": [
         [
-          "Compare the same room across channels",
-          "Use identical dates, guest numbers, bed layout and view category when comparing a hotel's own booking system with another platform. Check breakfast and cancellation terms too. A difference in price can reflect a different product, so compare the details before deciding where to reserve."
+          "Start with the room that fits your group",
+          "A couple seeking a sea view can consider Deluxe Double; two friends may prefer Twin; four or five relatives may need the family suite. The suite has two bedrooms and two bathrooms, with a panoramic view from one bedroom. Its fifth-floor position also means stairs after the lift's fourth-floor stop and a sloping ceiling. Direct conversation brings these useful details into the decision."
         ],
         [
-          "Check the payment and change conditions",
-          "Read the total, currency and payment timing before confirming. Ask how a date change, cancellation or shortened stay would be handled under that rate. Keep the written conditions and payment confirmation; a general conversation about availability is not a substitute for a confirmed reservation."
+          "More room for a personal conversation",
+          "Booking directly lets you discuss dates, arrival and the room choices available with the people who will welcome you. Our team aims to offer practical flexibility where it can. The benefit is an agreed arrangement for your booking, rather than an automatic room upgrade, unconditional date changes or a promise to beat every platform price."
         ],
         [
-          "Write essential requests clearly",
-          "Specify separate beds, a booked sea-view category or an important arrival time. Distinguish a confirmed room feature from a preference such as a particular floor or balcony. Ask the hotel to clarify any essential request that is not reflected in the room description or confirmation."
+          "Put the real extras into the plan",
+          "An adult-suitable extra bed costs €10 per day and a baby cot €5 per day. Breakfast-inclusive and room-only rates are both available, and parking is complimentary. Mention any particular meal request in advance: the team will assess whether it can prepare it. This personal approach reflects a family-run hotel, while keeping special requests realistic."
         ],
         [
-          "Book through Pelit Park's official links",
-          "Use the booking button on pelitparkhotel.com to reach the hotel's reservation system, or its published WhatsApp link for questions. Check the details before payment and retain the confirmation. Prices and availability depend on your dates; this guide does not promise a permanent discount or a lowest-price guarantee."
+          "Arrange an arrival that works for you",
+          "Reception operates 24 hours, with Turkish, English and Arabic spoken within the team and translation tools for other languages. Normal check-in is 14:00; from 09:00, a ready room can be provided early free of charge. Otherwise reception can hold your luggage. Use the official booking or WhatsApp buttons below to discuss the room and receive the agreed reservation details."
         ]
       ],
       "checklist": [
-        "Match dates, occupancy and room category.",
-        "Read the full price and rate conditions.",
-        "Get essential arrangements confirmed in writing.",
-        "Save the reservation number and contact details."
+        "Personal help choosing the actual room category.",
+        "Flexibility discussed for your own reservation.",
+        "Extra bed €10/day; baby cot €5/day.",
+        "Free early access from 09:00 when the room is ready."
       ],
       "faq": [
         [
-          "Does booking directly guarantee the cheapest rate?",
-          "No. Compare current offers with the same room and conditions."
+          "Will booking directly guarantee a free upgrade?",
+          "No. The team helps you choose from available room options and can discuss suitable arrangements; a better room is not automatically included."
         ],
         [
-          "Is a WhatsApp availability message a confirmed booking?",
-          "Confirm that the reservation has been completed and keep its written details and reference."
+          "Can I discuss a special meal before arrival?",
+          "Yes. Send the request to the hotel, and the team will let you know whether it can accommodate it."
         ]
       ]
     },
     "work-and-visits": {
-      "title": "Trabzon stays for work, KTÜ or Farabi visits: plan the practical details",
-      "description": "Plan a business or companion stay in Trabzon with advice on room layout, repeat journeys, uncertain dates and communication with your hotel.",
-      "intro": "A work visit, university appointment or hospital visit often follows a different rhythm from a holiday. Your priority may be a repeat journey, separate beds or changing dates. Choose the hotel around the practical needs of the stay and keep appointment arrangements separate from accommodation.",
+      "title": "Staying near KTÜ and Farabi: a quiet Trabzon base for your visit",
+      "description": "Pelit Park welcomes university applicants and Farabi visitors with a quiet atmosphere, Twin rooms, 24-hour reception, breakfast and nearby daily essentials.",
+      "intro": "A university application or a visit to a relative at Farabi can mean early starts, uncertain plans and time spent waiting. Our guests making these trips value a clean, quiet place to return to. Pelit Park provides ordinary hotel accommodation in the Forum, university and Farabi area, with practical help from reception.",
       "sections": [
         [
-          "Identify the exact building and entrance",
-          "Use the address in your meeting or appointment confirmation. A university or hospital name can cover more than one entrance or building. KTÜ Farabi publishes its location and contact information through its official website; confirm the correct destination there before planning the hotel journey."
+          "A room for the people making the trip",
+          "Twin rooms offer two separate single beds for companions, relatives or colleagues; Standard Double has a double bed. New comfortable beds, private bathrooms, Wi-Fi and 50-inch Smart TVs make the room a place to rest between appointments. The hotel hosts people visiting the university or hospital without presenting accommodation as a medical service or an institutional package."
         ],
         [
-          "Choose a room for the people staying",
-          "Two colleagues or companions may prefer a Twin, while a solo traveller may choose a Standard Double. Explain the full guest count and any specific movement or access needs before booking. Do not infer step-free access, medical facilities or special equipment from general hotel descriptions."
+          "A larger group and the suite's access",
+          "For four guests, the family suite provides a double bedroom, a twin bedroom and two bathrooms, connected by a private corridor. An extra bed brings capacity to five at €10 per day. One bedroom has a panoramic sea view. The suite is on floor five under a sloping ceiling; the lift stops at floor four, so this choice requires stairs for the final floor."
         ],
         [
-          "Make uncertain dates part of the booking decision",
-          "If your meeting schedule or visit length may change, compare the rate's amendment and cancellation conditions before payment. An extension depends on available rooms and the price at that time. Contact the hotel early when plans change, rather than assuming the same room remains free."
+          "Breakfast and the day's practical needs",
+          "The buffet runs from 08:00 to 11:00, with Turkish cold dishes, hot selections, tea and coffee. Its room is marked R in the lift. There are breakfast-inclusive and room-only rates. ŞOK and other nearby markets cover everyday shopping, and İlknur, Alper and Yağız pharmacies are close by. For evenings or closures, the official Ortahisar duty-pharmacy list below identifies that day's duty pharmacies."
         ],
         [
-          "Keep the stay easy to coordinate",
-          "Pelit Park offers Twin and Double options, Wi-Fi, free parking and 24-hour reception. Ask about the details you need for a work invoice or arrival arrangement before your visit. For appointments, visiting hours and medical matters, contact the institution directly; the hotel is an accommodation provider."
+          "Arrival, communication and changing plans",
+          "The 24-hour reception can call taxis and welcome late arrivals. Turkish, English and Arabic are spoken within the team; translation tools help with other languages. Free early access from 09:00 is possible when a room is ready, and bags can stay at reception otherwise. Direct contact also makes it easier to discuss an extension or a change, with availability and agreed booking terms determining the arrangement."
         ]
       ],
       "checklist": [
-        "Confirm the exact appointment destination.",
-        "Choose beds for the actual group.",
-        "Read change and extension conditions.",
-        "Share arrival needs without unnecessary private medical details."
+        "Twin rooms have two separate beds.",
+        "Breakfast 08:00–11:00; reception open 24 hours.",
+        "Suite access requires stairs above floor four.",
+        "Official Farabi contact and duty-pharmacy links below."
       ],
       "faq": [
         [
-          "Does a hotel stay include a hospital appointment?",
-          "No. Arrange appointments directly with the institution."
+          "Is there a special hospital or university package?",
+          "This guide describes ordinary hotel accommodation for visitors. Appointments and university applications remain with the relevant institution."
         ],
         [
-          "Can I extend the booking on the same terms?",
-          "Ask the hotel; an extension depends on current availability and the applicable rate."
+          "Which room suits two companions needing separate beds?",
+          "Twin offers two single beds. Larger groups can consider the family suite, taking its final stairs and sloping ceiling into account."
         ]
       ]
     }

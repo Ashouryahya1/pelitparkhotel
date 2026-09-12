@@ -104,7 +104,7 @@ function article(lang,topic){
   const {labels:l,articles}=packs[lang],a=articles[topic.id];
   const date=new Intl.DateTimeFormat(lang==="fa"?"fa-IR-u-ca-gregory":lang,{dateStyle:"long",timeZone:"UTC"}).format(new Date(catalog.updatedAt+"T00:00:00Z"));
   const toc=`<aside class="guide-toc"><h2>${e(l.contents)}</h2><ol>${a.sections.map(([heading],i)=>`<li><a href="#section-${i+1}">${e(heading)}</a></li>`).join("")}</ol></aside>`;
-  const sections=a.sections.map(([heading,p],i)=>`<section class="guide-section" id="section-${i+1}"><h2>${e(heading)}</h2><p>${e(p)}</p></section>`).join("\n");
+  const sections=a.sections.map(([heading,p],i)=>`<section class="guide-section" id="section-${i+1}"><h2>${e(heading)}</h2>${p.split(/\n\n+/).map(paragraph=>`<p>${e(paragraph)}</p>`).join("")}</section>`).join("\n");
   const content=`<article class="guide-article"><div class="guide-heading"><p class="guide-eyebrow">Pelit Park Hotel · Trabzon</p><h1>${e(a.title)}</h1><p class="guide-intro">${e(a.intro)}</p><p class="guide-meta">${e(l.author)} <a href="${groups.about[lang]||groups.home[lang]}">Pelit Park Hotel</a> · ${e(l.updated)} <time datetime="${catalog.updatedAt}">${e(date)}</time></p></div>
 <figure class="guide-photo"><img src="/assets/${topic.image}" alt="${e(l.imageAlt)}" width="1600" height="1160" decoding="async" /><figcaption>Pelit Park Hotel · Trabzon</figcaption></figure>
 <div class="guide-prose">${toc}${sections}

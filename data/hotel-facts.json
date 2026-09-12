@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-09-10",
+  "lastReviewed": "2026-09-12",
   "identity": {
     "name": "Pelit Park Hotel",
     "canonicalUrl": "https://pelitparkhotel.com/",
@@ -18,17 +18,29 @@
     "engineUrl": "https://pelit-park.rezervasyonal.com/",
     "whatsappUrl": "https://wa.me/905521510012",
     "ratePolicy": "Prices and availability are dynamic and must be checked for the selected dates and room.",
-    "breakfastPolicy": "Breakfast inclusion depends on the selected rate and must be confirmed before booking."
+    "breakfastPolicy": "Breakfast inclusion depends on the selected rate; room-only and breakfast-inclusive reservations are offered.",
+    "directBookingBenefits": "Direct contact helps guests choose a suitable room beyond the economy category and discuss more flexible arrangements. No guaranteed upgrade, lowest price or unconditional cancellation promise.",
+    "extraBed": {
+      "eurPerDay": 10,
+      "suitableForAdult": true
+    },
+    "babyCot": {
+      "eurPerDay": 5
+    }
   },
   "parking": {
     "publishedFact": "Complimentary on-site parking is available for hotel guests.",
-    "capacityPublished": false
+    "capacityPublished": false,
+    "overflow": "When the parking area is full, reception can coordinate parking in the access lane; guests leave their vehicle key with reception. Do not advertise unlimited or individually reserved spaces."
   },
   "roomAmenities": {
     "smartTvInches": 50,
     "bidetAvailable": true,
-    "bidetCopyLanguages": ["ar"],
-    "confirmedByHotelManagementOn": "2026-09-11"
+    "bidetCopyLanguages": [
+      "ar"
+    ],
+    "confirmedByHotelManagementOn": "2026-09-11",
+    "beds": "All beds are new and comfortable, as confirmed by management."
   },
   "rooms": {
     "deluxeDouble": {
@@ -45,19 +57,148 @@
       "beds": "one double bed",
       "viewPublished": false,
       "balconyPublishedForEveryRoom": false
+    },
+    "regularOccupancy": {
+      "baseGuests": 2,
+      "withExtraBedGuests": 3,
+      "babyCotOption": true
+    },
+    "familySuite": {
+      "bedrooms": 2,
+      "connection": "Two bedrooms linked by their own private corridor",
+      "bedLayout": [
+        "one double bed",
+        "two single beds"
+      ],
+      "bathrooms": 2,
+      "baseGuests": 4,
+      "withExtraBedGuests": 5,
+      "floor": 5,
+      "liftTopFloor": 4,
+      "stairsForFinalFloor": true,
+      "slopingAtticCeiling": true,
+      "panoramicSeaViewBedrooms": 1,
+      "balconyConfirmed": false
     }
   },
   "arrival": {
     "fixedTravelTimesPublished": false,
     "hotelOperatedAirportTransferPublished": false,
-    "instruction": "Use a live map and current official transport information; confirm any provider, price and conditions before travel."
+    "instruction": "Publish the management-provided approximate driving times with a traffic qualification. Do not invent airport transfers or transport fares.",
+    "checkIn": "14:00",
+    "checkOut": "12:00",
+    "freeEarlyCheckInFrom": "09:00",
+    "earlyCheckInSubjectToRoomAvailability": true,
+    "luggageAtReceptionBeforeRoomReady": true,
+    "receptionHours": 24,
+    "approximateDrivingMinutes": {
+      "Meydan": 10,
+      "Trabzon Airport": 5,
+      "Forum Trabzon": 2,
+      "Trabzon bus terminal": 3
+    },
+    "travelTimesSource": "Management experience; approximate and traffic-dependent, not guaranteed."
   },
   "notYetConfirmedForPublication": [
     "parking capacity and reserved-space policy",
-    "breakfast format, service hours and walk-in price",
+    "breakfast walk-in price",
     "balcony and view allocation for each exact Twin and Standard room",
     "languages guaranteed on every reception shift",
     "hotel-operated airport transfer availability and conditions",
-    "accessibility details and step-free room inventory"
-  ]
+    "step-free room inventory beyond the confirmed family-suite stair limitation",
+    "independently confirmed opening hours for individual nearby pharmacies",
+    "exclusive highest Google rating among all nearby hotels"
+  ],
+  "managementInterviewDate": "2026-09-12",
+  "positioning": {
+    "atmosphere": "Quiet, clean, comfortable, family-run hospitality; guests particularly praise cleanliness, peace and new comfortable beds.",
+    "comparison": "A quieter base than busy Meydan, with road and dolmus access to the centre.",
+    "exclusiveHighestRatingClaimVerified": false
+  },
+  "breakfast": {
+    "format": "Turkish open buffet",
+    "start": "08:00",
+    "end": "11:00",
+    "liftButton": "R",
+    "views": [
+      "Boztepe",
+      "sea"
+    ],
+    "usualColdItems": [
+      "various cheeses",
+      "olives",
+      "jams",
+      "honey",
+      "labneh"
+    ],
+    "usualHotItems": [
+      "fries",
+      "borek",
+      "mini pizza",
+      "pastries",
+      "omelette"
+    ],
+    "drinks": [
+      "tea",
+      "coffee"
+    ],
+    "itemsVary": true,
+    "specialMealRequests": "Guests may contact the hotel; the team evaluates what it can prepare. Acceptance is not automatic."
+  },
+  "transport": {
+    "dolmusPassesHotel": true,
+    "outboundToMeydanSign": "Meydan",
+    "returnFromMeydanSign": "TRT Bostancı",
+    "towardGanitaSign": "Moloz",
+    "taxi": "Reception can call a taxi.",
+    "forumWalkMinutesApprox": 15,
+    "forumOutwardWalk": "Comfortable outward walk; uphill return is more demanding.",
+    "routesSource": "Current management directions; no fixed timetable or exact boarding-stop claim."
+  },
+  "receptionLanguages": {
+    "spoken": [
+      "Turkish",
+      "English",
+      "Arabic"
+    ],
+    "otherLanguages": "Team uses translation tools to help communicate.",
+    "everyLanguageEveryShiftGuaranteed": false
+  },
+  "nearby": {
+    "markets": [
+      {
+        "name": "ŞOK",
+        "walkMinutesApprox": 2,
+        "usualHoursOwnerReported": "09:00–21:00"
+      },
+      {
+        "name": "Neşe",
+        "usualClosingOwnerReported": "00:00"
+      }
+    ],
+    "pharmacies": [
+      "İlknur Eczanesi",
+      "Alper Eczanesi",
+      "Yağız Eczanesi"
+    ],
+    "pharmacyHours": "Management reports nearby pharmacies close at 17:00 and on weekends; not independently confirmed. Do not publish these as a universal weekly schedule.",
+    "dutyPharmacyUrl": "https://www.trabzoneczaciodasi.org.tr/nobetci-eczaneler/61/1686",
+    "diningRecommendations": [
+      {
+        "name": "Ganita",
+        "reason": "Seafront seafood recommendation from hotel team"
+      },
+      {
+        "name": "Katık",
+        "branch": "Meydan",
+        "reason": "Doner recommendation from hotel team"
+      },
+      {
+        "name": "Maydonoz Döner",
+        "branch": "near hotel",
+        "reason": "Convenient nearby doner recommendation from hotel team"
+      }
+    ]
+  },
+  "universityAndHospitalVisits": "Guests include university applicants and people visiting relatives at Farabi. Ordinary accommodation, without claimed institutional partnerships or medical services."
 }

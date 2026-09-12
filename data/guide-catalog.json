@@ -12,7 +12,12 @@
       ],
       "hotelPage": "home",
       "image": "about.webp",
-      "sources": []
+      "sources": [
+        {
+          "name": "Google Maps · Pelit Park Hotel",
+          "url": "https://maps.app.goo.gl/AkTMb2R6jq4rDqtZ6"
+        }
+      ]
     },
     {
       "id": "hotel-prices",
@@ -93,6 +98,10 @@
         {
           "name": "Forum Trabzon",
           "url": "https://www.forumtrabzon.com/"
+        },
+        {
+          "name": "Trabzon Eczacı Odası · Ortahisar",
+          "url": "https://www.trabzoneczaciodasi.org.tr/nobetci-eczaneler/61/1686"
         }
       ]
     },
@@ -110,6 +119,10 @@
         {
           "name": "GoTürkiye · Trabzon",
           "url": "https://goturkiye.com/trabzon"
+        },
+        {
+          "name": "Maydonoz Döner",
+          "url": "https://maydonozdoner.com/subeler/"
         }
       ]
     },
@@ -139,6 +152,10 @@
         {
           "name": "KTÜ Farabi",
           "url": "https://www.ktu.edu.tr/farabi/iletisim"
+        },
+        {
+          "name": "Trabzon Eczacı Odası · Ortahisar",
+          "url": "https://www.trabzoneczaciodasi.org.tr/nobetci-eczaneler/61/1686"
         }
       ]
     }
