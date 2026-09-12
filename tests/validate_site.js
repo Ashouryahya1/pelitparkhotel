@@ -22,12 +22,12 @@ const GENERATED_LANGUAGE_PAGES = [
   "travel-tips/index.html",
 ];
 const GEORGIAN_SITEMAP_DATES = new Map([
-  [`${DOMAIN}/ka/`, "2026-09-11"],
-  [`${DOMAIN}/ka/hotel-near-forum-trabzon/`, "2026-09-11"],
-  [`${DOMAIN}/ka/hotel-near-farabi-hospital/`, "2026-09-11"],
-  [`${DOMAIN}/ka/hotel-near-trabzon-airport/`, "2026-09-11"],
-  [`${DOMAIN}/ka/batumi-trabzon/`, "2026-09-11"],
-  [`${DOMAIN}/ka/room-types/`, "2026-09-11"],
+  [`${DOMAIN}/ka/`, "2026-09-12"],
+  [`${DOMAIN}/ka/hotel-near-forum-trabzon/`, "2026-09-12"],
+  [`${DOMAIN}/ka/hotel-near-farabi-hospital/`, "2026-09-12"],
+  [`${DOMAIN}/ka/hotel-near-trabzon-airport/`, "2026-09-12"],
+  [`${DOMAIN}/ka/batumi-trabzon/`, "2026-09-12"],
+  [`${DOMAIN}/ka/room-types/`, "2026-09-12"],
 ]);
 
 const errors = [];

@@ -11,10 +11,11 @@
     "normalize:schema": "node tools/normalize-structured-data.js",
     "normalize:tracking": "node tools/normalize-tracking.js",
     "build:sitemap": "node tools/build-sitemap.js",
-    "build": "npm run build:locations && npm run build:i18n && npm run build:international && npm run build:home-stats && npm run build:reviews && npm run clean:campaigns && npm run normalize:schema && npm run normalize:tracking && npm run normalize:languages && npm run build:sitemap",
-    "test": "node tests/validate_site.js && node tests/validate_translations.js && node tests/validate_reviews.js && node tests/validate_international.js && node tests/validate_language_dropdown.js",
+    "build": "npm run build:locations && npm run build:i18n && npm run build:international && npm run build:home-stats && npm run build:reviews && npm run clean:campaigns && npm run build:guides && npm run normalize:schema && npm run normalize:tracking && npm run normalize:languages && npm run build:sitemap",
+    "test": "node tests/validate_site.js && node tests/validate_translations.js && node tests/validate_reviews.js && node tests/validate_international.js && node tests/validate_language_dropdown.js && node tests/validate_guides.js",
     "build:international": "node tools/build-international-pages.js",
-    "normalize:languages": "node tools/normalize-language-links.js"
+    "normalize:languages": "node tools/normalize-language-links.js",
+    "build:guides": "node tools/build-guide-pages.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0"

@@ -42,7 +42,7 @@ function getTranslation(lang, key) {
 
 function collectPages() {
   const pages = [];
-  const skipDirs = new Set(['en', 'ar', 'ka', 'ru', 'az', 'fa', 'translations', 'tools', 'node_modules', '.git']);
+  const skipDirs = new Set(['en', 'ar', 'ka', 'ru', 'az', 'fa', 'guides', 'translations', 'tools', 'node_modules', '.git']);
 
   function walk(dir) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });

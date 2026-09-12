@@ -1,0 +1,146 @@
+{
+  "publishedAt": "2026-09-12",
+  "updatedAt": "2026-09-12",
+  "topics": [
+    {
+      "id": "where-to-stay",
+      "slug": "where-to-stay-in-trabzon",
+      "related": [
+        "hotel-prices",
+        "airport-arrival",
+        "first-visit"
+      ],
+      "hotelPage": "home",
+      "image": "about.webp",
+      "sources": []
+    },
+    {
+      "id": "hotel-prices",
+      "slug": "trabzon-hotel-prices-and-budget",
+      "related": [
+        "direct-booking",
+        "family-stays",
+        "sea-view-rooms"
+      ],
+      "hotelPage": "rooms",
+      "image": "room-3.webp",
+      "sources": []
+    },
+    {
+      "id": "family-stays",
+      "slug": "family-hotel-and-room-guide-trabzon",
+      "related": [
+        "hotel-prices",
+        "first-visit",
+        "parking"
+      ],
+      "hotelPage": "rooms",
+      "image": "room-2.webp",
+      "sources": []
+    },
+    {
+      "id": "parking",
+      "slug": "trabzon-hotel-free-parking-guide",
+      "related": [
+        "airport-arrival",
+        "forum-shopping",
+        "where-to-stay"
+      ],
+      "hotelPage": "home",
+      "image": "about.webp",
+      "sources": []
+    },
+    {
+      "id": "sea-view-rooms",
+      "slug": "sea-view-hotel-rooms-trabzon",
+      "related": [
+        "family-stays",
+        "hotel-prices",
+        "direct-booking"
+      ],
+      "hotelPage": "rooms",
+      "image": "room-1.webp",
+      "sources": []
+    },
+    {
+      "id": "airport-arrival",
+      "slug": "trabzon-airport-arrival-and-hotel-check-in",
+      "related": [
+        "parking",
+        "where-to-stay",
+        "direct-booking"
+      ],
+      "hotelPage": "airport",
+      "image": "room-3.webp",
+      "sources": [
+        {
+          "name": "DHMİ · Trabzon Airport",
+          "url": "https://www.dhmi.gov.tr/Sayfalar/Havalimani/Trabzon/Ulasim.aspx"
+        }
+      ]
+    },
+    {
+      "id": "forum-shopping",
+      "slug": "forum-trabzon-shopping-and-hotel-stay",
+      "related": [
+        "parking",
+        "family-stays",
+        "where-to-stay"
+      ],
+      "hotelPage": "forum",
+      "image": "room-2.webp",
+      "sources": [
+        {
+          "name": "Forum Trabzon",
+          "url": "https://www.forumtrabzon.com/"
+        }
+      ]
+    },
+    {
+      "id": "first-visit",
+      "slug": "first-trip-to-trabzon-three-day-plan",
+      "related": [
+        "where-to-stay",
+        "family-stays",
+        "airport-arrival"
+      ],
+      "hotelPage": "home",
+      "image": "about.webp",
+      "sources": [
+        {
+          "name": "GoTürkiye · Trabzon",
+          "url": "https://goturkiye.com/trabzon"
+        }
+      ]
+    },
+    {
+      "id": "direct-booking",
+      "slug": "direct-hotel-booking-trabzon-checklist",
+      "related": [
+        "hotel-prices",
+        "sea-view-rooms",
+        "airport-arrival"
+      ],
+      "hotelPage": "rooms",
+      "image": "room-1.webp",
+      "sources": []
+    },
+    {
+      "id": "work-and-visits",
+      "slug": "trabzon-business-ktu-farabi-stay-guide",
+      "related": [
+        "direct-booking",
+        "parking",
+        "family-stays"
+      ],
+      "hotelPage": "farabi",
+      "image": "room-2.webp",
+      "sources": [
+        {
+          "name": "KTÜ Farabi",
+          "url": "https://www.ktu.edu.tr/farabi/iletisim"
+        }
+      ]
+    }
+  ]
+}

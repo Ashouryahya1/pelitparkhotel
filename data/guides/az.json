@@ -1,0 +1,420 @@
+{
+  "labels": {
+    "indexTitle": "Trabzon otelləri və səyahət bələdçiləri",
+    "indexDescription": "Trabzonda otel seçimi, otaq qiymətləri, ailəvi qalma, hava limanından gəliş, alış-veriş və gəzinti üçün praktik bələdçilər.",
+    "intro": "Trabzon səfərinizi uyğun otaq və rahat planla başlayın. Rezervasiyadan əvvəl yaranan suallara bu bələdçilərdə cavab tapa bilərsiniz.",
+    "guides": "Səyahət bələdçiləri",
+    "home": "Ana səhifə",
+    "rooms": "Otaqlar",
+    "about": "Haqqımızda",
+    "contact": "Əlaqə",
+    "read": "Bələdçini oxuyun",
+    "contents": "Bu bələdçidə",
+    "checklist": "Rezervasiyadan əvvəl",
+    "faq": "Tez-tez verilən suallar",
+    "related": "Digər səyahət bələdçiləri",
+    "sources": "Rəsmi məlumat",
+    "hotel": "Pelit Park Hotel-də qalmağınızı planlaşdırın",
+    "hotelLink": "Otellə tanış olun",
+    "book": "Tarix və otaq seçin",
+    "author": "Yayımlayan",
+    "updated": "Yenilənib",
+    "all": "Bütün bələdçilər",
+    "homeTitle": "Trabzon səfərinizi planlaşdırın",
+    "homeIntro": "Otaq seçimi, nəqliyyat və səfəriniz üçün faydalı məsləhətlər.",
+    "imageAlt": "Trabzondakı Pelit Park Hotel-in qonaq otağı",
+    "rights": "Bütün hüquqlar qorunur"
+  },
+  "articles": {
+    "where-to-stay": {
+      "title": "Trabzonda harada qalmaq olar? Planınıza uyğun otel seçimi",
+      "description": "Trabzonda otel yerini Meydan, hava limanı, Forum və Farabiyə gündəlik marşrutlarınızla müqayisə edərək seçin.",
+      "intro": "Trabzonda qalacağınız yeri seçmək üçün əvvəlcə günlərinizi necə keçirəcəyinizi düşünün. Şəhərdə piyada gəzmək, avtomobillə səfərlər və səhər uçuşu fərqli ehtiyaclar yaradır. Otelin yerini öz proqramınıza uyğun qiymətləndirin.",
+      "sections": [
+        [
+          "Əsas yerləri xəritədə qeyd edin",
+          "Otelin ünvanını, gəliş nöqtənizi və tez-tez gedəcəyiniz yerləri işarələyin. Ortahisar geniş rayondur; bu ünvan hər otelin Meydana piyada yaxın olduğunu göstərmir. Düz məsafədən çox, istifadə edəcəyiniz girişə real yolu yoxlayın."
+        ],
+        [
+          "Geri dönüşü də hesablayın",
+          "Axşamları mərkəzdə olacaqsınızsa, otelə qayıdış yoluna baxın. Avtomobillə müxtəlif yerlərə gedəndə dayanacaq daha vacib ola bilər. Çamadan, uşaq arabası və alış-veriş çantaları ilə dönüşü də nəzərə alın."
+        ],
+        [
+          "Səfərin əsas məqsədini seçin",
+          "Forumda alış-veriş, Farabi ziyarəti və erkən uçuş müxtəlif marşrutlar tələb edir. Ən çox təkrarlayacağınız yolu müəyyənləşdirin, sonra digər səfərlərlə müqayisə edin. Yol vaxtını aktual xəritədən yoxlayın; nəqliyyat və giriş nöqtəsi nəticəni dəyişə bilər."
+        ],
+        [
+          "Pelit Parkı planınıza uyğunlaşdırın",
+          "Ortahisardakı Pelit Park Hotel ərazidə pulsuz dayanacaq, 24 saat qəbul və üç otaq kateqoriyası təklif edir. Hava limanı, Forum və Farabi səhifələrindən marşrutları araşdırıb tarixlərinizə uyğun otağı seçə bilərsiniz."
+        ]
+      ],
+      "checklist": [
+        "Tam ünvanı və xəritəni saxlayın.",
+        "Gediş və dönüş yollarını müqayisə edin.",
+        "Baqaj və dayanacaq ehtiyacını müəyyənləşdirin.",
+        "Otaq kateqoriyasını təsdiqləyin."
+      ],
+      "faq": [
+        [
+          "Hava limanı yanında, yoxsa mərkəzdə qalmaq yaxşıdır?",
+          "Ən çox gedəcəyiniz yerdən başlayın, digər yolları və uçuş saatlarını birlikdə qiymətləndirin."
+        ],
+        [
+          "Ortahisardakı hər oteldən Meydana piyada getmək olar?",
+          "Rayon adı kifayət etmir; dəqiq yeri və piyada marşrutunu yoxlayın."
+        ]
+      ]
+    },
+    "hotel-prices": {
+      "title": "Trabzon otel qiymətləri: bütün qalma xərcini müqayisə edin",
+      "description": "Trabzonda sərfəli otel tapmaq üçün tarixləri, otağı, səhər yeməyini, dayanacağı və ləğv şərtlərini birlikdə yoxlayın.",
+      "intro": "Trabzonda ucuz otel axtararkən yalnız gecəlik məbləğə baxmaq tam mənzərəni göstərməyə bilər. Fərqli otaq, qonaq sayı və şərtlər müxtəlif təkliflər yaradır. Ehtiyacınıza uyğun qalmanın ümumi qiymətini müqayisə edin.",
+      "sections": [
+        [
+          "Axtarış məlumatlarını eyni saxlayın",
+          "Giriş-çıxış tarixlərini, böyüklərin sayını və uşaqların yaşlarını hər axtarışda eyni daxil edin. Standard və dəniz mənzərəli Deluxe fərqli kateqoriyalardır. Gecələrin sayını, valyutanı və ümumi məbləği yoxlayın."
+        ],
+        [
+          "Qiymətə daxil olanları ayırın",
+          "Səhər yeməyinin seçdiyiniz tarifə daxil olub-olmadığını oxuyun. Dayanacaq, gündəlik nəqliyyat və əlavə yataq ehtiyacını da hesablayın. Foto və qonaq rəyi təklifin tərkibini müəyyənləşdirmir; rezervasiyanın öz şərtlərinə baxın."
+        ],
+        [
+          "Dəyişiklik imkanını qiymətləndirin",
+          "Geri qaytarılmayan tariflə çevik tarif eyni deyil. Ödəniş vaxtını, ləğv müddətini və tarix dəyişmə qaydasını oxuyun. Planınız dəqiq deyilsə, mümkün dəyişikliyin xərcini də qərarınıza daxil edin."
+        ],
+        [
+          "Pelit Park üçün aktual qiymət alın",
+          "Pelit Parkda ərazidə dayanacaq pulsuzdur, səhər yeməyi isə tarifdən asılıdır. Deluxe, Twin və Standard otaqlarda 50 düymlük Smart TV var. Tarixlərinizi rezervasiya sistemində daxil edin, aydın olmayan şərti oteldən soruşun."
+        ]
+      ],
+      "checklist": [
+        "Eyni tarix və qonaq sayını müqayisə edin.",
+        "Ümumi məbləği və valyutanı qeyd edin.",
+        "Səhər yeməyi və əlavə tələbləri dəqiqləşdirin.",
+        "Ödəniş və ləğv şərtlərini oxuyun."
+      ],
+      "faq": [
+        [
+          "Aktual Trabzon otel qiymətini haradan öyrənim?",
+          "Dəqiq tarixlərinizlə rezervasiya sistemində axtarış edin; köhnə yazıdakı qiymət dəyişə bilər."
+        ],
+        [
+          "Ən ucuz gecəlik tarif həmişə sərfəlidirmi?",
+          "Ümumi qiyməti və ayrıca ödəyəcəyiniz xidmətləri birlikdə müqayisə edin."
+        ]
+      ]
+    },
+    "family-stays": {
+      "title": "Trabzonda ailə üçün otel: otaq, yataq və gündəlik rahatlıq",
+      "description": "Uşaqlarla Trabzonda qalmaq üçün yataqları, qonaq tutumunu, səhər yeməyini və gündəlik nəqliyyatı planlaşdırın.",
+      "intro": "Rahat ailə səfəri aydın yatma planından başlayır. Uşaqlı cütlüyün ehtiyacı otağı bölüşən iki dostdan fərqlənir. Ailənizin tərkibini əvvəlcədən bildirmək uyğun otağın təsdiqini asanlaşdırır.",
+      "sections": [
+        [
+          "Bütün qonaqları göstərin",
+          "Böyükləri və uşaqları yaşları ilə birlikdə rezervasiyaya əlavə edin. Uşağın mövcud yataqda qalmasını əvvəlcədən təsdiqləyin. Bir neçə otaq lazımdırsa, yaxın yerləşmələrini erkən istəyin və hansı düzülüşün mümkün olduğunu dəqiqləşdirin."
+        ],
+        [
+          "Yataq və tutuma baxın",
+          "Pelit Parkda Deluxe və Standard bir iki nəfərlik yataq, Twin isə iki ayrı tək nəfərlik yataq təklif edir. Dəniz mənzərəsi daha çox qonaq tutumu demək deyil. Ailənizin sayı üçün uyğunluğu və əlavə yatağı ayrıca soruşun."
+        ],
+        [
+          "İstirahət üçün vaxt ayırın",
+          "Səhər yeməyini, nəqliyyatı və gün ərzində otelə dönüşü düşünün. Daha qısa gəzinti proqramı uşaqlar üçün rahat ola bilər. Pilləkən, lift və ya maneəsiz keçid vacibdirsə, təklif edilən otağa gedişi əvvəlcədən öyrənin."
+        ],
+        [
+          "Vacib imkanları dəqiqləşdirin",
+          "Pelit Park otaqlarında 50 düymlük Smart TV, Wi-Fi və şəxsi hamam var; oteldə pulsuz dayanacaq mövcuddur. Səhər yeməyi tarifə bağlıdır. Uşaq yatağı və xüsusi yerləşmə ehtiyacını ödənişdən əvvəl otellə razılaşdırın."
+        ]
+      ],
+      "checklist": [
+        "Uşaqların yaşını və qonaq sayını bildirin.",
+        "Yataqları və tutumu təsdiqləyin.",
+        "Uşaq və əlavə yatağı əvvəlcədən soruşun.",
+        "Nəqliyyat və istirahəti planlaşdırın."
+      ],
+      "faq": [
+        [
+          "Hər Double otaqda üç nəfər qala bilər?",
+          "Otel konkret rezervasiya üçün tutumu və yataq düzülüşünü təsdiqləməlidir."
+        ],
+        [
+          "Twin ailə otağı deməkdir?",
+          "Twin iki ayrı yatağı bildirir; ailə tutumunu ayrıca yoxlamaq lazımdır."
+        ]
+      ]
+    },
+    "parking": {
+      "title": "Trabzonda pulsuz dayanacaqlı otel: avtomobillə gəliş bələdçisi",
+      "description": "Trabzon səfərində otelə giriş, baqajın endirilməsi, dayanacaq və kirayə avtomobilin qaytarılmasını əvvəlcədən planlaşdırın.",
+      "intro": "Dayanacaq həm büdcəyə, həm də gündəlik rahatlığa təsir edir. Girişi tapmaq, çamadanları endirmək və səhər yola çıxmaq detalları əvvəlcədən biləndə daha asan olur. Bir neçə sual gəlişinizi rahatlaşdıra bilər.",
+      "sections": [
+        [
+          "Giriş yolunu saxlayın",
+          "Tam ünvanı və son yaxınlaşma yolunu aktual xəritədə yoxlayın. Bina nişanı həmişə baqaj endirmək üçün uyğun yeri göstərmir. Gecə və ya tanımadığınız avtomobillə gəlirsinizsə, qəbuldan istiqamət alın."
+        ],
+        [
+          "Avtomobilinizə uyğun yeri soruşun",
+          "Pulsuz dayanacaq qiymət qaydasını bildirir; ayrılmış yer, örtük və ölçü barədə zəmanət vermir. Böyük avtomobiliniz varsa bunu bildirin. Gəliş saatında giriş qaydasını və əvvəlcə qəbulla danışmalı olub-olmadığınızı öyrənin."
+        ],
+        [
+          "Gəzintilərdəki dayanacaqları da düşünün",
+          "Gedəcəyiniz yerlərdə park imkanlarını ayrıca yoxlayın. Alış-veriş və tam günlük səfər fərqli baqaj və dönüş saatları yaradır. Kirayə avtomobilin qaytarılma yeri, saatı və şərtlərini şirkətlə ayrıca dəqiqləşdirin."
+        ],
+        [
+          "Pelit Parkda avtomobillə qalmaq",
+          "Pelit Park Hotel qonaqları ərazidə pulsuz dayanacaqdan istifadə edə bilərlər. Giriş və avtomobil sahəsi barədə qəbulla danışın. Qəbul 24 saat işləyir; otağa giriş isə təsdiqlənmiş rezervasiyanın tarix və şərtlərinə uyğun planlaşdırılmalıdır."
+        ]
+      ],
+      "checklist": [
+        "Ünvanı yola çıxmazdan əvvəl saxlayın.",
+        "Xüsusi avtomobil ehtiyaclarını bildirin.",
+        "Dayanacaq girişi və baqajı soruşun.",
+        "Avtomobilin qaytarılmasını ayrıca təsdiqləyin."
+      ],
+      "faq": [
+        [
+          "Pulsuz dayanacaqda mənə xüsusi yer ayrılır?",
+          "Müəyyən yer lazımdırsa, oteldən ayrıca təsdiq alın."
+        ],
+        [
+          "Otel rezervasiyası avtomobilin qaytarılmasını əhatə edir?",
+          "Bu razılaşmanı birbaşa kirayə şirkəti ilə edin."
+        ]
+      ]
+    },
+    "sea-view-rooms": {
+      "title": "Trabzonda dəniz mənzərəli otaq seçimi: nələri yoxlamaq lazımdır?",
+      "description": "Trabzon otellərində dəniz mənzərəsi, balkon və yataq növünü otaq təsvirinə görə müqayisə edin; Pelit Park seçimlərini tanıyın.",
+      "intro": "Dəniz mənzərəsi Trabzon səfərinizə xoş bir detal qata bilər. Ancaq otelin qalereyasındakı gözəl foto yalnız bir kateqoriyaya aid ola bilər. Rezervasiya etdiyiniz otağın adına və təsvirinə əsaslanın.",
+      "sections": [
+        [
+          "Mənzərəni otaq təsvirində axtarın",
+          "Seçilən kateqoriyada dəniz mənzərəsinin açıq göstərildiyinə baxın. Otelin sahilə yaxınlığı hər pəncərənin görünüşünü müəyyən etmir. Mənzərə qərarınız üçün vacibdirsə, təsviri rezervasiya təsdiqi ilə saxlayın."
+        ],
+        [
+          "Balkonu ayrıca dəqiqləşdirin",
+          "Dəniz mənzərəsi və balkon ayrı xüsusiyyətlərdir. Açıq sahə istəyirsinizsə, mövcud otağın detallarını soruşun. Fotolar bütün planları göstərməyə bilər; vacib xüsusiyyəti ödənişdən əvvəl təsdiqlətmək daha rahatdır."
+        ],
+        [
+          "Yataq ehtiyacını unutmayın",
+          "Cütlük iki nəfərlik yataq, dostlar isə ayrı yataqlar istəyə bilər. Qonaq sayı, yataq növü və mənzərəni birlikdə qiymətləndirin. Beləcə otaq həm istədiyiniz görünüşə, həm də gündəlik rahatlığınıza uyğun olar."
+        ],
+        [
+          "Pelit Park kateqoriyaları",
+          "Pelit Parkın Deluxe Double kateqoriyası dəniz mənzərəlidir. Twin iki ayrı tək nəfərlik, Standard bir iki nəfərlik yataq təqdim edir; bu kateqoriyalar üçün dəniz mənzərəsi vəd edilmir. Hamısında 50 düymlük Smart TV var. Balkon seçimini ayrıca soruşun."
+        ]
+      ],
+      "checklist": [
+        "Mənzərəni seçilmiş kateqoriyada yoxlayın.",
+        "Yataqları və qonaq sayını təsdiqləyin.",
+        "Balkon barədə ayrıca soruşun.",
+        "Otaq təsvirini saxlayın."
+      ],
+      "faq": [
+        [
+          "Pelit Parkın bütün otaqları dənizə baxır?",
+          "Dəniz mənzərəsi Deluxe Double üçün göstərilir; Twin və Standard üçün həmin vəd yoxdur."
+        ],
+        [
+          "Dəniz mənzərəli otaqda mütləq balkon olur?",
+          "Balkonu konkret mövcud otaq üçün ayrıca təsdiqləyin."
+        ]
+      ]
+    },
+    "airport-arrival": {
+      "title": "Trabzon Hava Limanından otelə gəliş və gec giriş planı",
+      "description": "Trabzon uçuşunuz üçün doğru rezervasiya gecəsini, nəqliyyatı, gec gəlişi və hava limanına dönüşü planlaşdırın.",
+      "intro": "Rahat gəliş təyyarə enməzdən əvvəl başlayır. Otelin ünvanını, rezervasiya tarixlərini və əlaqəni bir yerdə saxlayın. Xüsusən gec uçuşlarda gəliş vaxtını rezervasiya etdiyiniz gecə ilə uyğunlaşdırın.",
+      "sections": [
+        [
+          "Gecə yarısından sonrakı tarixi yoxlayın",
+          "Təqvim gecə dəyişir, otaq isə rezervasiyadakı gecələrə və giriş qaydasına uyğun ayrılır. Səhər tezdən gəlirsinizsə, uçuşun tarixini və yerli saatını otele bildirin. Ödənişdən əvvəl hansı gecəni bron etməli olduğunuzu soruşun."
+        ],
+        [
+          "Aktual nəqliyyatı seçin",
+          "DHMİ hava limanına çıxış variantları arasında taksi, ictimai nəqliyyat, servis və kirayə avtomobilləri göstərir. Gəliş saatınıza uyğun xidmət və yolu yoxlayın. Baqajı, sərnişin sayını və otelin tam ünvanını nəzərə alın."
+        ],
+        [
+          "Giriş vaxtını ayrıca razılaşdırın",
+          "24 saat qəbul əməkdaşlarla istənilən vaxt əlaqə deməkdir; hər otağın bütün saatlarda hazır olması demək deyil. Gəlişinizi rezervasiyaya uyğun təsdiqləyin və ciddi gecikməni bildirin. Erkən giriş ayrıca razılaşma tələb edir."
+        ],
+        [
+          "Dönüş yolunu da hazırlayın",
+          "Çıxış günündə yığışmaq, yol və hava limanı prosedurları üçün vaxt saxlayın. Taksi və ya avtomobil qaytarılmasını aidiyyəti şirkətlə təsdiqləyin. Pelit Parkda 24 saat qəbul və pulsuz dayanacaq var; hava limanı səhifəsi və WhatsApp vasitəsilə qalmağı planlaşdıra bilərsiniz."
+        ]
+      ],
+      "checklist": [
+        "Tarixi və yerli gəliş saatını bildirin.",
+        "Düzgün rezervasiya gecəsini təsdiqləyin.",
+        "Ünvanı və rezervasiya nömrəsini saxlayın.",
+        "Dönüş nəqliyyatını əvvəlcədən yoxlayın."
+      ],
+      "faq": [
+        [
+          "Gecə 02:00 gəlişi həmin günün adi gündüz girişi sayılır?",
+          "Bunu əvvəlcədən otellə dəqiqləşdirin və doğru gecəni rezervasiya edin."
+        ],
+        [
+          "Rezervasiyaya hava limanı transferi daxildir?",
+          "Nəqliyyatı ayrıca razılaşdırın və seçilmiş təklifin tərkibini yoxlayın."
+        ]
+      ]
+    },
+    "forum-shopping": {
+      "title": "Forum Trabzon alış-veriş səfəri: otel və otaq planı",
+      "description": "Forum Trabzonda alış-verişi otel, nəqliyyat, dayanacaq, baqaj və qrupunuza uyğun otaqla birlikdə planlaşdırın.",
+      "intro": "Alış-veriş səfərində oteli də plana daxil etmək işi asanlaşdırır. Alışları necə daşıyacağınızı, qrupun maraqlarını və dönüş saatını düşünün. Forum Trabzon yaxınlığında otel seçərkən bu detallar xəritə qədər faydalıdır.",
+      "sections": [
+        [
+          "Əsas dayanacaqları seçin",
+          "Mağaza, yemək, kino və aktual məlumat üçün Forum Trabzonun rəsmi saytına baxın. Prioritetlərinizi əvvəlcədən müəyyənləşdirin. Maraqlar fərqlidirsə, hamının rahat gəzməsi üçün görüş yeri və əlaqə qaydası seçin."
+        ],
+        [
+          "Alışlarla geri dönüşü düşünün",
+          "Əliboş gediş və çantalarla dönüş fərqli ola bilər. Marşrut və nəqliyyatı hər iki istiqamətdə yoxlayın. Avtomobillə gedəndə ticarət mərkəzinin dayanacaq qaydasını otelin dayanacağından ayrıca araşdırın."
+        ],
+        [
+          "Qrupa uyğun yataq seçin",
+          "İki dost ayrı yataqlı Twin, cütlük iki nəfərlik yataq istəyə bilər. Uşaqlarla səfərdə tutumu təsdiqləyin. Son gün alış-veriş planınız varsa, çamadanları yığmaq, çıxış və uçuş üçün vaxt ayırın."
+        ],
+        [
+          "Pelit Parkda fasilə verin",
+          "Pelit Parkda Deluxe Double, Twin və Standard otaqlar, 50 düymlük Smart TV və pulsuz dayanacaq var. Forum səhifəsində marşrut bağlantısını aça bilərsiniz. Baqaj saxlama və gec çıxış ehtiyacını əvvəlcədən qəbulla dəqiqləşdirin."
+        ]
+      ],
+      "checklist": [
+        "Forumun aktual məlumatlarına baxın.",
+        "Alışları geri gətirməyi planlaşdırın.",
+        "Yataqları və tutumu təsdiqləyin.",
+        "Son günü çıxış saatı ilə uyğunlaşdırın."
+      ],
+      "faq": [
+        [
+          "Forumun iş saatları həmişə eynidir?",
+          "Ziyarətdən əvvəl aktual rəsmi məlumatı yoxlayın."
+        ],
+        [
+          "İki dost üçün hansı otaq uyğundur?",
+          "Pelit Park Twin otağında iki ayrı tək nəfərlik yataq var; tarixləriniz üçün mövcudluğu yoxlayın."
+        ]
+      ]
+    },
+    "first-visit": {
+      "title": "İlk Trabzon səfəri üçün çevik üçgünlük plan",
+      "description": "Trabzonda üç günü şəhər gəzintisi, bir əsas səfər, istirahət və dönüş hazırlığı arasında rahat bölüşdürün.",
+      "intro": "Trabzonda üç gün bütün yerlərə tələsmədən də maraqlı keçə bilər. Bu nümunə gəlişi, əsas gəzintini və çevik son günü ayırır. Planı uçuş, hava və maraqlarınıza görə dəyişin.",
+      "sections": [
+        [
+          "Birinci gün: yerləşin və şəhərlə tanış olun",
+          "Rezervasiya şərtlərinə uyğun girişdən sonra Meydan və ətraf küçələr kimi qısa gəzinti seçin. Gecə yolundan gəlmisinizsə, axşamı yüngül saxlayın. Uzun səfərləri hamının dincəldiyi günə ayırmaq daha rahatdır."
+        ],
+        [
+          "İkinci gün: bir əsas səfər seçin",
+          "GoTürkiye Trabzon seçimləri arasında Uzungölün təbiətini və Sümela monastırını vurğulayır. Sizi daha çox maraqlandıranı seçin, aktual giriş və nəqliyyatı rəsmi mənbədən və ya seçdiyiniz təşkilatçıdan yoxlayın. Uzaq yerləri bir günə sıxışdırmayın."
+        ],
+        [
+          "Üçüncü gün: dönüşə uyğun plan qurun",
+          "Uçuşa görə qısa şəhər gəzintisi, alış-veriş və ya sakit səhər yeməyi seçə bilərsiniz. Əvvəlcə çıxış və nəqliyyatı təsdiqləyin. Daha çox yer görmək istəyirsinizsə, çıxışla uçuş arasına böyük səfər salmaq əvəzinə əlavə gecəni düşünün."
+        ],
+        [
+          "Bütün səfərə uyğun baza seçin",
+          "Təkrarlanan yolları, dayanacağı və yataq düzülüşünü müqayisə edin. Pelit Park pulsuz dayanacaq, 24 saat qəbul və Deluxe, Twin, Standard seçimləri təklif edir. Səhər yeməyi və gec gəlişinizi rezervasiyadan əvvəl dəqiqləşdirin."
+        ]
+      ],
+      "checklist": [
+        "Gəliş gününü yüngül saxlayın.",
+        "Bir günə bir əsas səfər seçin.",
+        "Aktual giriş və nəqliyyatı yoxlayın.",
+        "Çıxış və hava limanına vaxt ayırın."
+      ],
+      "faq": [
+        [
+          "Bu proqram tur kimi satılır?",
+          "Bu, şəxsi planlaşdırma nümunəsidir; nəqliyyat və ziyarətlər ayrıca təşkil olunur."
+        ],
+        [
+          "Üç gündə bütün məşhur yerləri görmək olar?",
+          "Prioritetləri seçib yolları yoxlayın və özünüzə uyğun temp qurun."
+        ]
+      ]
+    },
+    "direct-booking": {
+      "title": "Trabzonda birbaşa otel rezervasiyası: nəyi təsdiqləmək lazımdır?",
+      "description": "Birbaşa rezervasiyada tarix, otaq, səhər yeməyi, ödəniş, ləğv və yazılı təsdiqi yoxlamaq üçün praktik siyahı.",
+      "intro": "Birbaşa rezervasiya gəlişdən əvvəl otellə detalları danışmağa imkan verir. Uyğun təklif həm otaq, həm qiymət, həm də şərtlərlə ehtiyacınıza cavab verməlidir. Seçiminizin təsdiq sənədində aydın göstərildiyinə baxın.",
+      "sections": [
+        [
+          "Eyni təklifləri müqayisə edin",
+          "Otelin sistemi və başqa platformada eyni tarix, qonaq sayı, yataq və mənzərə kateqoriyasını seçin. Səhər yeməyi və ləğv şərtlərini də müqayisə edin. Qiymət fərqi təklifin məzmunundan yarana bilər."
+        ],
+        [
+          "Ödəniş və dəyişiklik qaydasını oxuyun",
+          "Ümumi məbləği, valyutanı və ödəniş vaxtını yoxlayın. Tarix dəyişmə, ləğv və erkən çıxışın tarifə görə necə hesablandığını soruşun. Şərtləri və ödəniş təsdiqini saxlayın; mövcudluq barədə söhbət tamamlanmış rezervasiya deyil."
+        ],
+        [
+          "Vacib tələbləri aydın yazın",
+          "Ayrı yataqları, seçdiyiniz dəniz mənzərəli kateqoriyanı və mühüm gəliş vaxtını bildirin. Təsdiqlənmiş xüsusiyyətlə mərtəbə və balkon arzusunu ayırın. Vacib detal təsdiqdə görünmürsə, ödənişdən əvvəl dəqiqləşdirin."
+        ],
+        [
+          "Pelit Parkın rəsmi bağlantılarından istifadə edin",
+          "pelitparkhotel.com saytındakı düymə otelin rezervasiya sisteminə aparır, yayımlanmış WhatsApp isə suallar üçündür. Aktual qiyməti yoxlayın və rezervasiya nömrəsini saxlayın. Birbaşa bron avtomatik olaraq daimi endirim və ya ən aşağı qiymət demək deyil."
+        ]
+      ],
+      "checklist": [
+        "Tarixləri, qonaqları və kateqoriyanı eyniləşdirin.",
+        "Tam qiymət və şərtləri oxuyun.",
+        "Vacib detalları yazılı təsdiqləyin.",
+        "Rezervasiya nömrəsi və əlaqəni saxlayın."
+      ],
+      "faq": [
+        [
+          "Birbaşa bron həmişə daha ucuzdur?",
+          "Eyni otaq və şərtlər üzrə aktual təklifləri müqayisə edin."
+        ],
+        [
+          "WhatsApp-da boş otaq cavabı rezervasiya təsdiqidir?",
+          "Rezervasiyanın tamamlandığını dəqiqləşdirib yazılı məlumat və nömrəsini alın."
+        ]
+      ]
+    },
+    "work-and-visits": {
+      "title": "İş, KTÜ və Farabi ziyarəti üçün Trabzonda qalma bələdçisi",
+      "description": "Trabzonda iş və müşayiətçi səfəri üçün dəqiq marşrut, yataq düzülüşü və dəyişə bilən tarixləri planlaşdırın.",
+      "intro": "İş, universitet və ya xəstəxana ziyarəti tətildən fərqli proqram yaradır. Təkrarlanan yol, ayrı yataq və çevik tarixlər daha vacib ola bilər. Oteli gündəlik ehtiyaclarınıza görə seçin.",
+      "sections": [
+        [
+          "Dəqiq bina və girişi müəyyənləşdirin",
+          "Görüş və ya qəbul təsdiqindəki ünvanı istifadə edin. Universitet və xəstəxananın bir neçə binası və girişi ola bilər. KTÜ Farabinin rəsmi əlaqə səhifəsindən mövqeyi və əlaqəni yoxlayıb yolu doğru nöqtəyə planlaşdırın."
+        ],
+        [
+          "Qalan şəxslərə uyğun yataqları seçin",
+          "İki həmkar və ya müşayiətçi Twin, tək səyyah Standard Double seçə bilər. Tam qonaq sayını və xüsusi hərəkət ehtiyaclarını əvvəlcədən bildirin. Tələb olunan şəraiti ümumi fotolardan çıxarmaq əvəzinə otellə dəqiqləşdirin."
+        ],
+        [
+          "Tarix dəyişikliyini nəzərə alın",
+          "Səfərin müddəti dəyişə bilərsə, ödənişdən əvvəl dəyişiklik və ləğv qaydasını oxuyun. Uzatma həmin vaxtdakı otaq mövcudluğu və qiymətə bağlıdır. Plan dəyişəndə otellə erkən əlaqə saxlamaq seçimləri öyrənməyə kömək edir."
+        ],
+        [
+          "Qalma detallarını hazırlayın",
+          "Pelit Parkda Twin və iki nəfərlik otaqlar, Wi-Fi, pulsuz dayanacaq və 24 saat qəbul var. İş səfəri hesab sənədi və gəliş tələblərini öncədən soruşun. Qəbul, ziyarət saatları və tibbi məsələlər üçün birbaşa müvafiq quruma müraciət edin."
+        ]
+      ],
+      "checklist": [
+        "Görüşün dəqiq ünvanını təsdiqləyin.",
+        "Qrupa uyğun yataq seçin.",
+        "Dəyişiklik və uzatma qaydasını oxuyun.",
+        "Gəliş və giriş ehtiyaclarını bildirin."
+      ],
+      "faq": [
+        [
+          "Otel bronuna xəstəxana qəbulu daxildir?",
+          "Qəbulu birbaşa qurumla təşkil etməlisiniz; otel qalma xidməti göstərir."
+        ],
+        [
+          "Qalmanı eyni şərtlərlə uzada bilərəm?",
+          "Bu, aktual mövcudluq və tarifdən asılıdır; otellə dəqiqləşdirin."
+        ]
+      ]
+    }
+  }
+}

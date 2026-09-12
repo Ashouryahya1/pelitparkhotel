@@ -21,7 +21,12 @@ const groups = Object.fromEntries(Object.entries(slugs).map(([key, slug]) => [ke
     .map(([lang, info]) => [lang, `${info.home}${lang === "tr" ? turkish[key] || slug : slug}`]))
 ]));
 const languageForPath = (urlPath) => urlPath.match(/^\/(en|ar|ka|ru|az|fa)(?:\/|$)/)?.[1] || "tr";
-const groupForPath = (urlPath) => Object.entries(groups).find(([, group]) => Object.values(group).includes(urlPath));
+// Editorial routes are separate from slugs: the core page generator owns only slugs.
+const guideCatalog = require('../../data/guide-catalog.json');
+const guideGroups = Object.fromEntries([['index', ''], ...guideCatalog.topics.map(t => [t.id, t.slug + '/'])]
+  .map(([id, slug]) => ['guide:' + id, Object.fromEntries(Object.entries(languages)
+    .map(([lang, info]) => [lang, `${info.home}guides/${slug}`]))]));
+const groupForPath = (urlPath) => Object.entries({...groups, ...guideGroups}).find(([, group]) => Object.values(group).includes(urlPath));
 function availableGroup(group) {
   return Object.entries(group).filter(([, urlPath]) => fs.existsSync(path.join(ROOT, urlPath, "index.html")));
 }
@@ -30,5 +35,4 @@ function alternates(group) {
   if (entries.length > 1) entries.push(["x-default", `${BASE}${group.tr}`]);
   return Object.fromEntries(entries);
 }
-module.exports = { ROOT, BASE, languages, slugs, groups, languageForPath, groupForPath, alternates };
-
+module.exports = { ROOT, BASE, languages, slugs, groups, guideGroups, languageForPath, groupForPath, alternates };
