@@ -63,6 +63,18 @@
           "بدون اجاره خودرو می‌توان اقامت کرد؟",
           "بله؛ دولموش جلوی هتل، مسیر پیاده فوروم و امکان درخواست تاکسی از پذیرش وجود دارد."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 1,
+          "text": "فرودگاه",
+          "target": "airport"
+        },
+        {
+          "section": 3,
+          "text": "فوروم",
+          "target": "forum"
+        }
       ]
     },
     "hotel-prices": {
@@ -102,6 +114,26 @@
           "رزرو مستقیم همیشه ارزان‌تر است؟",
           "لزوماً خیر؛ مزیت آن کمک شخصی در انتخاب اتاق و گفت‌وگو درباره شرایط مناسب اقامت است."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "سوئیت خانوادگی",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 1,
+          "text": "تخت اضافه",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        },
+        {
+          "section": 2,
+          "text": "بوفه ترکی",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "family-stays": {
@@ -141,6 +173,26 @@
           "سوئیت بدون پله در دسترس است؟",
           "خیر. آسانسور تا طبقه چهارم و سوئیت در طبقه پنجم است."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Twin",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "سوئیت",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 3,
+          "text": "ورود زودهنگام",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "parking": {
@@ -180,6 +232,19 @@
           "می‌توان خودرو را گذاشت و به میدان رفت؟",
           "بله؛ رفت با Meydan و برگشت با TRT Bostancı انجام می‌شود."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 1,
+          "text": "فرودگاه",
+          "target": "airport"
+        },
+        {
+          "section": 3,
+          "text": "ورود عادی",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "sea-view-rooms": {
@@ -219,6 +284,26 @@
           "منظره دریا یعنی بالکن هم وجود دارد؟",
           "خیر. بالکن ویژگی جداگانه‌ای است و برای هر اتاق تضمین نشده است."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Twin",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "سوئیت",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 3,
+          "text": "سالن صبحانه",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "airport-arrival": {
@@ -258,6 +343,25 @@
           "تا آماده شدن اتاق می‌توان چمدان گذاشت؟",
           "بله. چمدان را به پذیرش بدهید و بدون بار به گردش بروید."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "فرودگاه",
+          "target": "airport"
+        },
+        {
+          "section": 1,
+          "text": "ورود زودهنگام",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        },
+        {
+          "section": 3,
+          "text": "بوفه ترکی",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "forum-shopping": {
@@ -297,6 +401,18 @@
           "شب داروخانه را چطور پیدا کنیم؟",
           "فهرست رسمی داروخانه‌های کشیک Ortahisar را از پیوند مقاله برای روز موردنظر باز کنید."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "فوروم",
+          "target": "forum"
+        },
+        {
+          "section": 2,
+          "text": "Ganita",
+          "target": "guide:first-visit"
+        }
       ]
     },
     "first-visit": {
@@ -336,6 +452,25 @@
           "گردش‌های دور از شهر هم در برنامه هست؟",
           "خیر؛ برنامه روی شهر و ساحل تمرکز دارد و مقصدهای دور به روزهای اضافه نیاز دارند."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "ورود رایگان",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        },
+        {
+          "section": 1,
+          "text": "صبحانه",
+          "target": "rooms",
+          "fragment": "breakfast"
+        },
+        {
+          "section": 3,
+          "text": "فرودگاه",
+          "target": "airport"
+        }
       ]
     },
     "direct-booking": {
@@ -375,6 +510,20 @@
           "می‌توان غذای خاص درخواست کرد؟",
           "بله. از قبل بنویسید تا تیم پاسخ دهد امکان آماده کردن آن را دارد یا خیر."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "سوئیت",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "تخت نوزاد",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        }
       ]
     },
     "work-and-visits": {
@@ -414,6 +563,26 @@
           "برای دو همراه چه اتاقی مناسب است؟",
           "Twin برای تخت جدا مناسب است. گروه بزرگ‌تر می‌تواند با توجه به پله و سقف، سوئیت را بررسی کند."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Twin",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "سوئیت چهارنفره",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "بوفه ترکی",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     }
   }

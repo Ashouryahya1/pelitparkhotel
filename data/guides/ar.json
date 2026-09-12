@@ -63,6 +63,18 @@
           "هل الإقامة مناسبة بدون سيارة؟",
           "نعم؛ الدولموش يمر أمام الفندق، والفوروم يمكن الوصول إليه مشيًا، والاستقبال يستطيع طلب تاكسي."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 1,
+          "text": "المطار",
+          "target": "airport"
+        },
+        {
+          "section": 3,
+          "text": "الفوروم",
+          "target": "forum"
+        }
       ]
     },
     "hotel-prices": {
@@ -102,6 +114,26 @@
           "هل الحجز المباشر أرخص دائمًا؟",
           "ليس بالضرورة؛ ميزته المساعدة في اختيار الغرفة ومناقشة ترتيبات أكثر ملاءمة لإقامتك."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "سويت عائلي",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 1,
+          "text": "السرير الإضافي",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        },
+        {
+          "section": 2,
+          "text": "الإفطار بوفيه تركي مفتوح",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "family-stays": {
@@ -141,6 +173,26 @@
           "هل يصل المصعد إلى السويت؟",
           "لا؛ المصعد يصل إلى الرابع، والسويت في الخامس ويحتاج صعود السلم للطابق الأخير."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "الديلوكس",
+          "target": "rooms",
+          "fragment": "room-deluxe"
+        },
+        {
+          "section": 1,
+          "text": "السويت",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 3,
+          "text": "الدخول المبكر",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "parking": {
@@ -180,6 +232,19 @@
           "هل يمكن ترك السيارة وزيارة الميدان بالمواصلات؟",
           "نعم؛ اركب Meydan من أمام الفندق، وللعودة استخدم TRT Bostancı."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 1,
+          "text": "للمطار",
+          "target": "airport"
+        },
+        {
+          "section": 3,
+          "text": "دخول مبكر مجاني",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "sea-view-rooms": {
@@ -219,6 +284,26 @@
           "هل الإطلالة تعني وجود بلكونة؟",
           "لا؛ البلكونة ميزة مستقلة وليست مضمونة في كل غرفة من هذه الفئات."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "الديلوكس",
+          "target": "rooms",
+          "fragment": "room-deluxe"
+        },
+        {
+          "section": 1,
+          "text": "السويت",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 3,
+          "text": "البوفيه التركي",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "airport-arrival": {
@@ -258,6 +343,25 @@
           "ماذا أفعل إذا لم تكن الغرفة جاهزة؟",
           "يمكنك ترك الحقائب لدى الاستقبال والخروج حتى تصبح الغرفة جاهزة."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "للمطار",
+          "target": "airport"
+        },
+        {
+          "section": 1,
+          "text": "الدخول المبكر",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        },
+        {
+          "section": 3,
+          "text": "البوفيه التركي",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "forum-shopping": {
@@ -297,6 +401,18 @@
           "كيف أجد صيدلية ليلًا؟",
           "افتح قائمة الصيدليات المناوبة الرسمية المرتبطة بالمقال واختر المناوب لليوم والمنطقة."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "الفوروم",
+          "target": "forum"
+        },
+        {
+          "section": 2,
+          "text": "مطعم Ganita",
+          "target": "guide:first-visit"
+        }
       ]
     },
     "first-visit": {
@@ -336,6 +452,19 @@
           "هل يشمل البرنامج رحلات بعيدة خارج المدينة؟",
           "لا؛ هو تعريف هادئ بالمدينة والساحل، ويمكن تخصيص أيام إضافية للرحلات الأبعد."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "الفوروم",
+          "target": "forum"
+        },
+        {
+          "section": 3,
+          "text": "قاعة الإفطار",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "direct-booking": {
@@ -375,6 +504,20 @@
           "هل يمكن طلب وجبة معينة؟",
           "نعم؛ أرسل طلبك مسبقًا، وسيخبرك الفندق إذا كان يستطيع تنفيذه."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "السويت",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "السرير الإضافي",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        }
       ]
     },
     "work-and-visits": {
@@ -414,6 +557,26 @@
           "ما الخيار المناسب لمرافقين يحتاجان سريرين؟",
           "غرفة التوين بسريرين منفصلين، وللمجموعات الأكبر يمكن النظر في السويت مع مراعاة السلم والسقف المائل."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "التوين",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "السويت",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "البوفيه التركي",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     }
   }

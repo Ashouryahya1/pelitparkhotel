@@ -1,7 +1,7 @@
 const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
-const {ROOT,BASE,languages,groups,guideGroups,languageForPath}=require("./lib/site-languages");
+const {ROOT,BASE,languages,groups,guideGroups,languageForPath,groupForPath}=require("./lib/site-languages");
 const {languageSelector}=require("./lib/language-selector");
 const catalog=require("../data/guide-catalog.json");
 const facts=require("../data/hotel-facts.json");
@@ -21,7 +21,7 @@ function walk(dir){
 }
 function write(file,html){
   // Keep untouched legacy CRLF lines; added lines use LF consistently.
-  html=html.split('\n').map(line=>/TRABZON_GUIDES_|data-guide-(?:footer|css)/.test(line)?line.replace(/\r$/, ''):line).join('\n');
+  html=html.split('\n').map(line=>/TRABZON_GUIDES_|PAGE_GUIDES_|data-guide-(?:footer|css)/.test(line)?line.replace(/\r$/, ''):line).join('\n');
   fs.mkdirSync(path.dirname(file),{recursive:true});
   if(!fs.existsSync(file)||fs.readFileSync(file,"utf8")!==html)fs.writeFileSync(file,html);
 }
@@ -36,6 +36,15 @@ function homeSection(lang){
   const l=packs[lang].labels;
   return `<!-- TRABZON_GUIDES_START --><section class="section__container home-guides" id="travel-guides" aria-labelledby="home-guides-title"><p class="guide-eyebrow">Pelit Park Hotel · Trabzon</p><h2 class="section__header" id="home-guides-title">${e(l.homeTitle)}</h2><p class="section__description">${e(l.homeIntro)}</p>${cards(lang,["where-to-stay","family-stays","hotel-prices"],"h3")}<a class="btn guide-all" href="${guidePath(lang)}">${e(l.all)}</a></section><!-- TRABZON_GUIDES_END -->`;
 }
+const supportingGuides={
+  rooms:["sea-view-rooms","direct-booking"],
+  airport:["airport-arrival","parking"],
+  forum:["forum-shopping","first-visit"],
+  farabi:["work-and-visits","family-stays"]
+};
+function supportingSection(lang,key){
+  return `<!-- PAGE_GUIDES_START --><section class="section__container guide-related" id="stay-guides"><h2 class="section__header">${e(packs[lang].labels.related)}</h2>${cards(lang,supportingGuides[key],"h3")}</section><!-- PAGE_GUIDES_END -->`;
+}
 // Postprocess after the old locale builders. This removes any copied TR discovery
 // text from EN/AR and replaces only our marked additions, never existing prose.
 for(const file of walk(ROOT).filter(file=>file.endsWith(".html"))){
@@ -45,12 +54,19 @@ for(const file of walk(ROOT).filter(file=>file.endsWith(".html"))){
   if(!/<footer\b/.test(html)||/<meta\b[^>]*content=["'][^"']*noindex/i.test(html))continue;
   const lang=languageForPath(rel),l=packs[lang].labels;
   html=html.replace(/<!-- TRABZON_GUIDES_START -->[\s\S]*?<!-- TRABZON_GUIDES_END -->/g,"");
+  html=html.replace(/<!-- PAGE_GUIDES_START -->[\s\S]*?<!-- PAGE_GUIDES_END -->/g,"");
   html=html.replace(/<li data-guide-footer>[\s\S]*?<\/li>/g,"");
   html=html.replace(/<link data-guide-css[^>]*>/g,"");
   html=html.replace(/<footer\b[\s\S]*?<\/footer>/,footer=>footer.replace(/(<ul\b[^>]*class="footer__links"[^>]*>)/,`$1<li data-guide-footer><a href="${guidePath(lang)}">${e(l.guides)}</a></li>`));
   if(rel===languages[lang].home){
     const block=homeSection(lang);
     html=html.includes("</main>")?html.replace("</main>",block+"</main>"):html.replace(/<footer\b/,block+"<footer");
+    html=html.replace("</head>",`<link data-guide-css rel="stylesheet" href="${asset("assets/css/guides.css")}" /></head>`);
+  }
+  const pageKey=groupForPath(rel)?.[0];
+  if(supportingGuides[pageKey]){
+    if(!html.includes("</main>"))throw new Error("Missing main for guide discovery: "+rel);
+    html=html.replace("</main>",supportingSection(lang,pageKey)+"</main>");
     html=html.replace("</head>",`<link data-guide-css rel="stylesheet" href="${asset("assets/css/guides.css")}" /></head>`);
   }
   write(file,html);
@@ -104,7 +120,7 @@ function article(lang,topic){
   const {labels:l,articles}=packs[lang],a=articles[topic.id];
   const date=new Intl.DateTimeFormat(lang==="fa"?"fa-IR-u-ca-gregory":lang,{dateStyle:"long",timeZone:"UTC"}).format(new Date(catalog.updatedAt+"T00:00:00Z"));
   const toc=`<aside class="guide-toc"><h2>${e(l.contents)}</h2><ol>${a.sections.map(([heading],i)=>`<li><a href="#section-${i+1}">${e(heading)}</a></li>`).join("")}</ol></aside>`;
-  const sections=a.sections.map(([heading,p],i)=>`<section class="guide-section" id="section-${i+1}"><h2>${e(heading)}</h2>${p.split(/\n\n+/).map(paragraph=>`<p>${e(paragraph)}</p>`).join("")}</section>`).join("\n");
+  const sections=a.sections.map(([heading,p],i)=>`<section class="guide-section" id="section-${i+1}"><h2>${e(heading)}</h2>${renderLinkedParagraphs(p,(a.inlineLinks||[]).filter(link=>link.section===i),lang,topic.id)}</section>`).join("\n");
   const content=`<article class="guide-article"><div class="guide-heading"><p class="guide-eyebrow">Pelit Park Hotel · Trabzon</p><h1>${e(a.title)}</h1><p class="guide-intro">${e(a.intro)}</p><p class="guide-meta">${e(l.author)} <a href="${groups.about[lang]||groups.home[lang]}">Pelit Park Hotel</a> · ${e(l.updated)} <time datetime="${catalog.updatedAt}">${e(date)}</time></p></div>
 <figure class="guide-photo"><img src="/assets/${topic.image}" alt="${e(l.imageAlt)}" width="1600" height="1160" decoding="async" /><figcaption>Pelit Park Hotel · Trabzon</figcaption></figure>
 <div class="guide-prose">${toc}${sections}
@@ -114,6 +130,23 @@ ${topic.sources.length?`<section class="guide-sources"><h2>${e(l.sources)}</h2><
 <section class="guide-stay"><h2>${e(l.hotel)}</h2><p><a href="${groups[topic.hotelPage][lang]}">${e(topic.hotelPage==="rooms"?l.rooms:l.hotelLink)}</a></p><div class="guide-actions">${external(facts.booking.engineUrl,l.book,"booking_click")}${external(facts.booking.whatsappUrl,"WhatsApp","whatsapp_click")}</div></section>
 </div></article><section class="section__container guide-related"><h2>${e(l.related)}</h2>${cards(lang,topic.related,"h3")}<a class="guide-all guide-read" href="${guidePath(lang)}">${e(l.all)}</a></section>`;
   return shell(lang,topic.id,a.title,a.description,content,topic);
+}
+function renderLinkedParagraphs(text,links,lang,articleId){
+  const matches=links.map(link=>{
+    const offset=text.indexOf(link.text);
+    if(offset<0)throw new Error(`${lang}/${articleId}: missing anchor text ${link.text}`);
+    const target=groups[link.target]?.[lang]||guideGroups[link.target]?.[lang];
+    if(!target)throw new Error(`${lang}/${articleId}: unavailable link target ${link.target}`);
+    return {...link,offset,url:target+(link.fragment?'#'+link.fragment:'')};
+  }).sort((a,b)=>a.offset-b.offset);
+  let cursor=0,html='';
+  for(const match of matches){
+    if(match.offset<cursor)throw new Error(`${lang}/${articleId}: overlapping inline links`);
+    html+=e(text.slice(cursor,match.offset))+`<a href="${e(match.url)}">${e(match.text)}</a>`;
+    cursor=match.offset+match.text.length;
+  }
+  html+=e(text.slice(cursor));
+  return html.split(/\n\n+/).map(paragraph=>`<p>${paragraph}</p>`).join('');
 }
 for(const lang of Object.keys(languages)){
   const d=packs[lang],ids=catalog.topics.map(t=>t.id);

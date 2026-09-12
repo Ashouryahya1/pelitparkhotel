@@ -63,6 +63,18 @@
           "Можно обойтись без аренды машины?",
           "Да: доступны долмуш у отеля, пешая прогулка до Forum и такси через стойку регистрации."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 1,
+          "text": "аэропорта",
+          "target": "airport"
+        },
+        {
+          "section": 3,
+          "text": "Forum",
+          "target": "forum"
+        }
       ]
     },
     "hotel-prices": {
@@ -102,6 +114,26 @@
           "Прямое бронирование всегда дешевле?",
           "Не всегда. Оно позволяет лично обсудить подходящий номер и доступные условия проживания."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "семейный сьют",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 1,
+          "text": "Дополнительная кровать",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        },
+        {
+          "section": 2,
+          "text": "шведский стол",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "family-stays": {
@@ -141,6 +173,26 @@
           "Есть ли доступ без лестницы?",
           "Нет. Последний этаж к семейному сьюту нужно пройти по лестнице."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Twin",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "Сьют",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 3,
+          "text": "ранний заезд",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "parking": {
@@ -180,6 +232,19 @@
           "Можно оставить машину и поехать на Мейдан?",
           "Да. Туда — Meydan, обратно — TRT Bostancı."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 1,
+          "text": "аэропорт",
+          "target": "airport"
+        },
+        {
+          "section": 3,
+          "text": "заезд",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "sea-view-rooms": {
@@ -219,6 +284,26 @@
           "Морской вид означает наличие балкона?",
           "Нет. Балкон — отдельная особенность, не гарантированная для каждой комнаты."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Deluxe Double",
+          "target": "rooms",
+          "fragment": "room-deluxe"
+        },
+        {
+          "section": 1,
+          "text": "Сьют",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 3,
+          "text": "Турецкий буфет",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "airport-arrival": {
@@ -258,6 +343,25 @@
           "Можно оставить багаж до готовности комнаты?",
           "Да. Стойка примет вещи, и вы сможете выйти без чемоданов."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "аэропорта",
+          "target": "airport"
+        },
+        {
+          "section": 1,
+          "text": "раннего заезда",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        },
+        {
+          "section": 3,
+          "text": "завтрак",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "forum-shopping": {
@@ -297,6 +401,18 @@
           "Как найти аптеку ночью?",
           "Откройте официальный список дежурных аптек Ortahisar по ссылке в статье."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Forum",
+          "target": "forum"
+        },
+        {
+          "section": 2,
+          "text": "Ganita",
+          "target": "guide:first-visit"
+        }
       ]
     },
     "first-visit": {
@@ -336,6 +452,19 @@
           "Включены ли дальние загородные экскурсии?",
           "Нет. Это знакомство с городом и набережной; для дальних поездок лучше дополнительные дни."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Forum",
+          "target": "forum"
+        },
+        {
+          "section": 3,
+          "text": "завтрака",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "direct-booking": {
@@ -375,6 +504,26 @@
           "Можно попросить определённое блюдо?",
           "Да. Сообщите заранее, и команда ответит, сможет ли его приготовить."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "сьют",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "Дополнительная кровать",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        },
+        {
+          "section": 3,
+          "text": "Заезд",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "work-and-visits": {
@@ -414,6 +563,26 @@
           "Какой номер выбрать двум сопровождающим?",
           "Twin даёт отдельные кровати. Большей группе можно рассмотреть сьют с учётом его лестницы и потолка."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Twin",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "Сьют",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "Турецкий буфет",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     }
   }

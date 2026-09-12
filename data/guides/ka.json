@@ -63,6 +63,23 @@
           "მანქანის დაქირავების გარეშე შეიძლება დარჩენა?",
           "დიახ. დოლმუში წინ გადის, ფორუმამდე ფეხით მიხვალთ, ხოლო მისაღები ტაქსის გამოძახებაში დაგეხმარებათ."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "პარკინგის",
+          "target": "guide:parking"
+        },
+        {
+          "section": 1,
+          "text": "აეროპორტამდე",
+          "target": "airport"
+        },
+        {
+          "section": 3,
+          "text": "ფორუმამდე",
+          "target": "forum"
+        }
       ]
     },
     "hotel-prices": {
@@ -102,6 +119,26 @@
           "პირდაპირი ჯავშანი ყოველთვის იაფია?",
           "ყოველთვის არა. მისი უპირატესობა შესაფერისი ოთახის შერჩევა და პირადი შეთანხმებების განხილვაა."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "საოჯახო ნომერს",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 1,
+          "text": "დამატებითი საწოლი",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        },
+        {
+          "section": 2,
+          "text": "თურქული ბუფეტი",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "family-stays": {
@@ -141,6 +178,26 @@
           "ნომრამდე კიბის გარეშე მივალთ?",
           "არა. ბოლო სართული კიბით უნდა გაიაროთ, რადგან ლიფტი მეოთხეზე ჩერდება."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Twin",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "საოჯახო ნომერს",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 3,
+          "text": "შესვლა",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "parking": {
@@ -180,6 +237,19 @@
           "მანქანის დატოვებით მეიდანზე წავალთ?",
           "დიახ. იქით Meydan-ის, უკან TRT Bostancı-ის დოლმუშით იმგზავრებთ."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 1,
+          "text": "აეროპორტამდე",
+          "target": "airport"
+        },
+        {
+          "section": 3,
+          "text": "შესვლა",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "sea-view-rooms": {
@@ -219,6 +289,26 @@
           "ზღვის ხედი აივანსაც ნიშნავს?",
           "არა. აივანი ცალკე მახასიათებელია და ყველა ოთახისთვის გარანტირებული არ არის."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Twin",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "საოჯახო ნომერს",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 3,
+          "text": "თურქული ბუფეტი",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "airport-arrival": {
@@ -258,6 +348,25 @@
           "ოთახის მომზადებამდე ბარგს დავტოვებთ?",
           "დიახ. მისაღები ბარგს შეინახავს, თქვენ კი გასეირნებას შეძლებთ."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "აეროპორტის",
+          "target": "airport"
+        },
+        {
+          "section": 1,
+          "text": "შესვლა",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        },
+        {
+          "section": 3,
+          "text": "საუზმე",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "forum-shopping": {
@@ -297,6 +406,18 @@
           "ღამით აფთიაქს სად ვიპოვი?",
           "სტატიაში მოცემული Ortahisar-ის ოფიციალური მორიგე აფთიაქების სიით შესაბამისი დღე მოძებნეთ."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "ფორუმამდე",
+          "target": "forum"
+        },
+        {
+          "section": 2,
+          "text": "Ganita",
+          "target": "guide:first-visit"
+        }
       ]
     },
     "first-visit": {
@@ -336,6 +457,19 @@
           "შორეული მთის გასვლები შედის?",
           "არა. გეგმა ქალაქსა და სანაპიროზეა, შორი გასვლებისთვის დამატებითი დღე სჯობს."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "ადრეული შესვლა",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        },
+        {
+          "section": 3,
+          "text": "აეროპორტამდე",
+          "target": "airport"
+        }
       ]
     },
     "direct-booking": {
@@ -375,6 +509,26 @@
           "კონკრეტული კერძის თხოვნა შეიძლება?",
           "დიახ. წინასწარ მოგვწერეთ და გუნდი გეტყვით, შეუძლია თუ არა მისი მომზადება."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "საოჯახო ნომერი",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "დამატებითი საწოლი",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        },
+        {
+          "section": 3,
+          "text": "შესვლა",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "work-and-visits": {
@@ -414,6 +568,26 @@
           "ორი თანმხლები პირისთვის რომელი ოთახია?",
           "ცალკე საწოლებისთვის Twin. დიდ ჯგუფს შეუძლია საოჯახო ნომერი აირჩიოს კიბისა და ჭერის გათვალისწინებით."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Twin",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "საოჯახო ნომერს",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "თურქული ბუფეტი",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     }
   }

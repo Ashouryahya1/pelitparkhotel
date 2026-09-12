@@ -63,6 +63,23 @@
           "Can I stay here without hiring a car?",
           "Yes. Dolmuş passes the hotel for trips toward Meydan and Moloz, Forum is walkable, and reception can call a taxi."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 1,
+          "text": "Trabzon Airport",
+          "target": "airport"
+        },
+        {
+          "section": 2,
+          "text": "Ganita waterfront",
+          "target": "guide:first-visit"
+        },
+        {
+          "section": 3,
+          "text": "Forum Trabzon",
+          "target": "forum"
+        }
       ]
     },
     "hotel-prices": {
@@ -102,6 +119,26 @@
           "Does direct booking automatically mean a lower price?",
           "Not always. Its practical benefit is personal help choosing a suitable room and discussing the arrangements available for your stay."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "family suite",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 1,
+          "text": "extra bed",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        },
+        {
+          "section": 2,
+          "text": "Turkish open buffet",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "family-stays": {
@@ -141,6 +178,26 @@
           "Does the lift reach the family suite?",
           "No. It reaches floor four; the suite is on floor five and requires the final stairs."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Deluxe Double",
+          "target": "rooms",
+          "fragment": "room-deluxe"
+        },
+        {
+          "section": 1,
+          "text": "family suite",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 3,
+          "text": "Turkish open buffet",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "parking": {
@@ -180,6 +237,24 @@
           "Can we visit the centre while leaving the car at the hotel?",
           "Yes. Use the Meydan dolmuş from outside the hotel; for the return, look for TRT Bostancı."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 1,
+          "text": "Trabzon Airport",
+          "target": "airport"
+        },
+        {
+          "section": 2,
+          "text": "Ganita waterfront",
+          "target": "guide:first-visit"
+        },
+        {
+          "section": 3,
+          "text": "early check-in",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "sea-view-rooms": {
@@ -219,6 +294,26 @@
           "Does a sea-view room necessarily have a balcony?",
           "A balcony is a separate feature and is not promised for every room in these categories."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Deluxe Double",
+          "target": "rooms",
+          "fragment": "room-deluxe"
+        },
+        {
+          "section": 1,
+          "text": "The suite",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 3,
+          "text": "Turkish buffet",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "airport-arrival": {
@@ -258,6 +353,25 @@
           "What if my room is not ready when I arrive?",
           "Reception can keep your bags so you can go out while the room is being prepared."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "The airport",
+          "target": "airport"
+        },
+        {
+          "section": 1,
+          "text": "early check-in",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        },
+        {
+          "section": 3,
+          "text": "Turkish breakfast buffet",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "forum-shopping": {
@@ -297,6 +411,18 @@
           "Where can I find a pharmacy at night?",
           "Use the official Ortahisar duty-pharmacy list linked in this guide for that day's pharmacy and contact details."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Forum Trabzon",
+          "target": "forum"
+        },
+        {
+          "section": 2,
+          "text": "Ganita",
+          "target": "guide:first-visit"
+        }
       ]
     },
     "first-visit": {
@@ -336,6 +462,24 @@
           "Does this itinerary include distant day trips?",
           "No. It is a relaxed introduction to the city and waterfront, leaving longer excursions for extra days."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Forum",
+          "target": "forum"
+        },
+        {
+          "section": 1,
+          "text": "Turkish buffet",
+          "target": "rooms",
+          "fragment": "breakfast"
+        },
+        {
+          "section": 3,
+          "text": "Trabzon Airport",
+          "target": "airport"
+        }
       ]
     },
     "direct-booking": {
@@ -375,6 +519,26 @@
           "Can I discuss a special meal before arrival?",
           "Yes. Send the request to the hotel, and the team will let you know whether it can accommodate it."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "family suite",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "extra bed",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        },
+        {
+          "section": 3,
+          "text": "check-in",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "work-and-visits": {
@@ -414,6 +578,26 @@
           "Which room suits two companions needing separate beds?",
           "Twin offers two single beds. Larger groups can consider the family suite, taking its final stairs and sloping ceiling into account."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Twin rooms",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "family suite",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "breakfast",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     }
   }

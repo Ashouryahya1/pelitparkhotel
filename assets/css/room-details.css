@@ -1,0 +1,23 @@
+.room-details { padding-block: 2rem; min-width: 0; }
+.room-details :is(h2,h3,p,li,a,td,th) { overflow-wrap: break-word; }
+.room-details h2 { font-size: clamp(1.6rem,3vw,2.5rem); line-height: 1.5; }
+.room-details h3 { line-height: 1.5; margin-bottom: .75rem; }
+.room-details p, .room-details li { line-height: 1.85; color: var(--text-light); }
+.room-details p + p { margin-top: 1rem; }
+.room-details a:not(.btn) { color: #805831; text-decoration: underline; text-underline-offset: .2em; }
+.room-details a:focus-visible, .room-details__table:focus-visible { outline: 3px solid #b1824e; outline-offset: 4px; }
+.room-details__table { overflow-x: auto; margin-block: 1.5rem; border: 1px solid #e3d7c8; border-radius: .6rem; }
+.room-details table { width: 100%; min-width: 620px; border-collapse: collapse; text-align: start; }
+.room-details caption { text-align: start; padding: 1rem; font-weight: 600; background: #f5eee4; }
+.room-details :is(th,td) { padding: .9rem 1rem; border-bottom: 1px solid #e3d7c8; vertical-align: top; }
+.room-details th { text-align: start; }
+.room-details thead { background: #fbf7f0; }
+.room-details__suite { background: #f8f2e9; padding: clamp(1.25rem,3vw,2.5rem); border: 1px solid #dfc8a9; border-radius: .8rem; }
+.room-details__access { padding-inline-start: 1rem; border-inline-start: 3px solid #a97843; margin-block: 1.5rem; }
+.room-details__suite .btn { margin-top: 1.25rem; white-space: normal; line-height: 1.5; }
+.room-details__policies { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+.room-details__policies article { border: 1px solid #e3d7c8; border-radius: .6rem; padding: 1.25rem; min-width: 0; }
+.room-details ul { padding-inline-start: 1.25rem; margin-bottom: .75rem; }
+.room-details__anchor { display: block; }
+.room-details[id], .room-details [id], .room-details__anchor { scroll-margin-top: 7rem; }
+@media (max-width: 850px) { .room-details__policies { grid-template-columns: minmax(0,1fr); } }

@@ -63,6 +63,23 @@
           "Avtomobil kirayələmədən qalmaq mümkündür?",
           "Bəli. Dolmuş otelin qarşısından keçir, Foruma piyada getmək və resepsiyondan taksi istəmək mümkündür."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "parklanma",
+          "target": "guide:parking"
+        },
+        {
+          "section": 1,
+          "text": "hava limanına",
+          "target": "airport"
+        },
+        {
+          "section": 2,
+          "text": "Ganita",
+          "target": "guide:first-visit"
+        }
       ]
     },
     "hotel-prices": {
@@ -102,6 +119,26 @@
           "Birbaşa rezervasiya həmişə ucuzdur?",
           "Həmişə deyil. Əsas üstünlüklər uyğun otaq seçimi və şəxsi razılaşmaları müzakirə etməkdir."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "ailə süiti",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 1,
+          "text": "əlavə çarpayı",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        },
+        {
+          "section": 2,
+          "text": "Türk açıq bufeti",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "family-stays": {
@@ -141,6 +178,26 @@
           "Süitə pilləkənsiz çatmaq olur?",
           "Xeyr. Lift dördüncü mərtəbədə dayanır, süit beşincidədir."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Twin",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "Süit",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 3,
+          "text": "erkən giriş",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "parking": {
@@ -180,6 +237,24 @@
           "Maşını qoyub Meydana gedə bilərik?",
           "Bəli. Gedişdə Meydan, geri dönüşdə TRT Bostancı dolmuşu istifadə olunur."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 1,
+          "text": "hava limanına",
+          "target": "airport"
+        },
+        {
+          "section": 2,
+          "text": "Ganita",
+          "target": "guide:first-visit"
+        },
+        {
+          "section": 3,
+          "text": "Normal giriş",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "sea-view-rooms": {
@@ -219,6 +294,26 @@
           "Dəniz mənzərəsi balkon deməkdir?",
           "Xeyr. Balkon ayrıca xüsusiyyətdir və hər otaq üçün vəd olunmur."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Deluxe Double",
+          "target": "rooms",
+          "fragment": "room-deluxe"
+        },
+        {
+          "section": 1,
+          "text": "süitdə",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "giriş",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "airport-arrival": {
@@ -258,6 +353,20 @@
           "Otaq hazır olana qədər çamadan saxlamaq mümkündür?",
           "Bəli. Baqajı resepsiyona verib rahat gəzintiyə çıxa bilərsiniz."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 1,
+          "text": "erkən giriş",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        },
+        {
+          "section": 3,
+          "text": "Türk bufeti",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "forum-shopping": {
@@ -297,6 +406,18 @@
           "Gecə aptek haradan tapılır?",
           "Məqalədəki rəsmi Ortahisar növbətçi aptek siyahısından həmin günü seçin."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Foruma",
+          "target": "forum"
+        },
+        {
+          "section": 2,
+          "text": "Ganita",
+          "target": "guide:first-visit"
+        }
       ]
     },
     "first-visit": {
@@ -336,6 +457,20 @@
           "Uzaq dağ gəzintiləri plana daxildir?",
           "Xeyr. Şəhər və sahilə yönəlib; uzaq səfərlər üçün əlavə gün ayırmaq olar."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "erkən giriş",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        },
+        {
+          "section": 3,
+          "text": "səhər yeməyi",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     },
     "direct-booking": {
@@ -375,6 +510,26 @@
           "Müəyyən yemək istəmək olar?",
           "Bəli. Əvvəlcədən yazın; komanda hazırlaya bilib-bilməyəcəyini bildirəcək."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Süitdə",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "körpə yatağı",
+          "target": "rooms",
+          "fragment": "extra-beds"
+        },
+        {
+          "section": 3,
+          "text": "erkən giriş",
+          "target": "rooms",
+          "fragment": "arrival-policy"
+        }
       ]
     },
     "work-and-visits": {
@@ -414,6 +569,26 @@
           "İki müşayiətçiyə hansı otaq uyğundur?",
           "Ayrı yataqlar üçün Twin. Daha böyük qrup süiti pilləkən və maili tavanı nəzərə alaraq seçə bilər."
         ]
+      ],
+      "inlineLinks": [
+        {
+          "section": 0,
+          "text": "Twin",
+          "target": "rooms",
+          "fragment": "room-twin"
+        },
+        {
+          "section": 1,
+          "text": "süitdə",
+          "target": "rooms",
+          "fragment": "family-suite"
+        },
+        {
+          "section": 2,
+          "text": "Türk bufeti",
+          "target": "rooms",
+          "fragment": "breakfast"
+        }
       ]
     }
   }
