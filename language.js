@@ -1,6 +1,6 @@
 (() => {
   const STORAGE_KEY = "preferredLangPath";
-  const languageForPath = value => value?.match(/^\/(ar|en|ka|ru|az|fa)(?:\/|$)/)?.[1] || (value?.startsWith("/") ? "tr" : "");
+  const languageForPath = value => value?.match(/^\/(ar|en|ka|ru|az|fa|de)(?:\/|$)/)?.[1] || (value?.startsWith("/") ? "tr" : "");
   const setupLanguageLinks = () => {
     const menus = [...document.querySelectorAll("details.language-switcher")];
     const activeLanguage = languageForPath(window.location.pathname || "/");

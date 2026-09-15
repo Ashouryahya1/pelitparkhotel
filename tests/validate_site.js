@@ -22,12 +22,12 @@ const GENERATED_LANGUAGE_PAGES = [
   "travel-tips/index.html",
 ];
 const GEORGIAN_SITEMAP_DATES = new Map([
-  [`${DOMAIN}/ka/`, "2026-09-12"],
-  [`${DOMAIN}/ka/hotel-near-forum-trabzon/`, "2026-09-12"],
-  [`${DOMAIN}/ka/hotel-near-farabi-hospital/`, "2026-09-12"],
-  [`${DOMAIN}/ka/hotel-near-trabzon-airport/`, "2026-09-12"],
-  [`${DOMAIN}/ka/batumi-trabzon/`, "2026-09-12"],
-  [`${DOMAIN}/ka/room-types/`, "2026-09-12"],
+  [`${DOMAIN}/ka/`, "2026-09-15"],
+  [`${DOMAIN}/ka/hotel-near-forum-trabzon/`, "2026-09-15"],
+  [`${DOMAIN}/ka/hotel-near-farabi-hospital/`, "2026-09-15"],
+  [`${DOMAIN}/ka/hotel-near-trabzon-airport/`, "2026-09-15"],
+  [`${DOMAIN}/ka/batumi-trabzon/`, "2026-09-15"],
+  [`${DOMAIN}/ka/room-types/`, "2026-09-15"],
 ]);
 
 const errors = [];
@@ -140,8 +140,8 @@ for (const file of htmlFiles) {
   }
   for (const match of page.html.matchAll(/<details[^>]+class=["'][^"']*language-switcher[^"']*["'][^>]*>([\s\S]*?)<\/details>/gi)) {
     const languageHrefs = [...match[1].matchAll(/<a\s+[^>]*href=["']([^"']+)["']/gi)].map((item) => item[1]);
-    const languageCode = (href) => href.match(/^\/(ar|en|ka|ru|az|fa)\//)?.[1] || (href.startsWith("/") ? "tr" : "");
-    for (const expectedLanguage of ["ar", "en", "ka", "tr", "ru", "az", "fa"]) {
+    const languageCode = (href) => href.match(/^\/(ar|en|ka|ru|az|fa|de)\//)?.[1] || (href.startsWith("/") ? "tr" : "");
+    for (const expectedLanguage of ["ar", "en", "ka", "tr", "ru", "az", "fa", "de"]) {
       const count = languageHrefs.filter((href) => languageCode(href) === expectedLanguage).length;
       if (count !== 1) errors.push(`${rel}: language menu must contain exactly one ${expectedLanguage} link`);
     }

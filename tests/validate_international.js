@@ -38,11 +38,11 @@ for(const lang of ["ru","az","fa"]) {
     titles.add(title);descriptions.add(description);
     assert.match(html,new RegExp(`property="og:locale" content="${data.locale}"`),relative);
     const languageMenu=html.match(/<details class="language-switcher"[^>]*>([\s\S]*?)<\/details>/)[1];
-    assert.equal((languageMenu.match(/<a\b/g)||[]).length,7,relative+": all seven languages");
+    assert.equal((languageMenu.match(/<a\b/g)||[]).length,8,relative+": all eight navigation languages");
     assert.equal((languageMenu.match(/aria-current="page"/g)||[]).length,1,relative);
     // Independently verify the actual alternate destinations and their backlinks.
     const alternateTags=[...html.matchAll(/<link\b[^>]*rel="alternate"[^>]*>/g)].map(m=>m[0]);
-    assert.equal(alternateTags.length,["about/","reviews/"].includes(slug)?7:8,relative+": equivalent languages only");
+    assert.equal(alternateTags.length,slug===""?9:["about/","reviews/"].includes(slug)?7:8,relative+": equivalent languages only");
     assert.equal(new Set(alternateTags.map(t=>attr(t,"hreflang"))).size,alternateTags.length,relative+": no duplicate alternates");
     for(const tag of alternateTags){
       const href=attr(tag,"href"),code=attr(tag,"hreflang"),destination=new URL(href).pathname;

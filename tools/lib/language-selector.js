@@ -1,6 +1,6 @@
-const { languages } = require("./site-languages");
+const { navigationLanguages: languages } = require("./site-languages");
 const e = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const labels = {tr:"Dil seçin",en:"Choose language",ar:"اختيار اللغة",ka:"ენის არჩევა",ru:"Выбрать язык",az:"Dil seçin",fa:"انتخاب زبان"};
+const labels = {tr:"Dil seçin",en:"Choose language",ar:"اختيار اللغة",ka:"ენის არჩევა",ru:"Выбрать язык",az:"Dil seçin",fa:"انتخاب زبان",de:"Sprache wählen"};
 function languageSelector(active,paths={}) {
   const current=languages[active]||languages.tr;
   const options=Object.entries(languages).map(([code,info]) => {
@@ -10,4 +10,3 @@ function languageSelector(active,paths={}) {
   return `<details class="language-switcher"><summary class="language-switcher__toggle" aria-label="${e(labels[active]+": "+current.name)}"><i class="ri-global-line" aria-hidden="true"></i><span class="language-switcher__current" lang="${active}" dir="auto">${current.name}</span><i class="ri-arrow-down-s-line language-switcher__chevron" aria-hidden="true"></i></summary><ul class="language-switcher__list" aria-label="${e(labels[active])}">${options}</ul></details>`;
 }
 module.exports={languageSelector};
-

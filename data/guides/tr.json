@@ -83,7 +83,7 @@
       ]
     },
     "hotel-prices": {
-      "title": "Trabzon otel bütçesi: kahvaltı, ek yatak ve gerçek konaklama maliyeti",
+      "title": "Trabzon Otel Fiyatları: Oda, Kahvaltı ve Ek Ücretler",
       "description": "Pelit Park'ta ücretsiz otopark, kahvaltılı ve kahvaltısız fiyatlar, günlük 10 € ek yatak ve 5 € bebek yatağı ücretleriyle bütçenizi planlayın.",
       "intro": "Konaklama bütçesinde oda bedelinin yanında bilinen ek hizmetleri de görmek gerekir. Pelit Park'ta otopark ücretsizdir; kahvaltılı veya yalnızca oda içeren rezervasyonlar bulunur. Ek yatak ücretleri de açıkça belirtilir.",
       "sections": [
@@ -139,7 +139,8 @@
           "target": "rooms",
           "fragment": "breakfast"
         }
-      ]
+      ],
+      "updatedAt": "2026-09-15"
     },
     "family-stays": {
       "title": "Trabzon'da aile konaklaması: üç kişilik oda ve iki odalı aile süiti",

@@ -83,7 +83,7 @@
       ]
     },
     "hotel-prices": {
-      "title": "Trabzon otel büdcəsi: səhər yeməyi, əlavə çarpayı və dayanacaq",
+      "title": "Trabzon otel qiymətləri: otaq, səhər yeməyi və əlavə xərclər",
       "description": "Pelit Park-da pulsuz dayanacaq, yeməkli və yeməksiz tariflər, gündəlik 10 € əlavə çarpayı və 5 € körpə yatağı ilə üçgünlük büdcə nümunəsi.",
       "intro": "Otağın ilk görünən qiyməti səfərin bütün xərcini göstərmir. Pelit Park-da dayanacaq pulsuzdur, səhər yeməyi seçilmiş tarifə bağlıdır, əlavə çarpayı və körpə yatağının haqqı isə əvvəlcədən aydındır.",
       "sections": [
@@ -139,7 +139,8 @@
           "target": "rooms",
           "fragment": "breakfast"
         }
-      ]
+      ],
+      "updatedAt": "2026-09-15"
     },
     "family-stays": {
       "title": "Trabzonda ailə ilə qalmaq: üçnəfərlik otaq və ikiotaqlı süit",

@@ -52,7 +52,9 @@ for(const file of walk(ROOT).filter(file=>file.endsWith(".html"))){
   if(/\/guides\//.test(rel))continue;
   let html=fs.readFileSync(file,"utf8");
   if(!/<footer\b/.test(html)||/<meta\b[^>]*content=["'][^"']*noindex/i.test(html))continue;
-  const lang=languageForPath(rel),l=packs[lang].labels;
+  const lang=languageForPath(rel);
+  if (!packs[lang]) continue; // Standalone landings have no guide translation pack.
+  const l=packs[lang].labels;
   html=html.replace(/<!-- TRABZON_GUIDES_START -->[\s\S]*?<!-- TRABZON_GUIDES_END -->/g,"");
   html=html.replace(/<!-- PAGE_GUIDES_START -->[\s\S]*?<!-- PAGE_GUIDES_END -->/g,"");
   html=html.replace(/<li data-guide-footer>[\s\S]*?<\/li>/g,"");
@@ -94,7 +96,7 @@ function shell(lang,id,title,description,content,topic){
     {"@type":"WebSite","@id":BASE+"/#website",name:"Pelit Park Hotel",url:BASE+"/"}
   ];
   if(topic){
-    graph.push({"@type":"Article","@id":canonical+"#article",headline:title,description,inLanguage:lang,url:canonical,mainEntityOfPage:{"@id":canonical+"#webpage"},image:imageUrl,datePublished:catalog.publishedAt,dateModified:catalog.updatedAt,author:{"@id":BASE+"/#hotel"},publisher:{"@id":BASE+"/#hotel"}});
+    graph.push({"@type":"Article","@id":canonical+"#article",headline:title,description,inLanguage:lang,url:canonical,mainEntityOfPage:{"@id":canonical+"#webpage"},image:imageUrl,datePublished:catalog.publishedAt,dateModified:packs[lang].articles[id].updatedAt||catalog.updatedAt,author:{"@id":BASE+"/#hotel"},publisher:{"@id":BASE+"/#hotel"}});
   }else{
     graph.push({"@type":"ItemList",itemListElement:catalog.topics.map((t,i)=>({"@type":"ListItem",position:i+1,name:packs[lang].articles[t.id].title,url:BASE+guidePath(lang,t.id)}))});
   }
@@ -105,7 +107,7 @@ function shell(lang,id,title,description,content,topic){
 <title>${e(title)} | Pelit Park Hotel</title><meta name="description" content="${e(description)}" /><meta name="robots" content="index,follow" />
 <link rel="canonical" href="${canonical}" />${alternateTags}<link rel="alternate" hreflang="x-default" href="${BASE}${guidePath("tr",id)}" />
 <meta property="og:type" content="${topic?"article":"website"}" /><meta property="og:title" content="${e(title)}" /><meta property="og:description" content="${e(description)}" /><meta property="og:url" content="${canonical}" /><meta property="og:site_name" content="Pelit Park Hotel" /><meta property="og:locale" content="${locales[lang]}" /><meta property="og:image" content="${imageUrl}" /><meta property="og:image:alt" content="${e(l.imageAlt)}" />
-${topic?`<meta property="article:published_time" content="${catalog.publishedAt}" /><meta property="article:modified_time" content="${catalog.updatedAt}" />`:""}
+${topic?`<meta property="article:published_time" content="${catalog.publishedAt}" /><meta property="article:modified_time" content="${packs[lang].articles[id].updatedAt||catalog.updatedAt}" />`:""}
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="${e(title)}" /><meta name="twitter:description" content="${e(description)}" /><meta name="twitter:image" content="${imageUrl}" /><meta name="twitter:image:alt" content="${e(l.imageAlt)}" />
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" /><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" /><link rel="manifest" href="/assets/site.webmanifest" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" /><link rel="stylesheet" href="${asset("styles.css")}" /><link rel="stylesheet" href="${asset("assets/css/guides.css")}" />
@@ -118,10 +120,11 @@ ${header(lang,id)}<main id="main-content">${content}</main>${footers[lang]}
 }
 function article(lang,topic){
   const {labels:l,articles}=packs[lang],a=articles[topic.id];
-  const date=new Intl.DateTimeFormat(lang==="fa"?"fa-IR-u-ca-gregory":lang,{dateStyle:"long",timeZone:"UTC"}).format(new Date(catalog.updatedAt+"T00:00:00Z"));
+  const updatedAt=a.updatedAt||catalog.updatedAt;
+  const date=new Intl.DateTimeFormat(lang==="fa"?"fa-IR-u-ca-gregory":lang,{dateStyle:"long",timeZone:"UTC"}).format(new Date(updatedAt+"T00:00:00Z"));
   const toc=`<aside class="guide-toc"><h2>${e(l.contents)}</h2><ol>${a.sections.map(([heading],i)=>`<li><a href="#section-${i+1}">${e(heading)}</a></li>`).join("")}</ol></aside>`;
   const sections=a.sections.map(([heading,p],i)=>`<section class="guide-section" id="section-${i+1}"><h2>${e(heading)}</h2>${renderLinkedParagraphs(p,(a.inlineLinks||[]).filter(link=>link.section===i),lang,topic.id)}</section>`).join("\n");
-  const content=`<article class="guide-article"><div class="guide-heading"><p class="guide-eyebrow">Pelit Park Hotel · Trabzon</p><h1>${e(a.title)}</h1><p class="guide-intro">${e(a.intro)}</p><p class="guide-meta">${e(l.author)} <a href="${groups.about[lang]||groups.home[lang]}">Pelit Park Hotel</a> · ${e(l.updated)} <time datetime="${catalog.updatedAt}">${e(date)}</time></p></div>
+  const content=`<article class="guide-article"><div class="guide-heading"><p class="guide-eyebrow">Pelit Park Hotel · Trabzon</p><h1>${e(a.title)}</h1><p class="guide-intro">${e(a.intro)}</p>${topic.id==="hotel-prices"?`<div class="guide-actions">${external(facts.booking.engineUrl,l.book,"booking_click")}</div>`:""}<p class="guide-meta">${e(l.author)} <a href="${groups.about[lang]||groups.home[lang]}">Pelit Park Hotel</a> · ${e(l.updated)} <time datetime="${updatedAt}">${e(date)}</time></p></div>
 <figure class="guide-photo"><img src="/assets/${topic.image}" alt="${e(l.imageAlt)}" width="1600" height="1160" decoding="async" /><figcaption>Pelit Park Hotel · Trabzon</figcaption></figure>
 <div class="guide-prose">${toc}${sections}
 <section class="guide-checklist"><h2>${e(l.checklist)}</h2><ul>${a.checklist.map(item=>`<li>${e(item)}</li>`).join("")}</ul></section>
@@ -155,7 +158,8 @@ for(const lang of Object.keys(languages)){
   write(path.join(ROOT,guidePath(lang),"index.html"),shell(lang,"index",d.labels.indexTitle,d.labels.indexDescription,index));
   for(const topic of catalog.topics)write(path.join(ROOT,guidePath(lang,topic.id),"index.html"),article(lang,topic));
 }
+const guideDates=Object.fromEntries(Object.entries(guideGroups).flatMap(([key,group])=>Object.entries(group).map(([lang,url])=>[BASE+url,key==="guide:index"?Object.values(packs[lang].articles).reduce((latest,a)=>a.updatedAt>latest?a.updatedAt:latest,catalog.updatedAt):packs[lang].articles[key.slice(6)].updatedAt||catalog.updatedAt])));
 const urls=Object.values(guideGroups).flatMap(group=>Object.values(group).map(url=>BASE+url)).sort();
-write(path.join(ROOT,"sitemap-guides.xml"),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(url=>`  <url><loc>${e(url)}</loc><lastmod>${catalog.updatedAt}</lastmod></url>`).join("\n")}\n</urlset>\n`);
+write(path.join(ROOT,"sitemap-guides.xml"),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(url=>`  <url><loc>${e(url)}</loc><lastmod>${guideDates[url]}</lastmod></url>`).join("\n")}\n</urlset>\n`);
 write(path.join(ROOT,"docs/guide-indexing-urls.txt"),urls.join("\n")+"\n");
 console.log(`Built ${catalog.topics.length*Object.keys(languages).length} localized articles, seven indexes, shared footer discovery and sitemap-guides.xml.`);

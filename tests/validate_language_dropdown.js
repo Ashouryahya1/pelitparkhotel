@@ -3,7 +3,7 @@ const fs=require("node:fs");
 const path=require("node:path");
 const vm=require("node:vm");
 const root=path.resolve(__dirname,"..");
-const names={tr:"Türkçe",en:"English",ar:"العربية",ka:"ქართული",ru:"Русский",az:"Azərbaycanca",fa:"فارسی"};
+const names={tr:"Türkçe",en:"English",ar:"العربية",ka:"ქართული",ru:"Русский",az:"Azərbaycanca",fa:"فارسی",de:"Deutsch"};
 function walk(dir){
   return fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>{
     if([".git","node_modules"].includes(entry.name))return [];
@@ -20,7 +20,7 @@ for(const file of walk(root).filter(file=>file.endsWith(".html"))){
   assert.doesNotMatch(html,/<div[^>]*class="[^"]*language-switcher/,file+": no old horizontal pills");
   const menu=menus[0][1];
   assert.equal((menu.match(/<summary\b/g)||[]).length,1,file+": one keyboard-operable toggle");
-  assert.equal((menu.match(/<a\b/g)||[]).length,7,file+": seven actual links");
+  assert.equal((menu.match(/<a\b/g)||[]).length,8,file+": eight actual links");
   for(const [lang,name] of Object.entries(names)){
     assert.ok(menu.includes(`lang="${lang}"`),file+": "+lang);
     assert.ok(menu.includes(`>${name}<span`),file+": native language names");
@@ -59,5 +59,5 @@ for(const lang of Object.keys(names)){
   menu.open=true;events.keydown({key:"Escape"});assert.equal(menu.open,false);assert.equal(summary.focused,true);
   menu.open=true;links[6].handlers.click();assert.equal(menu.open,false);assert.equal(saved.preferredLangPath,"/fa/room-types/");
 }
-console.log(`Validated accessible language dropdowns on ${count} pages, dismissal and persistence in all seven languages.`);
+console.log(`Validated accessible language dropdowns on ${count} pages, dismissal and persistence in all eight languages.`);
 
