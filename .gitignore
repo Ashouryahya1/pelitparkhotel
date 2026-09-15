@@ -1,3 +1,4 @@
 .codex-tmp/
 outputs/**/*-preview.png
 outputs/**/*.inspect.ndjson
+node_modules/

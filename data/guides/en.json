@@ -83,7 +83,7 @@
       ]
     },
     "hotel-prices": {
-      "title": "Trabzon hotel costs: rooms, breakfast and the extras families pay",
+      "title": "Trabzon Hotel Prices: Rooms, Breakfast and Extra Costs",
       "description": "Understand Pelit Park's room-only and breakfast rates, free parking, €10 daily extra beds and €5 baby cots, with a worked three-night family example.",
       "intro": "A useful hotel budget starts with real inclusions and known extras. At Pelit Park, parking is free, breakfast can be included or excluded from the room rate, and the charges for an additional bed or baby cot are clear. This makes it easier to budget beyond the first price in a search result.",
       "sections": [
@@ -139,7 +139,8 @@
           "target": "rooms",
           "fragment": "breakfast"
         }
-      ]
+      ],
+      "updatedAt": "2026-09-15"
     },
     "family-stays": {
       "title": "Family rooms in Trabzon: a two-bedroom suite or a room for three",
