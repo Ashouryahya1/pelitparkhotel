@@ -73,10 +73,10 @@ for(const [lang,info] of Object.entries(languages)){
     const article=graph.find(g=>g["@type"]==="Article");
     assert.equal(article.mainEntityOfPage["@id"],url+"#webpage");
     assert.equal(article.datePublished,catalog.publishedAt);
-    assert.equal(article.dateModified,catalog.updatedAt);
+    assert.equal(article.dateModified,a.updatedAt||catalog.updatedAt);
     assert.equal(article.inLanguage,lang);
     assert.equal(article.author["@id"],BASE+"/#hotel");
-    assert.ok(html.includes(`datetime="${catalog.updatedAt}"`),url+": visible actual date");
+    assert.ok(html.includes(`datetime="${a.updatedAt||catalog.updatedAt}"`),url+": visible actual date");
   }
   const json=JSON.stringify(d);
   if(lang!=="ar")assert.doesNotMatch(json,/bidet|биде|شطاف|بیده|شلنگ/i,lang+": Arabic-only amenity wording");
